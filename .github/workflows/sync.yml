@@ -1,0 +1,38 @@
+# Rastrea aoe2companion cada 15 minutos y guarda las partidas nuevas de la liga.
+name: Sincronizar liga
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Rastrear partidas
+        run: python scripts/sync.py
+      - name: Guardar cambios
+        run: |
+          if git diff --quiet -- data; then
+            echo "Sin cambios"
+            exit 0
+          fi
+          git config user.name "elo-hispania-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git commit -m "Datos: $(python -c "import json;d=json.load(open('data/sync.json'));print(f\"+{d.get('added',0)} partidas, +{d.get('newPlayers',0)} jugadores\")")"
+          git pull --rebase origin main
+          git push

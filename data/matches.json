@@ -1,0 +1,2472 @@
+{
+ "aoe-517034554": {
+  "aoeMatchId": 517034554,
+  "civs": {
+   "p-18749773": "Britons",
+   "p-254537": "Koreans",
+   "p-2589122": "Franks",
+   "p-4279580": "Shu",
+   "p-8179071": "Portuguese",
+   "p-903143": "Malay"
+  },
+  "date": "2026-10-28",
+  "durationSec": 1357,
+  "lobby": "[Revancha] dkamino al bingo vs garagardo",
+  "map": "CW7 Socotra (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-8179071",
+   "p-254537",
+   "p-903143"
+  ],
+  "team2": [
+   "p-18749773",
+   "p-2589122",
+   "p-4279580"
+  ],
+  "ts": 1793220324000,
+  "winner": 2
+ },
+ "aoe-517037512": {
+  "aoeMatchId": 517037512,
+  "civs": {
+   "p-10179079": "Maya",
+   "p-11427701": "Koreans",
+   "p-1342495": "Huns",
+   "p-1886379": "Spanish",
+   "p-2598337": "Lithuanians",
+   "p-8487446": "Tatars"
+  },
+  "date": "2026-10-28",
+  "durationSec": 1143,
+  "lobby": "CW",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1886379",
+   "p-11427701",
+   "p-8487446"
+  ],
+  "team2": [
+   "p-10179079",
+   "p-1342495",
+   "p-2598337"
+  ],
+  "ts": 1793220991000,
+  "winner": 1
+ },
+ "aoe-517041062": {
+  "aoeMatchId": 517041062,
+  "civs": {
+   "p-18749773": "Vietnamese",
+   "p-254537": "Ethiopians",
+   "p-2589122": "Romans",
+   "p-4279580": "Malians",
+   "p-8179071": "Poles",
+   "p-903143": "Saracens"
+  },
+  "date": "2026-10-28",
+  "durationSec": 1347,
+  "lobby": "[Revancha] dkamino al bingo vs garagardo",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-8179071",
+   "p-254537",
+   "p-903143"
+  ],
+  "team2": [
+   "p-2589122",
+   "p-4279580",
+   "p-18749773"
+  ],
+  "ts": 1793221899000,
+  "winner": 1
+ },
+ "aoe-517042856": {
+  "aoeMatchId": 517042856,
+  "civs": {
+   "p-10179079": "Saracens",
+   "p-11427701": "Romans",
+   "p-1886379": "Slavs",
+   "p-236313": "Magyars",
+   "p-2598337": "Vikings",
+   "p-8487446": "Wu"
+  },
+  "date": "2026-10-28",
+  "durationSec": 1381,
+  "lobby": "[Revancha] CW",
+  "map": "CW7 Socotra (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-8487446",
+   "p-11427701",
+   "p-1886379"
+  ],
+  "team2": [
+   "p-2598337",
+   "p-10179079",
+   "p-236313"
+  ],
+  "ts": 1793222448000,
+  "winner": 2
+ },
+ "aoe-517048977": {
+  "aoeMatchId": 517048977,
+  "civs": {
+   "p-10179079": "Portuguese",
+   "p-11427701": "Ethiopians",
+   "p-1342495": "Armenians",
+   "p-1886379": "Italians",
+   "p-236313": "Cumans",
+   "p-8487446": "Hindustanis"
+  },
+  "date": "2026-10-28",
+  "durationSec": 239,
+  "lobby": "[Revancha] CW",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1886379",
+   "p-8487446",
+   "p-11427701"
+  ],
+  "team2": [
+   "p-10179079",
+   "p-236313",
+   "p-1342495"
+  ],
+  "ts": 1793224360000,
+  "winner": 2
+ },
+ "aoe-517051450": {
+  "aoeMatchId": 517051450,
+  "civs": {
+   "p-10179079": "Portuguese",
+   "p-11427701": "Ethiopians",
+   "p-1342495": "Armenians",
+   "p-1886379": "Italians",
+   "p-236313": "Cumans",
+   "p-8487446": "Hindustanis"
+  },
+  "date": "2026-10-28",
+  "durationSec": 2654,
+  "lobby": "[Revancha] CW",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1886379",
+   "p-11427701",
+   "p-8487446"
+  ],
+  "team2": [
+   "p-1342495",
+   "p-236313",
+   "p-10179079"
+  ],
+  "ts": 1793224850000,
+  "winner": 2
+ },
+ "aoe-517255932": {
+  "aoeMatchId": 517255932,
+  "civs": {
+   "p-1879291": "Vietnamese",
+   "p-197388": "Varangians",
+   "p-2574050": "Lithuanians",
+   "p-2626999": "Dravidians",
+   "p-3810018": "Tupi",
+   "p-542233": "Huns"
+  },
+  "date": "2026-10-29",
+  "durationSec": 1382,
+  "lobby": "CW7",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-2574050",
+   "p-3810018",
+   "p-542233"
+  ],
+  "team2": [
+   "p-2626999",
+   "p-1879291",
+   "p-197388"
+  ],
+  "ts": 1793305520000,
+  "winner": 2
+ },
+ "aoe-517263077": {
+  "aoeMatchId": 517263077,
+  "civs": {
+   "p-1879291": "Maya",
+   "p-197388": "Burgundians",
+   "p-2221150": "Georgians",
+   "p-2574050": "Muisca",
+   "p-2626999": "Shu",
+   "p-3810018": "Bulgarians"
+  },
+  "date": "2026-10-29",
+  "durationSec": 21,
+  "hidden": true,
+  "hiddenReason": "Menos de 5 minutos",
+  "lobby": "CW7",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-2221150",
+   "p-2574050",
+   "p-3810018"
+  ],
+  "team2": [
+   "p-197388",
+   "p-1879291",
+   "p-2626999"
+  ],
+  "ts": 1793307219000,
+  "winner": 2
+ },
+ "aoe-517263576": {
+  "aoeMatchId": 517263576,
+  "civs": {
+   "p-12271904": "Varangians",
+   "p-18313886": "Persians",
+   "p-19702504": "Maya",
+   "p-230285": "Japanese",
+   "p-2775595": "Persians",
+   "p-593571": "Portuguese"
+  },
+  "date": "2026-10-29",
+  "durationSec": 2432,
+  "lobby": "Clan wars VII",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-2775595",
+   "p-230285",
+   "p-593571"
+  ],
+  "team2": [
+   "p-12271904",
+   "p-18313886",
+   "p-19702504"
+  ],
+  "ts": 1793307598000,
+  "winner": 1
+ },
+ "aoe-517264186": {
+  "aoeMatchId": 517264186,
+  "civs": {
+   "p-1879291": "Maya",
+   "p-197388": "Burgundians",
+   "p-2221150": "Georgians",
+   "p-2574050": "Muisca",
+   "p-2626999": "Shu",
+   "p-3810018": "Bulgarians"
+  },
+  "date": "2026-10-29",
+  "durationSec": 1136,
+  "lobby": "[Rematch] CW7",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-2221150",
+   "p-3810018",
+   "p-2574050"
+  ],
+  "team2": [
+   "p-197388",
+   "p-2626999",
+   "p-1879291"
+  ],
+  "ts": 1793307372000,
+  "winner": 2
+ },
+ "aoe-517274599": {
+  "aoeMatchId": 517274599,
+  "civs": {
+   "p-18313886": "Magyars",
+   "p-19702504": "Italians",
+   "p-24274928": "Britons",
+   "p-2775595": "Koreans",
+   "p-4746585": "Spanish",
+   "p-593571": "Armenians"
+  },
+  "date": "2026-10-29",
+  "durationSec": 1372,
+  "lobby": "Clan wars VII",
+  "map": "CW7 Socotra (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-2775595",
+   "p-4746585",
+   "p-593571"
+  ],
+  "team2": [
+   "p-24274928",
+   "p-18313886",
+   "p-19702504"
+  ],
+  "ts": 1793310529000,
+  "winner": 2
+ },
+ "aoe-517281076": {
+  "aoeMatchId": 517281076,
+  "civs": {
+   "p-12271904": "Tupi",
+   "p-18313886": "Georgians",
+   "p-230285": "Poles",
+   "p-24274928": "Inca",
+   "p-4746585": "Hindustanis",
+   "p-593571": "Vietnamese"
+  },
+  "date": "2026-10-29",
+  "durationSec": 1460,
+  "lobby": "Clan wars VII",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-230285",
+   "p-4746585",
+   "p-593571"
+  ],
+  "team2": [
+   "p-18313886",
+   "p-24274928",
+   "p-12271904"
+  ],
+  "ts": 1793312725000,
+  "winner": 1
+ },
+ "aoe-517515889": {
+  "aoeMatchId": 517515889,
+  "civs": {
+   "p-13714194": "Koreans",
+   "p-22842704": "Sicilians",
+   "p-232252": "Franks",
+   "p-264709": "Britons",
+   "p-305399": "Khmer",
+   "p-3266401": "Saracens"
+  },
+  "date": "2026-10-30",
+  "durationSec": 855,
+  "lobby": "Clan Wars 7",
+  "map": "CW7 Socotra (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-264709",
+   "p-305399",
+   "p-13714194"
+  ],
+  "team2": [
+   "p-22842704",
+   "p-232252",
+   "p-3266401"
+  ],
+  "ts": 1793397714000,
+  "winner": 1
+ },
+ "aoe-517520953": {
+  "aoeMatchId": 517520953,
+  "civs": {
+   "p-12465743": "Berbers",
+   "p-13714194": "Dravidians",
+   "p-232252": "Japanese",
+   "p-264709": "Vikings",
+   "p-305399": "Georgians",
+   "p-3266401": "Tatars"
+  },
+  "date": "2026-10-30",
+  "durationSec": 1091,
+  "lobby": "Clan Wars 7",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-13714194",
+   "p-264709",
+   "p-305399"
+  ],
+  "team2": [
+   "p-232252",
+   "p-3266401",
+   "p-12465743"
+  ],
+  "ts": 1793399054000,
+  "winner": 1
+ },
+ "aoe-517527129": {
+  "aoeMatchId": 517527129,
+  "civs": {
+   "p-13714194": "Vietnamese",
+   "p-22842704": "Chinese",
+   "p-232252": "Malians",
+   "p-264709": "Ethiopians",
+   "p-305399": "Lithuanians",
+   "p-3266401": "Maya"
+  },
+  "date": "2026-10-30",
+  "durationSec": 1870,
+  "lobby": "Clan Wars 7",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-305399",
+   "p-13714194",
+   "p-264709"
+  ],
+  "team2": [
+   "p-3266401",
+   "p-22842704",
+   "p-232252"
+  ],
+  "ts": 1793400725000,
+  "winner": 1
+ },
+ "aoe-517717081": {
+  "aoeMatchId": 517717081,
+  "civs": {
+   "p-12264186": "Khmer",
+   "p-12278112": "Franks",
+   "p-1382231": "Saracens",
+   "p-1840848": "Ethiopians",
+   "p-217558": "Maya",
+   "p-810914": "Britons"
+  },
+  "date": "2026-10-31",
+  "durationSec": 1822,
+  "lobby": "CW La Orden del Humo Verde vs Tdb Espadas",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-810914",
+   "p-12278112",
+   "p-217558"
+  ],
+  "team2": [
+   "p-1382231",
+   "p-12264186",
+   "p-1840848"
+  ],
+  "ts": 1793465015000,
+  "winner": 1
+ },
+ "aoe-517729435": {
+  "aoeMatchId": 517729435,
+  "civs": {
+   "p-12264186": "Huns",
+   "p-12278112": "Magyars",
+   "p-1382231": "Chinese",
+   "p-1840848": "Spanish",
+   "p-217558": "Berbers",
+   "p-810914": "Dravidians"
+  },
+  "date": "2026-10-31",
+  "durationSec": 1437,
+  "lobby": "CW La Orden del Humo Verde vs Tdb Espadas",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-217558",
+   "p-810914",
+   "p-12278112"
+  ],
+  "team2": [
+   "p-1382231",
+   "p-1840848",
+   "p-12264186"
+  ],
+  "ts": 1793467819000,
+  "winner": 1
+ },
+ "aoe-517736305": {
+  "aoeMatchId": 517736305,
+  "civs": {
+   "p-12264186": "Dravidians",
+   "p-12278112": "Malians",
+   "p-1382231": "Japanese",
+   "p-1840848": "Bengalis",
+   "p-217558": "Vikings",
+   "p-810914": "Italians"
+  },
+  "date": "2026-10-31",
+  "durationSec": 1496,
+  "lobby": "CW La Orden del Humo Verde vs Tdb Espadas",
+  "map": "CW7 Crescent (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-12264186",
+   "p-1840848",
+   "p-1382231"
+  ],
+  "team2": [
+   "p-810914",
+   "p-12278112",
+   "p-217558"
+  ],
+  "ts": 1793469661000,
+  "winner": 2
+ },
+ "aoe-518013260": {
+  "aoeMatchId": 518013260,
+  "civs": {
+   "p-110352": "Vikings",
+   "p-17557006": "Portuguese",
+   "p-18410803": "Maya",
+   "p-19629440": "Italians",
+   "p-36653": "Sicilians",
+   "p-4756136": "Mongols"
+  },
+  "date": "2026-11-01",
+  "durationSec": 1650,
+  "lobby": "ClanWars",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-4756136",
+   "p-18410803",
+   "p-110352"
+  ],
+  "team2": [
+   "p-19629440",
+   "p-17557006",
+   "p-36653"
+  ],
+  "ts": 1793554781000,
+  "winner": 1
+ },
+ "aoe-518026906": {
+  "aoeMatchId": 518026906,
+  "civs": {
+   "p-110352": "Shu",
+   "p-15716475": "Varangians",
+   "p-17557006": "Saracens",
+   "p-19629440": "Japanese",
+   "p-2951669": "Tatars",
+   "p-36653": "Persians"
+  },
+  "date": "2026-11-01",
+  "durationSec": 1807,
+  "lobby": "clan wars",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-15716475",
+   "p-110352",
+   "p-2951669"
+  ],
+  "team2": [
+   "p-19629440",
+   "p-36653",
+   "p-17557006"
+  ],
+  "ts": 1793557591000,
+  "winner": 1
+ },
+ "aoe-518037268": {
+  "aoeMatchId": 518037268,
+  "civs": {
+   "p-15716475": "Khmer",
+   "p-17557006": "Vietnamese",
+   "p-18410803": "Koreans",
+   "p-19629440": "Spanish",
+   "p-36653": "Franks",
+   "p-4756136": "Berbers"
+  },
+  "date": "2026-11-01",
+  "durationSec": 3015,
+  "lobby": "ClanWars",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-18410803",
+   "p-15716475",
+   "p-4756136"
+  ],
+  "team2": [
+   "p-36653",
+   "p-19629440",
+   "p-17557006"
+  ],
+  "ts": 1793560162000,
+  "winner": 1
+ },
+ "aoe-518262493": {
+  "aoeMatchId": 518262493,
+  "civs": {
+   "p-12278112": "Berbers",
+   "p-217558": "Maya",
+   "p-2780487": "Japanese",
+   "p-5043635": "Dravidians",
+   "p-643730": "Chinese",
+   "p-810914": "Koreans"
+  },
+  "date": "2026-11-02",
+  "durationSec": 1469,
+  "lobby": "CONQUIS B VS LA ORDEN DEL HUMO VERDE",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-810914",
+   "p-217558",
+   "p-12278112"
+  ],
+  "team2": [
+   "p-2780487",
+   "p-5043635",
+   "p-643730"
+  ],
+  "ts": 1793640661000,
+  "winner": 1
+ },
+ "aoe-518264492": {
+  "aoeMatchId": 518264492,
+  "civs": {
+   "p-1156287": "Persians",
+   "p-18060565": "Japanese",
+   "p-236788": "Portuguese",
+   "p-3566006": "Mongols",
+   "p-5473258": "Ethiopians",
+   "p-96571": "Persians"
+  },
+  "date": "2026-11-02",
+  "durationSec": 1613,
+  "lobby": "Clan Wars VII: TdBar vs DK",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-236788",
+   "p-1156287",
+   "p-3566006"
+  ],
+  "team2": [
+   "p-5473258",
+   "p-96571",
+   "p-18060565"
+  ],
+  "ts": 1793641472000,
+  "winner": 2
+ },
+ "aoe-518268500": {
+  "aoeMatchId": 518268500,
+  "civs": {
+   "p-12278112": "Franks",
+   "p-217558": "Ethiopians",
+   "p-2780487": "Saracens",
+   "p-5043635": "Malay",
+   "p-643730": "Cumans",
+   "p-810914": "Britons"
+  },
+  "date": "2026-11-02",
+  "durationSec": 2432,
+  "lobby": "CONQUIS B VS LA ORDEN DEL HUMO VERDE",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-217558",
+   "p-12278112",
+   "p-810914"
+  ],
+  "team2": [
+   "p-2780487",
+   "p-643730",
+   "p-5043635"
+  ],
+  "ts": 1793642557000,
+  "winner": 1
+ },
+ "aoe-518272448": {
+  "aoeMatchId": 518272448,
+  "civs": {
+   "p-1156287": "Lithuanians",
+   "p-11836559": "Koreans",
+   "p-18060565": "Bengalis",
+   "p-3566006": "Vietnamese",
+   "p-4392035": "Dravidians",
+   "p-5473258": "Malians"
+  },
+  "date": "2026-11-02",
+  "durationSec": 1615,
+  "lobby": "[Rematch] Clan Wars VII: TdBar vs DK",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-4392035",
+   "p-1156287",
+   "p-3566006"
+  ],
+  "team2": [
+   "p-18060565",
+   "p-11836559",
+   "p-5473258"
+  ],
+  "ts": 1793643665000,
+  "winner": 2
+ },
+ "aoe-518279629": {
+  "aoeMatchId": 518279629,
+  "civs": {
+   "p-12278112": "Khmer",
+   "p-217558": "Celts",
+   "p-2780487": "Mongols",
+   "p-5043635": "Burmese",
+   "p-643730": "Lithuanians",
+   "p-810914": "Vietnamese"
+  },
+  "date": "2026-11-02",
+  "durationSec": 1753,
+  "lobby": "CONQUIS B VS LA ORDEN DEL HUMO VERDE",
+  "map": "CW7 Fortress (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-217558",
+   "p-810914",
+   "p-12278112"
+  ],
+  "team2": [
+   "p-5043635",
+   "p-643730",
+   "p-2780487"
+  ],
+  "ts": 1793645497000,
+  "winner": 1
+ },
+ "aoe-518280162": {
+  "aoeMatchId": 518280162,
+  "civs": {
+   "p-1156287": "Cumans",
+   "p-11836559": "Georgians",
+   "p-18060565": "Britons",
+   "p-236788": "Magyars",
+   "p-4392035": "Maya",
+   "p-5473258": "Chinese"
+  },
+  "date": "2026-11-02",
+  "durationSec": 1282,
+  "lobby": "[Rematch] Clan Wars VII: TdBar vs DK",
+  "map": "CW7 Socotra (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-4392035",
+   "p-1156287",
+   "p-236788"
+  ],
+  "team2": [
+   "p-5473258",
+   "p-11836559",
+   "p-18060565"
+  ],
+  "ts": 1793645616000,
+  "winner": 1
+ },
+ "aoe-518309306": {
+  "aoeMatchId": 518309306,
+  "civs": {
+   "p-18858603": "Vikings",
+   "p-237920": "Burgundians",
+   "p-2599637": "Italians",
+   "p-5066226": "Portuguese",
+   "p-8179071": "Malians",
+   "p-903143": "Japanese"
+  },
+  "date": "2026-11-02",
+  "durationSec": 1568,
+  "lobby": "Clan War | Huertanicos de Élite\rHuertanicos de Élite\rVS\rDKalenta",
+  "map": "CW7 Crescent (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-5066226",
+   "p-18858603",
+   "p-237920"
+  ],
+  "team2": [
+   "p-8179071",
+   "p-2599637",
+   "p-903143"
+  ],
+  "ts": 1793652808000,
+  "winner": 2
+ },
+ "aoe-518318651": {
+  "aoeMatchId": 518318651,
+  "civs": {
+   "p-18858603": "Saracens",
+   "p-237920": "Georgians",
+   "p-254537": "Maya",
+   "p-5066226": "Ethiopians",
+   "p-8179071": "Poles",
+   "p-903143": "Shu"
+  },
+  "date": "2026-11-02",
+  "durationSec": 1056,
+  "lobby": "Clan War | Huertanicos de Élite\rHuertanicos de Élite\rVS\rDKalenta",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-18858603",
+   "p-237920",
+   "p-5066226"
+  ],
+  "team2": [
+   "p-254537",
+   "p-903143",
+   "p-8179071"
+  ],
+  "ts": 1793654954000,
+  "winner": 1
+ },
+ "aoe-518326085": {
+  "aoeMatchId": 518326085,
+  "civs": {
+   "p-18858603": "Koreans",
+   "p-237920": "Franks",
+   "p-2599637": "Malay",
+   "p-5066226": "Vietnamese",
+   "p-8179071": "Khitans",
+   "p-903143": "Britons"
+  },
+  "date": "2026-11-02",
+  "durationSec": 1518,
+  "lobby": "Clan War | Huertanicos de Élite\rHuertanicos de Élite\rVS\rDKalenta",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-18858603",
+   "p-237920",
+   "p-5066226"
+  ],
+  "team2": [
+   "p-903143",
+   "p-2599637",
+   "p-8179071"
+  ],
+  "ts": 1793656846000,
+  "winner": 2
+ },
+ "aoe-518507253": {
+  "aoeMatchId": 518507253,
+  "civs": {
+   "p-18747331": "Tupi",
+   "p-18947729": "Italians",
+   "p-215042": "Lithuanians",
+   "p-382573": "Georgians",
+   "p-4269127": "Berbers",
+   "p-6347572": "Koreans"
+  },
+  "date": "2026-11-03",
+  "durationSec": 1331,
+  "lobby": "Clan Wars VII: Dynamic FU vs Sufriendo DKtaratas",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-4269127",
+   "p-18947729",
+   "p-382573"
+  ],
+  "team2": [
+   "p-18747331",
+   "p-6347572",
+   "p-215042"
+  ],
+  "ts": 1793730115000,
+  "winner": 1
+ },
+ "aoe-518513737": {
+  "aoeMatchId": 518513737,
+  "civs": {
+   "p-18747331": "Bohemians",
+   "p-18947729": "Slavs",
+   "p-215042": "Jurchens",
+   "p-4269127": "Dravidians",
+   "p-4574855": "Portuguese",
+   "p-9737913": "Vietnamese"
+  },
+  "date": "2026-11-03",
+  "durationSec": 1446,
+  "lobby": "[Rematch] Clan Wars VII: Dynamic FU vs Sufriendo DKtaratas",
+  "map": "CW7 Fortress (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-4269127",
+   "p-9737913",
+   "p-18947729"
+  ],
+  "team2": [
+   "p-215042",
+   "p-4574855",
+   "p-18747331"
+  ],
+  "ts": 1793732202000,
+  "winner": 1
+ },
+ "aoe-518521435": {
+  "aoeMatchId": 518521435,
+  "civs": {
+   "p-18747331": "Ethiopians",
+   "p-18947729": "Magyars",
+   "p-215042": "Franks",
+   "p-382573": "Malay",
+   "p-6347572": "Shu",
+   "p-9737913": "Maya"
+  },
+  "date": "2026-11-03",
+  "durationSec": 613,
+  "lobby": "[Rematch] Clan Wars VII: Dynamic FU vs Sufriendo DKtaratas",
+  "map": "CW7 Socotra (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-382573",
+   "p-9737913",
+   "p-18947729"
+  ],
+  "team2": [
+   "p-6347572",
+   "p-215042",
+   "p-18747331"
+  ],
+  "ts": 1793734224000,
+  "winner": 2
+ },
+ "aoe-518532922": {
+  "aoeMatchId": 518532922,
+  "civs": {
+   "p-1136264": "Vikings",
+   "p-1472624": "Dravidians",
+   "p-1502305": "Magyars",
+   "p-2887868": "Britons",
+   "p-314216": "Shu",
+   "p-3469310": "Franks"
+  },
+  "date": "2026-11-03",
+  "durationSec": 2412,
+  "lobby": "cw 7 - conquis c vs cachopos",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-3469310",
+   "p-314216",
+   "p-2887868"
+  ],
+  "team2": [
+   "p-1502305",
+   "p-1472624",
+   "p-1136264"
+  ],
+  "ts": 1793737185000,
+  "winner": 2
+ },
+ "aoe-518543628": {
+  "aoeMatchId": 518543628,
+  "civs": {
+   "p-1938577": "Britons",
+   "p-2548076": "Shu",
+   "p-2569133": "Huns",
+   "p-2836315": "Chinese",
+   "p-4048309": "Wu",
+   "p-5447824": "Lithuanians"
+  },
+  "date": "2026-11-03",
+  "durationSec": 999,
+  "lobby": "CONQUIS VS DK",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-5447824",
+   "p-2548076",
+   "p-2569133"
+  ],
+  "team2": [
+   "p-1938577",
+   "p-2836315",
+   "p-4048309"
+  ],
+  "ts": 1793740110000,
+  "winner": 1
+ },
+ "aoe-518543968": {
+  "aoeMatchId": 518543968,
+  "civs": {
+   "p-1136264": "Khmer",
+   "p-1502305": "Koreans",
+   "p-2286345": "Ethiopians",
+   "p-2887868": "Saracens",
+   "p-314216": "Maya",
+   "p-3469310": "Burgundians"
+  },
+  "date": "2026-11-03",
+  "durationSec": 1122,
+  "lobby": "[Revancha] cw 7 - conquis c vs cachopos",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-314216",
+   "p-2887868",
+   "p-3469310"
+  ],
+  "team2": [
+   "p-1136264",
+   "p-1502305",
+   "p-2286345"
+  ],
+  "ts": 1793739994000,
+  "winner": 2
+ },
+ "aoe-518549465": {
+  "aoeMatchId": 518549465,
+  "civs": {
+   "p-1131746": "Malians",
+   "p-1136264": "Lithuanians",
+   "p-1472624": "Vietnamese",
+   "p-2887868": "Portuguese",
+   "p-314216": "Japanese",
+   "p-3469310": "Persians"
+  },
+  "date": "2026-11-03",
+  "durationSec": 1792,
+  "lobby": "[Revancha] cw 7 - conquis c vs cachopos",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1131746",
+   "p-1136264",
+   "p-1472624"
+  ],
+  "team2": [
+   "p-3469310",
+   "p-314216",
+   "p-2887868"
+  ],
+  "ts": 1793741432000,
+  "winner": 1
+ },
+ "aoe-518549707": {
+  "aoeMatchId": 518549707,
+  "civs": {
+   "p-1938577": "Persians",
+   "p-2443606": "Italians",
+   "p-2569133": "Berbers",
+   "p-2836315": "Dravidians",
+   "p-4048309": "Malians",
+   "p-5447824": "Vietnamese"
+  },
+  "date": "2026-11-03",
+  "durationSec": 1322,
+  "lobby": "CONQUIS VS DK",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-2443606",
+   "p-2569133",
+   "p-5447824"
+  ],
+  "team2": [
+   "p-1938577",
+   "p-2836315",
+   "p-4048309"
+  ],
+  "ts": 1793741706000,
+  "winner": 1
+ },
+ "aoe-518721143": {
+  "aoeMatchId": 518721143,
+  "civs": {
+   "p-16504982": "Shu",
+   "p-2081072": "Lithuanians",
+   "p-3319907": "Khmer",
+   "p-4718632": "Dravidians",
+   "p-575546": "Bohemians",
+   "p-6161511": "Maya"
+  },
+  "date": "2026-11-04",
+  "durationSec": 1111,
+  "lobby": "Clan Wars VII",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-6161511",
+   "p-16504982",
+   "p-3319907"
+  ],
+  "team2": [
+   "p-575546",
+   "p-4718632",
+   "p-2081072"
+  ],
+  "ts": 1793812767000,
+  "winner": 2
+ },
+ "aoe-518726251": {
+  "aoeMatchId": 518726251,
+  "civs": {
+   "p-16504982": "Saxons",
+   "p-2081072": "Hindustanis",
+   "p-3319907": "Georgians",
+   "p-4718632": "Japanese",
+   "p-575546": "Berbers",
+   "p-6161511": "Magyars"
+  },
+  "date": "2026-11-04",
+  "durationSec": 1214,
+  "lobby": "Clan Wars VII",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-6161511",
+   "p-16504982",
+   "p-3319907"
+  ],
+  "team2": [
+   "p-2081072",
+   "p-4718632",
+   "p-575546"
+  ],
+  "ts": 1793814286000,
+  "winner": 2
+ },
+ "aoe-518730973": {
+  "aoeMatchId": 518730973,
+  "civs": {
+   "p-16504982": "Italians",
+   "p-2081072": "Malians",
+   "p-3319907": "Chinese",
+   "p-4718632": "Bengalis",
+   "p-575546": "Koreans",
+   "p-6161511": "Mongols"
+  },
+  "date": "2026-11-04",
+  "durationSec": 1051,
+  "lobby": "Clan Wars VII",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-16504982",
+   "p-6161511",
+   "p-3319907"
+  ],
+  "team2": [
+   "p-2081072",
+   "p-575546",
+   "p-4718632"
+  ],
+  "ts": 1793815833000,
+  "winner": 2
+ },
+ "aoe-518754631": {
+  "aoeMatchId": 518754631,
+  "civs": {
+   "p-13235": "Franks",
+   "p-18749773": "Japanese",
+   "p-214269": "Vikings",
+   "p-2589122": "Magyars",
+   "p-329032": "Byzantines",
+   "p-4279580": "Berbers"
+  },
+  "date": "2026-11-04",
+  "durationSec": 1359,
+  "lobby": "clan wars 7",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-4279580",
+   "p-18749773",
+   "p-2589122"
+  ],
+  "team2": [
+   "p-13235",
+   "p-329032",
+   "p-214269"
+  ],
+  "ts": 1793823728000,
+  "winner": 1
+ },
+ "aoe-518766510": {
+  "aoeMatchId": 518766510,
+  "civs": {
+   "p-13235": "Lithuanians",
+   "p-18749773": "Britons",
+   "p-214269": "Saracens",
+   "p-2589122": "Hindustanis",
+   "p-4279580": "Shu",
+   "p-6216515": "Ethiopians"
+  },
+  "date": "2026-11-04",
+  "durationSec": 1747,
+  "lobby": "clan wars 7",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-18749773",
+   "p-4279580",
+   "p-2589122"
+  ],
+  "team2": [
+   "p-6216515",
+   "p-214269",
+   "p-13235"
+  ],
+  "ts": 1793825825000,
+  "winner": 2
+ },
+ "aoe-518773228": {
+  "aoeMatchId": 518773228,
+  "civs": {
+   "p-13235": "Gurjaras",
+   "p-18749773": "Mongols",
+   "p-214269": "Spanish",
+   "p-2589122": "Khmer",
+   "p-4279580": "Italians",
+   "p-6216515": "Koreans"
+  },
+  "date": "2026-11-04",
+  "durationSec": 2124,
+  "lobby": "clan wars 7",
+  "map": "CW7 Fortress (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-18749773",
+   "p-4279580",
+   "p-2589122"
+  ],
+  "team2": [
+   "p-13235",
+   "p-6216515",
+   "p-214269"
+  ],
+  "ts": 1793828127000,
+  "winner": 1
+ },
+ "aoe-518938767": {
+  "aoeMatchId": 518938767,
+  "civs": {
+   "p-260973": "Spanish",
+   "p-279036": "Jurchens",
+   "p-340055": "Mapuche",
+   "p-3810018": "Vietnamese",
+   "p-542233": "Hindustanis",
+   "p-841889": "Berbers"
+  },
+  "date": "2026-11-05",
+  "durationSec": 1323,
+  "lobby": "3v3 clan wars r1 contra traidores",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-542233",
+   "p-841889",
+   "p-3810018"
+  ],
+  "team2": [
+   "p-260973",
+   "p-279036",
+   "p-340055"
+  ],
+  "ts": 1793899795000,
+  "winner": 2
+ },
+ "aoe-518952040": {
+  "aoeMatchId": 518952040,
+  "civs": {
+   "p-1554380": "Danes",
+   "p-2221150": "Wei",
+   "p-260973": "Magyars",
+   "p-340055": "Britons",
+   "p-542233": "Italians",
+   "p-841889": "Shu"
+  },
+  "date": "2026-11-05",
+  "durationSec": 892,
+  "lobby": "[Rematch] R1 vs R1,5",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-542233",
+   "p-2221150",
+   "p-841889"
+  ],
+  "team2": [
+   "p-260973",
+   "p-1554380",
+   "p-340055"
+  ],
+  "ts": 1793903753000,
+  "winner": 2
+ },
+ "aoe-518970512": {
+  "aoeMatchId": 518970512,
+  "civs": {
+   "p-12271904": "Wu",
+   "p-1914324": "Tupi",
+   "p-19702504": "Italians",
+   "p-2969298": "Tatars",
+   "p-4712135": "Georgians",
+   "p-6433681": "Wei"
+  },
+  "date": "2026-11-05",
+  "durationSec": 2142,
+  "lobby": "CW7-DINAMICB",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-4712135",
+   "p-2969298",
+   "p-1914324"
+  ],
+  "team2": [
+   "p-12271904",
+   "p-19702504",
+   "p-6433681"
+  ],
+  "ts": 1793909614000,
+  "winner": 1
+ },
+ "aoe-518979656": {
+  "aoeMatchId": 518979656,
+  "civs": {
+   "p-10179079": "Italians",
+   "p-1342495": "Varangians",
+   "p-2598337": "Berbers",
+   "p-2599637": "Huns",
+   "p-8179071": "Malians",
+   "p-903143": "Malay"
+  },
+  "date": "2026-11-05",
+  "durationSec": 1353,
+  "lobby": "bingo vs potasium",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1342495",
+   "p-10179079",
+   "p-2598337"
+  ],
+  "team2": [
+   "p-2599637",
+   "p-8179071",
+   "p-903143"
+  ],
+  "ts": 1793911583000,
+  "winner": 2
+ },
+ "aoe-518982325": {
+  "aoeMatchId": 518982325,
+  "civs": {
+   "p-12271904": "Cumans",
+   "p-18313886": "Koreans",
+   "p-1914324": "Dravidians",
+   "p-19702504": "Britons",
+   "p-3403169": "Vietnamese",
+   "p-4712135": "Franks"
+  },
+  "date": "2026-11-05",
+  "durationSec": 1369,
+  "lobby": "CW7-DINAMICB",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1914324",
+   "p-3403169",
+   "p-4712135"
+  ],
+  "team2": [
+   "p-12271904",
+   "p-18313886",
+   "p-19702504"
+  ],
+  "ts": 1793912662000,
+  "winner": 2
+ },
+ "aoe-518983125": {
+  "aoeMatchId": 518983125,
+  "civs": {
+   "p-15019418": "Hindustanis",
+   "p-15770941": "Portuguese",
+   "p-1937895": "Bengalis",
+   "p-2443606": "Turks",
+   "p-2569133": "Berbers",
+   "p-5447824": "Wei"
+  },
+  "date": "2026-11-05",
+  "durationSec": 1963,
+  "lobby": "PENAL VS DK",
+  "map": "CW7 Fortress (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-5447824",
+   "p-2443606",
+   "p-2569133"
+  ],
+  "team2": [
+   "p-15019418",
+   "p-15770941",
+   "p-1937895"
+  ],
+  "ts": 1793912520000,
+  "winner": 2
+ },
+ "aoe-518985248": {
+  "aoeMatchId": 518985248,
+  "civs": {
+   "p-10179079": "Mongols",
+   "p-1342495": "Maya",
+   "p-236313": "Persians",
+   "p-254537": "Japanese",
+   "p-8179071": "Poles",
+   "p-903143": "Shu"
+  },
+  "date": "2026-11-05",
+  "durationSec": 1957,
+  "lobby": "bingo vs potasium",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1342495",
+   "p-10179079",
+   "p-236313"
+  ],
+  "team2": [
+   "p-254537",
+   "p-903143",
+   "p-8179071"
+  ],
+  "ts": 1793913415000,
+  "winner": 2
+ },
+ "aoe-518990035": {
+  "aoeMatchId": 518990035,
+  "civs": {
+   "p-1914324": "Ethiopians",
+   "p-19702504": "Japanese",
+   "p-24274928": "Saracens",
+   "p-2969298": "Berbers",
+   "p-3403169": "Maya",
+   "p-6433681": "Magyars"
+  },
+  "date": "2026-11-05",
+  "durationSec": 1575,
+  "lobby": "J1 LEA mnkd vs dyn",
+  "map": "CW7 Socotra (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1914324",
+   "p-3403169",
+   "p-2969298"
+  ],
+  "team2": [
+   "p-24274928",
+   "p-19702504",
+   "p-6433681"
+  ],
+  "ts": 1793914588000,
+  "winner": 2
+ },
+ "aoe-518990851": {
+  "aoeMatchId": 518990851,
+  "civs": {
+   "p-15019418": "Dravidians",
+   "p-15770941": "Chinese",
+   "p-1937895": "Varangians",
+   "p-2443606": "Koreans",
+   "p-2569133": "Huns",
+   "p-5447824": "Malians"
+  },
+  "date": "2026-11-05",
+  "durationSec": 1414,
+  "lobby": "[Revancha] PENAL VS DK",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-2569133",
+   "p-5447824",
+   "p-2443606"
+  ],
+  "team2": [
+   "p-15019418",
+   "p-15770941",
+   "p-1937895"
+  ],
+  "ts": 1793914820000,
+  "winner": 2
+ },
+ "aoe-518994216": {
+  "aoeMatchId": 518994216,
+  "civs": {
+   "p-2315213": "Portuguese",
+   "p-236313": "Franks",
+   "p-254537": "Ethiopians",
+   "p-2598337": "Vietnamese",
+   "p-2599637": "Magyars",
+   "p-903143": "Britons"
+  },
+  "date": "2026-11-05",
+  "durationSec": 3547,
+  "lobby": "CW Bingo vs POSTASSIUM",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-2315213",
+   "p-236313",
+   "p-2598337"
+  ],
+  "team2": [
+   "p-2599637",
+   "p-254537",
+   "p-903143"
+  ],
+  "ts": 1793915840000,
+  "winner": 2
+ },
+ "aoe-518996582": {
+  "aoeMatchId": 518996582,
+  "civs": {
+   "p-15019418": "Japanese",
+   "p-15770941": "Britons",
+   "p-1937895": "Khitans",
+   "p-2548076": "Saracens",
+   "p-2569133": "Ethiopians",
+   "p-5447824": "Lithuanians"
+  },
+  "date": "2026-11-05",
+  "durationSec": 694,
+  "lobby": "[Revancha] PENAL VS DK",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-2548076",
+   "p-5447824",
+   "p-2569133"
+  ],
+  "team2": [
+   "p-15770941",
+   "p-15019418",
+   "p-1937895"
+  ],
+  "ts": 1793916603000,
+  "winner": 2
+ },
+ "aoe-519189444": {
+  "aoeMatchId": 519189444,
+  "civs": {
+   "p-10721552": "Shu",
+   "p-10728048": "Hindustanis",
+   "p-18747331": "Armenians",
+   "p-215042": "Poles",
+   "p-2871715": "Italians",
+   "p-4574855": "Maya"
+  },
+  "date": "2026-11-06",
+  "durationSec": 955,
+  "lobby": "TdB.Caimanes vs Dynamic FU",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-215042",
+   "p-18747331",
+   "p-4574855"
+  ],
+  "team2": [
+   "p-2871715",
+   "p-10721552",
+   "p-10728048"
+  ],
+  "ts": 1793993501000,
+  "winner": 2
+ },
+ "aoe-519195315": {
+  "aoeMatchId": 519195315,
+  "civs": {
+   "p-10721552": "Huns",
+   "p-18747331": "Dravidians",
+   "p-215042": "Wei",
+   "p-275124": "Lithuanians",
+   "p-2871715": "Koreans",
+   "p-6347572": "Varangians"
+  },
+  "date": "2026-11-06",
+  "durationSec": 1277,
+  "lobby": "TdB.Caimanes vs Dynamic FU",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-275124",
+   "p-2871715",
+   "p-10721552"
+  ],
+  "team2": [
+   "p-6347572",
+   "p-215042",
+   "p-18747331"
+  ],
+  "ts": 1793994926000,
+  "winner": 1
+ },
+ "aoe-519202201": {
+  "aoeMatchId": 519202201,
+  "civs": {
+   "p-10721552": "Ethiopians",
+   "p-10728048": "Khmer",
+   "p-18747331": "Tupi",
+   "p-215042": "Georgians",
+   "p-275124": "Vietnamese",
+   "p-6347572": "Inca"
+  },
+  "date": "2026-11-06",
+  "durationSec": 892,
+  "lobby": "Clan wars",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-10728048",
+   "p-10721552",
+   "p-275124"
+  ],
+  "team2": [
+   "p-215042",
+   "p-6347572",
+   "p-18747331"
+  ],
+  "ts": 1793996591000,
+  "winner": 1
+ },
+ "aoe-519463195": {
+  "aoeMatchId": 519463195,
+  "civs": {
+   "p-110352": "Britons",
+   "p-18410803": "Hindustanis",
+   "p-230285": "Turks",
+   "p-2775595": "Magyars",
+   "p-4756136": "Burgundians",
+   "p-4872369": "Romans"
+  },
+  "date": "2026-11-07",
+  "durationSec": 2121,
+  "lobby": "ClanWars",
+  "map": "CW7 Fortress (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-110352",
+   "p-18410803",
+   "p-4756136"
+  ],
+  "team2": [
+   "p-4872369",
+   "p-2775595",
+   "p-230285"
+  ],
+  "ts": 1794080023000,
+  "winner": 1
+ },
+ "aoe-519475697": {
+  "aoeMatchId": 519475697,
+  "civs": {
+   "p-15716475": "Khmer",
+   "p-18410803": "Koreans",
+   "p-230285": "Armenians",
+   "p-2775595": "Italians",
+   "p-4756136": "Berbers",
+   "p-4872369": "Vikings"
+  },
+  "date": "2026-11-07",
+  "durationSec": 1064,
+  "lobby": "ClanWars",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-18410803",
+   "p-15716475",
+   "p-4756136"
+  ],
+  "team2": [
+   "p-4872369",
+   "p-2775595",
+   "p-230285"
+  ],
+  "ts": 1794082943000,
+  "winner": 1
+ },
+ "aoe-519480345": {
+  "aoeMatchId": 519480345,
+  "civs": {
+   "p-15019418": "Turks",
+   "p-15770941": "Bohemians",
+   "p-1937895": "Wei",
+   "p-263513": "Japanese",
+   "p-3140712": "Aztecs",
+   "p-6046048": "Khmer"
+  },
+  "date": "2026-11-07",
+  "durationSec": 2360,
+  "lobby": "Pnal vs Emp",
+  "map": "CW7 Fortress (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-3140712",
+   "p-263513",
+   "p-6046048"
+  ],
+  "team2": [
+   "p-1937895",
+   "p-15770941",
+   "p-15019418"
+  ],
+  "ts": 1794083836000,
+  "winner": 2
+ },
+ "aoe-519483420": {
+  "aoeMatchId": 519483420,
+  "civs": {
+   "p-110352": "Shu",
+   "p-15716475": "Persians",
+   "p-18410803": "Ethiopians",
+   "p-230285": "Saracens",
+   "p-2775595": "Franks",
+   "p-593571": "Maya"
+  },
+  "date": "2026-11-07",
+  "durationSec": 1908,
+  "lobby": "clan wars",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-18410803",
+   "p-15716475",
+   "p-110352"
+  ],
+  "team2": [
+   "p-2775595",
+   "p-593571",
+   "p-230285"
+  ],
+  "ts": 1794084725000,
+  "winner": 2
+ },
+ "aoe-519490827": {
+  "aoeMatchId": 519490827,
+  "civs": {
+   "p-15019418": "Dravidians",
+   "p-15770941": "Italians",
+   "p-1937895": "Berbers",
+   "p-263513": "Malians",
+   "p-4063407": "Portuguese",
+   "p-6046048": "Varangians"
+  },
+  "date": "2026-11-07",
+  "durationSec": 1722,
+  "lobby": "Pnal vs Emp",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-263513",
+   "p-4063407",
+   "p-6046048"
+  ],
+  "team2": [
+   "p-15019418",
+   "p-1937895",
+   "p-15770941"
+  ],
+  "ts": 1794086753000,
+  "winner": 2
+ },
+ "aoe-519496389": {
+  "aoeMatchId": 519496389,
+  "civs": {
+   "p-13714194": "Koreans",
+   "p-15408392": "Koreans",
+   "p-24287923": "Malay",
+   "p-264709": "Chinese",
+   "p-305399": "Byzantines",
+   "p-9950254": "Turks"
+  },
+  "date": "2026-11-07",
+  "durationSec": 1745,
+  "lobby": "Clan Wars 7",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-24287923",
+   "p-15408392",
+   "p-9950254"
+  ],
+  "team2": [
+   "p-305399",
+   "p-13714194",
+   "p-264709"
+  ],
+  "ts": 1794087774000,
+  "winner": 1
+ },
+ "aoe-519500426": {
+  "aoeMatchId": 519500426,
+  "civs": {
+   "p-15019418": "Britons",
+   "p-15770941": "Shu",
+   "p-1937895": "Burgundians",
+   "p-263513": "Ethiopians",
+   "p-3140712": "Magyars",
+   "p-4063407": "Maya"
+  },
+  "date": "2026-11-07",
+  "durationSec": 851,
+  "lobby": "Pnal vs Emp",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-263513",
+   "p-4063407",
+   "p-3140712"
+  ],
+  "team2": [
+   "p-15770941",
+   "p-15019418",
+   "p-1937895"
+  ],
+  "ts": 1794088797000,
+  "winner": 2
+ },
+ "aoe-519504651": {
+  "aoeMatchId": 519504651,
+  "civs": {
+   "p-13714194": "Dravidians",
+   "p-15408392": "Berbers",
+   "p-24287923": "Japanese",
+   "p-264709": "Ethiopians",
+   "p-305399": "Hindustanis",
+   "p-9950254": "Armenians"
+  },
+  "date": "2026-11-07",
+  "durationSec": 939,
+  "lobby": "Clan Wars 7",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-24287923",
+   "p-15408392",
+   "p-9950254"
+  ],
+  "team2": [
+   "p-13714194",
+   "p-305399",
+   "p-264709"
+  ],
+  "ts": 1794090022000,
+  "winner": 2
+ },
+ "aoe-519510362": {
+  "aoeMatchId": 519510362,
+  "civs": {
+   "p-13714194": "Italians",
+   "p-15408392": "Maya",
+   "p-24287923": "Varangians",
+   "p-264709": "Britons",
+   "p-305399": "Georgians",
+   "p-9950254": "Sicilians"
+  },
+  "date": "2026-11-07",
+  "durationSec": 1043,
+  "lobby": "Clan Wars 7",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-24287923",
+   "p-9950254",
+   "p-15408392"
+  ],
+  "team2": [
+   "p-264709",
+   "p-13714194",
+   "p-305399"
+  ],
+  "ts": 1794091315000,
+  "winner": 2
+ },
+ "aoe-519621195": {
+  "aoeMatchId": 519621195,
+  "civs": {
+   "p-18060565": "Japanese",
+   "p-1848728": "Spanish",
+   "p-1879291": "Dravidians",
+   "p-197388": "Lithuanians",
+   "p-5473258": "Vikings",
+   "p-96571": "Malians"
+  },
+  "date": "2026-11-08",
+  "durationSec": 24,
+  "hidden": true,
+  "hiddenReason": "Menos de 5 minutos (sala mal creada)",
+  "lobby": "CW7",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1848728",
+   "p-1879291",
+   "p-197388"
+  ],
+  "team2": [
+   "p-96571",
+   "p-18060565",
+   "p-5473258"
+  ],
+  "ts": 1794130112000,
+  "winner": 2
+ },
+ "aoe-519621674": {
+  "aoeMatchId": 519621674,
+  "civs": {
+   "p-18060565": "Japanese",
+   "p-1848728": "Spanish",
+   "p-1879291": "Dravidians",
+   "p-197388": "Lithuanians",
+   "p-5473258": "Vikings",
+   "p-96571": "Malians"
+  },
+  "date": "2026-11-08",
+  "durationSec": 1797,
+  "lobby": "CW7",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1879291",
+   "p-1848728",
+   "p-197388"
+  ],
+  "team2": [
+   "p-96571",
+   "p-18060565",
+   "p-5473258"
+  ],
+  "ts": 1794130303000,
+  "winner": 1
+ },
+ "aoe-519626552": {
+  "aoeMatchId": 519626552,
+  "civs": {
+   "p-18060565": "Japanese",
+   "p-1848728": "Spanish",
+   "p-1879291": "Dravidians",
+   "p-197388": "Lithuanians",
+   "p-5473258": "Vikings",
+   "p-96571": "Malians"
+  },
+  "date": "2026-11-08",
+  "durationSec": 301,
+  "lobby": "CW7",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-197388",
+   "p-1848728",
+   "p-1879291"
+  ],
+  "team2": [
+   "p-18060565",
+   "p-96571",
+   "p-5473258"
+  ],
+  "ts": 1794132378000,
+  "winner": 1
+ },
+ "aoe-519627488": {
+  "aoeMatchId": 519627488,
+  "civs": {
+   "p-1848728": "Teutons",
+   "p-197388": "Danes",
+   "p-2626999": "Italians",
+   "p-429847": "Georgians",
+   "p-5473258": "Chinese",
+   "p-96571": "Saracens"
+  },
+  "date": "2026-11-08",
+  "durationSec": 689,
+  "lobby": "CW7",
+  "map": "CW7 Socotra (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-2626999",
+   "p-1848728",
+   "p-197388"
+  ],
+  "team2": [
+   "p-429847",
+   "p-96571",
+   "p-5473258"
+  ],
+  "ts": 1794133139000,
+  "winner": 1
+ },
+ "aoe-519630058": {
+  "aoeMatchId": 519630058,
+  "civs": {
+   "p-18060565": "Ethiopians",
+   "p-1879291": "Maya",
+   "p-197388": "Hindustanis",
+   "p-2626999": "Vietnamese",
+   "p-429847": "Poles",
+   "p-96571": "Britons"
+  },
+  "date": "2026-11-08",
+  "durationSec": 2110,
+  "lobby": "CW7",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-197388",
+   "p-1879291",
+   "p-2626999"
+  ],
+  "team2": [
+   "p-429847",
+   "p-18060565",
+   "p-96571"
+  ],
+  "ts": 1794134296000,
+  "winner": 1
+ },
+ "aoe-519718369": {
+  "aoeMatchId": 519718369,
+  "civs": {
+   "p-1382231": "Koreans",
+   "p-1840848": "Hindustanis",
+   "p-2867863": "Italians",
+   "p-643730": "Lithuanians",
+   "p-646085": "Chinese",
+   "p-824070": "Malians"
+  },
+  "date": "2026-11-08",
+  "durationSec": 1399,
+  "lobby": "Conquis B vs Tdb Espadas",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1840848",
+   "p-1382231",
+   "p-2867863"
+  ],
+  "team2": [
+   "p-643730",
+   "p-646085",
+   "p-824070"
+  ],
+  "ts": 1794159961000,
+  "winner": 2
+ },
+ "aoe-519725790": {
+  "aoeMatchId": 519725790,
+  "civs": {
+   "p-1382231": "Shu",
+   "p-1840848": "Magyars",
+   "p-2780487": "Ethiopians",
+   "p-2867863": "Maya",
+   "p-646085": "Slavs",
+   "p-824070": "Britons"
+  },
+  "date": "2026-11-08",
+  "durationSec": 2021,
+  "lobby": "Conquis B vs Tdb Espadas",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-2867863",
+   "p-1382231",
+   "p-1840848"
+  ],
+  "team2": [
+   "p-824070",
+   "p-646085",
+   "p-2780487"
+  ],
+  "ts": 1794161802000,
+  "winner": 2
+ },
+ "aoe-519737804": {
+  "aoeMatchId": 519737804,
+  "civs": {
+   "p-1136264": "Magyars",
+   "p-1502305": "Byzantines",
+   "p-2286345": "Malians",
+   "p-242561": "Dravidians",
+   "p-271761": "Lithuanians",
+   "p-985424": "Huns"
+  },
+  "date": "2026-11-08",
+  "durationSec": 1495,
+  "lobby": "Clan Wars VII Cachopos vs Panatimankos",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-2286345",
+   "p-1136264",
+   "p-1502305"
+  ],
+  "team2": [
+   "p-985424",
+   "p-242561",
+   "p-271761"
+  ],
+  "ts": 1794164569000,
+  "winner": 1
+ },
+ "aoe-519738309": {
+  "aoeMatchId": 519738309,
+  "civs": {
+   "p-1382231": "Portuguese",
+   "p-1840848": "Franks",
+   "p-2780487": "Japanese",
+   "p-2867863": "Vikings",
+   "p-5043635": "Dravidians",
+   "p-643730": "Persians"
+  },
+  "date": "2026-11-08",
+  "durationSec": 1758,
+  "lobby": "Conquis B vs Tdb Espadas",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-2867863",
+   "p-1840848",
+   "p-1382231"
+  ],
+  "team2": [
+   "p-643730",
+   "p-5043635",
+   "p-2780487"
+  ],
+  "ts": 1794164667000,
+  "winner": 1
+ },
+ "aoe-519746390": {
+  "aoeMatchId": 519746390,
+  "civs": {
+   "p-1136264": "Slavs",
+   "p-1472624": "Vietnamese",
+   "p-2286345": "Mongols",
+   "p-242561": "Maya",
+   "p-271761": "Japanese",
+   "p-985424": "Franks"
+  },
+  "date": "2026-11-08",
+  "durationSec": 866,
+  "lobby": "Clan Wars VII Cachopos vs Panatimankos",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-2286345",
+   "p-1472624",
+   "p-1136264"
+  ],
+  "team2": [
+   "p-985424",
+   "p-271761",
+   "p-242561"
+  ],
+  "ts": 1794166524000,
+  "winner": 1
+ },
+ "aoe-519750934": {
+  "aoeMatchId": 519750934,
+  "civs": {
+   "p-1136264": "Bengalis",
+   "p-1472624": "Koreans",
+   "p-1502305": "Burgundians",
+   "p-242561": "Armenians",
+   "p-271761": "Saracens",
+   "p-985424": "Sicilians"
+  },
+  "date": "2026-11-08",
+  "durationSec": 993,
+  "lobby": "Clan Wars VII Cachopos vs Panatimankos",
+  "map": "CW7 Crescent (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1136264",
+   "p-1472624",
+   "p-1502305"
+  ],
+  "team2": [
+   "p-271761",
+   "p-985424",
+   "p-242561"
+  ],
+  "ts": 1794167833000,
+  "winner": 1
+ },
+ "aoe-519985759": {
+  "aoeMatchId": 519985759,
+  "civs": {
+   "p-2887868": "Chinese",
+   "p-314216": "Turks",
+   "p-3905401": "Vietnamese",
+   "p-59289": "Georgians",
+   "p-846645": "Portuguese",
+   "p-861763": "Hindustanis"
+  },
+  "date": "2026-11-09",
+  "durationSec": 2359,
+  "lobby": "CW7 ",
+  "map": "CW7 Fortress (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-861763",
+   "p-314216",
+   "p-2887868"
+  ],
+  "team2": [
+   "p-3905401",
+   "p-846645",
+   "p-59289"
+  ],
+  "ts": 1794254809000,
+  "winner": 2
+ },
+ "aoe-519992019": {
+  "aoeMatchId": 519992019,
+  "civs": {
+   "p-15019418": "Koreans",
+   "p-15770941": "Wei",
+   "p-1758789": "Vikings",
+   "p-1937895": "Varangians",
+   "p-2152015": "Franks",
+   "p-5829315": "Portuguese"
+  },
+  "date": "2026-11-09",
+  "durationSec": 1777,
+  "lobby": "Clan Wars - Han vs 5",
+  "map": "CW7 Crescent (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-2152015",
+   "p-5829315",
+   "p-1758789"
+  ],
+  "team2": [
+   "p-1937895",
+   "p-15019418",
+   "p-15770941"
+  ],
+  "ts": 1794256836000,
+  "winner": 1
+ },
+ "aoe-519997235": {
+  "aoeMatchId": 519997235,
+  "civs": {
+   "p-2887868": "Maya",
+   "p-314216": "Dravidians",
+   "p-3905401": "Aztecs",
+   "p-59289": "Huns",
+   "p-846645": "Romans",
+   "p-861763": "Persians"
+  },
+  "date": "2026-11-09",
+  "durationSec": 1533,
+  "lobby": "[Revancha] CW7 ",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-314216",
+   "p-2887868",
+   "p-861763"
+  ],
+  "team2": [
+   "p-846645",
+   "p-59289",
+   "p-3905401"
+  ],
+  "ts": 1794257720000,
+  "winner": 1
+ },
+ "aoe-520003823": {
+  "aoeMatchId": 520003823,
+  "civs": {
+   "p-15019418": "Ethiopians",
+   "p-15770941": "Vietnamese",
+   "p-1758789": "Malians",
+   "p-1937895": "Khitans",
+   "p-4566248": "Cumans",
+   "p-5829315": "Maya"
+  },
+  "date": "2026-11-09",
+  "durationSec": 1497,
+  "lobby": "Clan Wars - Potassium",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-5829315",
+   "p-1758789",
+   "p-4566248"
+  ],
+  "team2": [
+   "p-1937895",
+   "p-15019418",
+   "p-15770941"
+  ],
+  "ts": 1794259192000,
+  "winner": 1
+ },
+ "aoe-520004956": {
+  "aoeMatchId": 520004956,
+  "civs": {
+   "p-2887868": "Britons",
+   "p-314216": "Ethiopians",
+   "p-3905401": "Inca",
+   "p-59289": "Mongols",
+   "p-846645": "Koreans",
+   "p-861763": "Lithuanians"
+  },
+  "date": "2026-11-09",
+  "durationSec": 1791,
+  "lobby": "[Revancha] CW7 ",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-314216",
+   "p-861763",
+   "p-2887868"
+  ],
+  "team2": [
+   "p-59289",
+   "p-3905401",
+   "p-846645"
+  ],
+  "ts": 1794259659000,
+  "winner": 1
+ },
+ "aoe-520012389": {
+  "aoeMatchId": 520012389,
+  "civs": {
+   "p-1229488": "Saracens",
+   "p-15019418": "Khmer",
+   "p-15770941": "Shu",
+   "p-1937895": "Tupi",
+   "p-2299693": "Magyars",
+   "p-4566248": "Berbers"
+  },
+  "date": "2026-11-09",
+  "durationSec": 1201,
+  "lobby": "Clan Wars - Potassium vs Penal",
+  "map": "CW7 Socotra (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-4566248",
+   "p-1229488",
+   "p-2299693"
+  ],
+  "team2": [
+   "p-1937895",
+   "p-15019418",
+   "p-15770941"
+  ],
+  "ts": 1794261572000,
+  "winner": 2
+ },
+ "aoe-520179259": {
+  "aoeMatchId": 520179259,
+  "civs": {
+   "p-1156287": "Italians",
+   "p-1554380": "Britons",
+   "p-260973": "Slavs",
+   "p-340055": "Koreans",
+   "p-3566006": "Poles",
+   "p-4392035": "Ethiopians"
+  },
+  "date": "2026-11-10",
+  "durationSec": 1319,
+  "lobby": "CW7 R1 vs TdBar",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-260973",
+   "p-1554380",
+   "p-340055"
+  ],
+  "team2": [
+   "p-3566006",
+   "p-4392035",
+   "p-1156287"
+  ],
+  "ts": 1794332442000,
+  "winner": 1
+ },
+ "aoe-520185135": {
+  "aoeMatchId": 520185135,
+  "civs": {
+   "p-1554380": "Spanish",
+   "p-236788": "Mongols",
+   "p-260973": "Berbers",
+   "p-279036": "Mongols",
+   "p-3566006": "Portuguese",
+   "p-4392035": "Hindustanis"
+  },
+  "date": "2026-11-10",
+  "durationSec": 1732,
+  "lobby": "CW7 R1 vs TdBar",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-279036",
+   "p-1554380",
+   "p-260973"
+  ],
+  "team2": [
+   "p-4392035",
+   "p-3566006",
+   "p-236788"
+  ],
+  "ts": 1794334476000,
+  "winner": 1
+ },
+ "aoe-520193640": {
+  "aoeMatchId": 520193640,
+  "civs": {
+   "p-1156287": "Cumans",
+   "p-1554380": "Malians",
+   "p-236788": "Vietnamese",
+   "p-260973": "Georgians",
+   "p-340055": "Maya",
+   "p-4392035": "Byzantines"
+  },
+  "date": "2026-11-10",
+  "durationSec": 965,
+  "lobby": "[Rematch] CW7 R1 vs TdBar",
+  "map": "CW7 Socotra (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1554380",
+   "p-340055",
+   "p-260973"
+  ],
+  "team2": [
+   "p-236788",
+   "p-1156287",
+   "p-4392035"
+  ],
+  "ts": 1794336519000,
+  "winner": 1
+ },
+ "aoe-520194035": {
+  "aoeMatchId": 520194035,
+  "civs": {
+   "p-1848728": "Vikings",
+   "p-478118": "Saracens",
+   "p-5741031": "Goths",
+   "p-643730": "Danes",
+   "p-6742741": "Portuguese",
+   "p-96571": "Tatars"
+  },
+  "date": "2026-11-10",
+  "disputed": false,
+  "disputedAt": 1794339347236,
+  "durationSec": 1116,
+  "lobby": "PRACTICA CW",
+  "map": "CW7 Socotra (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-6742741",
+   "p-478118",
+   "p-5741031"
+  ],
+  "team2": [
+   "p-96571",
+   "p-643730",
+   "p-1848728"
+  ],
+  "ts": 1794336712000,
+  "winner": 1
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "since": "2026-10-06",
+ "lobbyPattern": "(?i)\\bcw|clan\\s*wars?",
+ "mapPattern": "(?i)^cw7",
+ "mapNeedsVs": true,
+ "teamSizes": [
+  2,
+  3,
+  4
+ ],
+ "minGameSec": 300,
+ "speedFactor": 1.7,
+ "leaderboards": [
+  "unranked"
+ ],
+ "mode": "test-cw",
+ "K": 32
+}

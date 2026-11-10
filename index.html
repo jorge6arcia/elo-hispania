@@ -1,0 +1,740 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Ranking ELO de partidas preparadas de Age of Empires II entre jugadores españoles.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 50'%3E%3Cpath d='M3 3h38v20c0 13-9 21-19 25C12 44 3 36 3 23z' fill='%239a6b0c'/%3E%3Crect x='8' y='17' width='28' height='9' fill='%23b0312c'/%3E%3C/svg%3E">
+<style>html{color-scheme:light}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px/1.5 system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Elo Hispania</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600&display=swap">
+<style>
+/* Layout: cabecera con escudo + pestañas; cada pestaña una columna de trabajo, máx 1080px */
+:root{
+  --bg:#eceff3; --surface:#ffffff; --sunk:#f4f6f9; --fg:#18202c; --muted:#5b6575; --line:#d5dae2;
+  --gold:#9a6b0c; --gold-soft:#f5ead2; --win:#2b7a4b; --win-soft:#e1f1e7; --loss:#b0312c; --loss-soft:#f8e3e1;
+  --t1:#2c5aa0; --t2:#a8402f;
+  --display:"Cinzel", "Trajan Pro", Georgia, serif;
+  --body:"Barlow", "Segoe UI", system-ui, sans-serif;
+  --cond:"Barlow Condensed", "Arial Narrow", "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#10141b; --surface:#181e27; --sunk:#141921; --fg:#e6e9ef; --muted:#97a1b1; --line:#2a323e;
+  --gold:#dcaa47; --gold-soft:#2c2414; --win:#5cc488; --win-soft:#15291e; --loss:#ee7a72; --loss-soft:#311a19;
+  --t1:#7fa8e8; --t2:#e88d7a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#10141b; --surface:#181e27; --sunk:#141921; --fg:#e6e9ef; --muted:#97a1b1; --line:#2a323e;
+  --gold:#dcaa47; --gold-soft:#2c2414; --win:#5cc488; --win-soft:#15291e; --loss:#ee7a72; --loss-soft:#311a19;
+  --t1:#7fa8e8; --t2:#e88d7a; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 48px}
+.wrap{max-width:1080px;margin:0 auto}
+header{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px;padding-block:28px 18px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand svg{flex:none}
+h1{font:700 1.75rem/1.1 var(--display);letter-spacing:.04em;margin:0;text-wrap:balance}
+.sub{color:var(--muted);font-size:.9rem;margin:2px 0 0}
+nav{display:flex;gap:4px;border-bottom:1px solid var(--line);margin-bottom:22px;overflow-x:auto}
+nav a{font:600 1rem var(--cond);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-decoration:none;padding:10px 14px;border-bottom:3px solid transparent;margin-bottom:-1px;white-space:nowrap}
+nav a[aria-current="page"]{color:var(--fg);border-color:var(--gold)}
+nav a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+h2{font:700 1.15rem var(--display);letter-spacing:.03em;margin:0}
+h3{font:600 .95rem var(--cond);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px}
+.grid2{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:18px;align-items:start}
+@media (max-width:820px){.grid2{grid-template-columns:minmax(0,1fr)}}
+.stack{display:flex;flex-direction:column;gap:18px}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.between{justify-content:space-between}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{border:0;border-radius:0;background:transparent;padding:6px 14px}
+.seg button[aria-pressed="true"]{background:var(--gold);color:var(--surface)}
+button{font:600 .9rem var(--body);color:var(--fg);background:var(--sunk);border:1px solid var(--line);border-radius:8px;padding:8px 14px;cursor:pointer}
+button:hover{border-color:var(--muted)}
+button.primary{background:var(--gold);border-color:var(--gold);color:var(--surface)}
+button.primary:disabled{opacity:.45;cursor:not-allowed}
+a.btnlink{display:inline-block;font:600 .85rem var(--body);color:var(--gold);border:1px solid var(--line);border-radius:8px;padding:6px 10px;text-decoration:none;white-space:nowrap}
+a.btnlink:hover{border-color:var(--gold)}
+a.btnlink:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+button.link{background:none;border:0;padding:0;color:var(--muted);font-weight:500;text-decoration:underline;text-underline-offset:3px}
+button.danger{color:var(--loss)}
+input,select{font:500 .95rem var(--body);color:var(--fg);background:var(--sunk);border:1px solid var(--line);border-radius:8px;padding:8px 10px;min-width:0}
+label{display:flex;flex-direction:column;gap:4px;font:600 .8rem var(--cond);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.tbl{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+th{font:600 .78rem var(--cond);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:10px;border-bottom:1px solid var(--line);white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right}
+tbody tr.click{cursor:pointer}
+tbody tr.click:hover{background:var(--sunk)}
+tbody tr.playing{background:var(--win-soft)}
+tbody tr.playing:hover{background:var(--win-soft)}
+.livepill{display:inline-flex;align-items:center;gap:5px;font:700 .72rem var(--cond);letter-spacing:.08em;text-transform:uppercase;color:var(--loss);border:1px solid var(--loss);border-radius:4px;padding:0 6px}
+.livepill::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--loss)}
+@media (prefers-reduced-motion:no-preference){.livepill::before{animation:blink 1.4s ease-in-out infinite}@keyframes blink{50%{opacity:.25}}}
+.playtag{font:600 .7rem var(--cond);letter-spacing:.06em;text-transform:uppercase;color:var(--win);margin-left:6px}
+.pos{font:700 1rem var(--display);color:var(--muted);width:2.5em}
+tr.top1 .pos{color:var(--gold)}
+.elo{font:700 1.1rem var(--cond);letter-spacing:.02em}
+.nick{font-weight:600}
+.reg{color:var(--muted);font-size:.82rem;margin-left:6px}
+.prov{font:600 .7rem var(--cond);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:0 4px;margin-left:6px}
+.pips{display:inline-flex;gap:3px}
+.pip{width:16px;height:16px;border-radius:3px;font:700 .65rem/16px var(--cond);text-align:center}
+.pip.w{background:var(--win-soft);color:var(--win)}.pip.l{background:var(--loss-soft);color:var(--loss)}
+.d-up{color:var(--win);font-weight:600}.d-down{color:var(--loss);font-weight:600}
+.empty{border:1px dashed var(--line);border-radius:10px;padding:28px 20px;text-align:center;color:var(--muted)}
+.empty strong{display:block;color:var(--fg);font:700 1.05rem var(--display);margin-bottom:6px}
+.note{color:var(--muted);font-size:.85rem}
+.banner{background:var(--gold-soft);border:1px solid var(--line);border-radius:8px;padding:10px 14px;font-size:.9rem;margin-bottom:16px}
+.match{display:grid;grid-template-columns:auto minmax(0,1fr) auto minmax(0,1fr) auto;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
+.match:last-child{border-bottom:0}
+.match.disputed > :not(.act){opacity:.5}
+.match.disputed .side .p span:first-child,.match.disputed .res,.match.disputed .map{text-decoration:line-through}
+button.clanbtn{background:none;cursor:pointer;font-weight:600}
+button.clanbtn:hover{border-color:var(--gold);color:var(--gold)}
+.mode.disp{color:var(--loss);border-color:var(--loss)}
+.mdate{font:600 .8rem var(--cond);letter-spacing:.05em;color:var(--muted);text-transform:uppercase;line-height:1.2;width:62px}
+.side{display:flex;flex-direction:column;gap:2px;min-width:0}
+.side.r{text-align:right}
+.side .p{display:flex;gap:6px;align-items:baseline;justify-content:inherit}
+.side.r .p{justify-content:flex-end}
+.side .p span:first-child{overflow-wrap:anywhere;min-width:0}
+#histBody,#recentBody,#ongoingBody,.mlist{container-type:inline-size}
+#v-partidas .grid2{grid-template-columns:minmax(0,1fr)}
+@container (max-width:640px){.match{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)}.mdate{grid-column:1/-1;width:auto}.match .act{grid-column:1/-1;justify-self:end}}
+.side.won .p span:first-child{font-weight:700}
+.vs{display:flex;flex-direction:column;align-items:center;gap:2px;min-width:70px}
+.vs .res{font:700 .78rem var(--cond);letter-spacing:.1em;text-transform:uppercase}
+.vs .map{font-size:.78rem;color:var(--muted);text-align:center}
+.mode{font:600 .7rem var(--cond);letter-spacing:.08em;border:1px solid var(--line);border-radius:4px;padding:0 5px;color:var(--muted)}
+@media (max-width:560px){.match{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)}.mdate{grid-column:1/-1;width:auto}.match .act{grid-column:1/-1;justify-self:end}}
+.teams{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+@media (max-width:480px){.teams{grid-template-columns:minmax(0,1fr)}}
+.team{border:1px solid var(--line);border-radius:8px;padding:12px;display:flex;flex-direction:column;gap:8px;background:var(--sunk)}
+.team.t1{border-top:3px solid var(--t1)}.team.t2{border-top:3px solid var(--t2)}
+.team.win{box-shadow:0 0 0 2px var(--gold) inset}
+.chips{display:flex;flex-wrap:wrap;gap:6px;min-height:30px}
+.chip{display:inline-flex;align-items:center;gap:6px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:3px 4px 3px 10px;font-size:.88rem}
+.chip button{border:0;background:none;padding:0 6px;color:var(--muted);font-size:1rem;line-height:1}
+.chip .e{color:var(--muted);font-size:.78rem;font-variant-numeric:tabular-nums}
+.preview{font-variant-numeric:tabular-nums;font-size:.9rem;display:flex;flex-direction:column;gap:3px}
+.prob{height:8px;border-radius:4px;background:var(--t2);overflow:hidden;margin:6px 0}
+.prob i{display:block;height:100%;background:var(--t1)}
+.big{font:700 2rem/1 var(--cond)}
+.calc{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.calcout{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:12px;text-align:center}
+.calcout div{background:var(--sunk);border-radius:8px;padding:10px 4px}
+.calcout small{display:block;font:600 .72rem var(--cond);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.salalist{display:flex;flex-direction:column}
+.salalist .it{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--line);gap:8px}
+.salalist .it:last-child{border-bottom:0}
+dialog{border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--fg);padding:0;width:min(680px,calc(100vw - 32px));max-height:85vh}
+dialog::backdrop{background:rgba(10,14,20,.5)}
+.dlg{padding:20px;display:flex;flex-direction:column;gap:16px}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;text-align:center}
+.stats div{background:var(--sunk);border-radius:8px;padding:10px 4px}
+.stats b{display:block;font:700 1.3rem var(--cond);font-variant-numeric:tabular-nums}
+.stats small{font:600 .7rem var(--cond);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+svg.spark{width:100%;height:auto;display:block;overflow:visible}
+svg.spark text{font:600 11px var(--cond);fill:var(--muted)}
+.ehist{max-height:220px;overflow-y:auto;border-top:1px solid var(--line)}
+.ehist .it{display:grid;grid-template-columns:7.5em minmax(0,1fr) 3em 3.5em;text-align:left;gap:10px;align-items:center;padding:6px 0;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums;font-size:.88rem}
+.ehist .it > :nth-child(3),.ehist .it > :nth-child(4){text-align:right}
+.ehist .it span:nth-child(2){overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--fg);color:var(--bg);padding:10px 16px;border-radius:8px;font-weight:600;font-size:.9rem;z-index:20}
+.how{font-size:.9rem;color:var(--muted)}
+.how p{margin:0 0 8px;max-width:62ch}
+code{font-family:var(--cond);font-size:1rem;color:var(--fg)}
+@media (prefers-reduced-motion:no-preference){.toast{animation:up .2s ease-out}@keyframes up{from{transform:translate(-50%,8px);opacity:0}}}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="brand">
+    <svg width="44" height="50" viewBox="0 0 44 50" aria-hidden="true"><path d="M3 3h38v20c0 13-9 21-19 25C12 44 3 36 3 23z" fill="var(--gold)"/><path d="M8 8h28v15c0 10-7 16-14 19C15 39 8 33 8 23z" fill="var(--surface)"/><rect x="8" y="17" width="28" height="9" fill="var(--loss)"/><path d="M22 12l2 3h-4zM16 30h12l-2 6h-8z" fill="var(--gold)"/></svg>
+    <div>
+      <h1>Elo Hispania</h1>
+      <p class="sub">Liga de partidas preparadas de Age of Empires entre jugadores españoles</p>
+    </div>
+  </div>
+  <div class="row" id="status"></div>
+</header>
+
+<nav aria-label="Secciones">
+  <a href="#ranking" data-tab="ranking">Ranking</a>
+  <a href="#partidas" data-tab="partidas">Partidas</a>
+  <a href="#sala" data-tab="sala">Sala y equipos</a>
+  <a href="#directo" data-tab="directo">En directo</a>
+</nav>
+
+<div id="offline" class="banner" hidden></div>
+
+<!-- RANKING -->
+<section id="v-ranking" data-view>
+  <div class="grid2">
+    <div class="panel stack">
+      <div class="row between">
+        <h2>Clasificación</h2>
+        <span class="mode" style="color:var(--gold);border-color:var(--gold)">Modo pruebas · salas CW</span>
+      </div>
+      <div class="row between">
+        <div class="seg" role="group" aria-label="Vista del ranking">
+          <button data-rview="players" aria-pressed="true">Jugadores</button>
+          <button data-rview="clans" aria-pressed="false">Clanes</button>
+        </div>
+        <label for="clanFilter" style="flex-direction:row;align-items:center;gap:8px">Clan <select id="clanFilter"><option value="">Todos</option></select></label>
+      </div>
+      <div id="rankBody"></div>
+    </div>
+    <div class="stack">
+      <div class="panel stack">
+        <h2>Cómo apuntarse</h2>
+        <p class="note" style="margin:0">En modo pruebas no hace falta: quien juega una partida del torneo (sala con <code>CW</code> o <code>Clan War</code>, o mapa CW7 con «vs» en el nombre de la sala) entra solo en el ranking con su elo de 1v1 del momento.</p>
+        <p class="note" style="margin:0">Para corregir un dato o impugnar una partida, avisa a un administrador de la liga.</p>
+      </div>
+      <div class="panel how">
+        <h3>Cómo se calcula</h3>
+        <p>Cada jugador empieza con <b>su elo de 1v1 del juego</b> justo antes de su primera partida de liga. Tras cada partida ganas o pierdes <code>32 × (resultado − esperado)</code> puntos, y ganar da siempre al menos <code>+1</code>.</p>
+        <p>El resultado esperado depende de la diferencia entre tu elo y el <b>elo medio del equipo rival</b>, igual que en las TG del juego. Ganar a alguien mucho mejor da muchos puntos; perder contra él quita pocos.</p>
+        <p>Hay un único ranking y solo cuentan partidas por equipos (2v2, 3v3 y 4v4) de lobby en Random Map.</p>
+        <p><b>Modo pruebas:</b> cada 15 minutos se registran solas las partidas de salas cuyo nombre contiene <code>CW</code> o <code>Clan War</code>, o que se juegan en un mapa <code>CW7</code> con «vs» en el nombre de la sala (los entrenamientos no cuentan), y sus jugadores se dan de alta automáticamente. Llevan la etiqueta <code>Auto</code>.</p>
+        <p>No cuentan las partidas de menos de <b>5 minutos de juego</b>. La duración que se muestra es la del reloj de la partida (velocidad normal, 1,7× el tiempo real).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTIDAS -->
+<section id="v-partidas" data-view hidden>
+  <div class="grid2">
+    <div class="panel stack">
+      <div class="row between">
+        <h2>Historial</h2>
+        <label for="hFilter" style="flex-direction:row;align-items:center;gap:8px">Jugador
+          <select id="hFilter"><option value="">Todos</option></select>
+        </label>
+      </div>
+      <div id="histBody"></div>
+    </div>
+    <div class="panel stack" id="formPanel" hidden>
+      <h2>Registrar partida</h2>
+      <div class="row">
+        <label for="mDate">Fecha<input type="date" id="mDate"></label>
+        <label for="mMap" style="flex:1">Mapa<input id="mMap" list="maps" placeholder="Arabia" maxlength="40"></label>
+        <datalist id="maps"><option>Arabia</option><option>Arena</option><option>Black Forest</option><option>Nomad</option><option>Megarandom</option><option>Islands</option><option>Gold Rush</option><option>Socotra</option><option>Four Lakes</option><option>Hideout</option><option>Acropolis</option><option>Mediterranean</option></datalist>
+      </div>
+      <div class="teams">
+        <div class="team t1" id="team1"><h3 style="color:var(--t1);margin:0">Equipo 1</h3><div class="chips"></div><select aria-label="Añadir jugador al equipo 1"></select><button type="button" data-win="1">Ganó el equipo 1</button></div>
+        <div class="team t2" id="team2"><h3 style="color:var(--t2);margin:0">Equipo 2</h3><div class="chips"></div><select aria-label="Añadir jugador al equipo 2"></select><button type="button" data-win="2">Ganó el equipo 2</button></div>
+      </div>
+      <div id="mPreview" class="preview"></div>
+      <div class="row"><button class="primary" id="mSave" disabled>Guardar partida</button><button type="button" class="link" id="mClear">Limpiar</button></div>
+      <p class="note" id="mMsg"></p>
+    </div>
+  </div>
+</section>
+
+<!-- DIRECTO -->
+<section id="v-directo" data-view hidden>
+  <div class="stack">
+    <div class="panel stack">
+      <div class="row between">
+        <h2>En curso</h2>
+        <a class="btnlink" href="https://aoe2recs.com/" target="_blank" rel="noopener">Todo el directo en aoe2recs ↗</a>
+      </div>
+      <div id="ongoingBody"></div>
+    </div>
+    <div class="panel stack">
+      <h2>Partidas recientes</h2>
+      <div id="recentBody"></div>
+    </div>
+    <div class="panel stack">
+      <div class="row between"><h2>Jugadores</h2><span class="note">Su perfil en aoe2recs muestra al momento si están jugando</span></div>
+      <input id="liveSearch" placeholder="Buscar jugador…" aria-label="Buscar jugador" autocomplete="off">
+      <div id="liveBody"></div>
+    </div>
+  </div>
+</section>
+
+<!-- SALA -->
+<section id="v-sala" data-view hidden>
+  <div class="grid2">
+    <div class="panel stack">
+      <div class="row between">
+        <h2>Sala de la próxima quedada</h2>
+        <button class="link" id="sClear">Vaciar sala</button>
+      </div>
+      <p class="note" style="margin:0">Apunta a los jugadores que van a jugar (la lista se guarda solo en tu navegador) y genera equipos equilibrados según el elo de la liga.</p>
+      <div class="row">
+        <select id="sAdd" aria-label="Jugador para apuntar" style="flex:1"></select>
+        <button id="sAddBtn">Apuntar</button>
+      </div>
+      <div id="salaBody"></div>
+      <div class="row"><button class="primary" id="sBalance">Hacer equipos equilibrados</button></div>
+      <div id="balBody"></div>
+    </div>
+    <div class="stack">
+      <div class="panel stack">
+        <h2>Calculadora de puntos</h2>
+        <div class="calc">
+          <label for="cMe">Tu elo<input type="number" id="cMe" value="1000" min="0" max="4000" step="10"></label>
+          <label for="cOpp">Elo medio rival<input type="number" id="cOpp" value="1300" min="0" max="4000" step="10"></label>
+        </div>
+        <div class="calcout" id="calcOut"></div>
+      </div>
+      <div class="panel how">
+        <h3>Ejemplo</h3>
+        <p>Tu equipo: 1000 y 1400. Rivales: 1200 y 1200 (media 1200). El de 1000 se juega mucho más que su compañero: si ganan, él suma más puntos porque partía con menos posibilidades.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<dialog id="dlg"><div class="dlg" id="dlgBody"></div></dialog>
+
+<script>
+const K = 32, START = 1000, PROV = 1;
+const REGIONS = ["Andalucía","Aragón","Asturias","Baleares","Canarias","Cantabria","Castilla-La Mancha","Castilla y León","Cataluña","Ceuta","Comunidad Valenciana","Extremadura","Galicia","La Rioja","Madrid","Melilla","Murcia","Navarra","País Vasco"];
+const S = { clan:"", rview:"players", live:[], players:{}, matches:[], sala:{}, loaded:{p:false,m:false,s:false}, mode:"all", db:null, readonly:false,
+  form:{t1:[],t2:[],win:0}, filter:"", confirmDel:null, balance:null };
+let R = null; // computed ratings
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const today = () => { const d=new Date(); return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); };
+const expected = (me, opp) => 1/(1+Math.pow(10,(opp-me)/400));
+const modeOf = m => "all";
+const startOf = id => (S.players[id]?.eloStart ?? START);
+const nick = id => S.players[id]?.nick || "Jugador borrado";
+const avg = a => a.reduce((x,y)=>x+y,0)/a.length;
+const fmtDate = s => { const [y,m,d]=s.split("-"); const mm=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"][+m-1]; return `${+d} ${mm}<br>${y}`; };
+const sign = n => n>0?"+"+n:String(n);
+
+function parseAoe(v){ const m = String(v||"").trim().match(/(\d{3,12})\s*\/?\s*$/) || String(v||"").match(/profile[s]?\/(\d{3,12})/); return m ? m[1] : ""; }
+function ago(t){ const s=(Date.now()-t)/1000; if(s<90) return "hace un momento"; if(s<3600) return `hace ${Math.round(s/60)} min`; if(s<86400) return `hace ${Math.round(s/3600)} h`; return `hace ${Math.round(s/86400)} días`; }
+function fmtDur(sec){ sec=Math.round(sec); const h=Math.floor(sec/3600), m=Math.floor(sec%3600/60), s=sec%60; return (h?h+":"+String(m).padStart(2,"0"):m)+":"+String(s).padStart(2,"0"); }
+function toast(t){ const el=document.createElement("div"); el.className="toast"; el.textContent=t; document.body.appendChild(el); setTimeout(()=>el.remove(),2400); }
+
+/* ---------- Motor ELO ---------- */
+function compute(){
+  const r = {all:{}}, deltas = {}, before = {};
+  const get = (mode,id) => r.all[id] ||= {elo:startOf(id),games:0,w:0,l:0,form:[],hist:[startOf(id)],pts:[{elo:startOf(id),start:true}],streak:0};
+  const ordered = S.matches.filter(m=>!m.disputed).sort((a,b)=> a.date===b.date ? (a.ts||0)-(b.ts||0) : a.date<b.date?-1:1);
+  for(const m of ordered){
+    const mode = modeOf(m), d = {}, b = {};
+    const e1 = m.team1.map(id=>get(mode,id).elo), e2 = m.team2.map(id=>get(mode,id).elo);
+    const a1 = avg(e1), a2 = avg(e2);
+    [[m.team1,a2,1],[m.team2,a1,2]].forEach(([team,oppAvg,n])=>{
+      team.forEach(id=>{
+        const p = get(mode,id), s = m.winner===n?1:0;
+        b[id] = p.elo;
+        d[id] = s ? Math.max(1, Math.round(K*(1-expected(p.elo,oppAvg)))) : Math.round(K*(0-expected(p.elo,oppAvg)));
+      });
+    });
+    for(const id in d){
+      const p = get(mode,id), won = d[id] >= 0 && ((m.team1.includes(id)&&m.winner===1)||(m.team2.includes(id)&&m.winner===2));
+      const w = (m.team1.includes(id)&&m.winner===1)||(m.team2.includes(id)&&m.winner===2);
+      p.elo += d[id]; p.games++; w?p.w++:p.l++;
+      p.form.push(w?"w":"l"); p.hist.push(p.elo); p.pts.push({elo:p.elo, date:m.date, d:d[id], map:m.map, won:w});
+      p.streak = w ? (p.streak>0?p.streak+1:1) : (p.streak<0?p.streak-1:-1);
+    }
+    deltas[m.id] = d; before[m.id] = b;
+  }
+  R = {r, deltas, before, ordered};
+}
+const eloOf = (a,b) => { const id = b===undefined ? a : b; return R?.r.all[id]?.elo ?? startOf(id); };
+
+/* ---------- Vistas ---------- */
+function clanOf(id){ return (S.players[id]?.clan||"").trim(); }
+function clanStats(){
+  const g={};
+  Object.keys(S.players).forEach(id=>{ const c=clanOf(id); if(!c) return; const st=R.r.all[id];
+    const x=g[c] ||= {c,all:[],ids:[],w:0,l:0,elos:[]}; x.all.push(id); if(!st||!st.games) return; x.ids.push(id); x.w+=st.w; x.l+=st.l; x.elos.push(st.elo); });
+  return Object.values(g).map(x=>({...x,avg:x.elos.length?Math.round(avg(x.elos)):null,best:x.ids.slice().sort((a,b)=>eloOf(b)-eloOf(a))[0]}))
+    .sort((a,b)=>(b.avg??-1)-(a.avg??-1) || a.c.localeCompare(b.c,"es"));
+}
+function renderClanFilter(){
+  const sel=$("#clanFilter"), cur=S.clan||"";
+  const clans=clanStats();
+  sel.innerHTML=`<option value="">Todos los clanes</option>`+clans.map((x,i)=>`<option value="${esc(x.c)}" ${x.c===cur?"selected":""}>${x.avg?`${i+1}. `:""}${esc(x.c)} · ${x.avg?`media ${x.avg}`:"sin partidas"}</option>`).join("")+`<option value="__none" ${cur==="__none"?"selected":""}>Sin clan</option>`;
+  sel.disabled = S.rview==="clans";
+}
+function renderClans(box){
+  const rows=clanStats().filter(x=>x.avg);
+  if(!rows.length){ box.innerHTML=`<div class="empty"><strong>Sin clanes todavía</strong>Aparecerán cuando sus jugadores tengan partidas.</div>`; return; }
+  box.innerHTML=`<div class="tbl"><table><thead><tr><th>#</th><th>Clan</th><th class="num">Elo medio</th><th class="num">Jugadores</th><th class="num">V–D</th><th>Mejor jugador</th></tr></thead><tbody>${
+    rows.map((x,i)=>`<tr class="click ${i===0?"top1":""}" data-clan="${esc(x.c)}" tabindex="0"><td class="pos">${i+1}</td><td><span class="nick">${esc(x.c)}</span></td><td class="num elo">${x.avg}</td><td class="num">${x.ids.length}</td><td class="num">${x.w}–${x.l}</td><td>${esc(nick(x.best))} <span class="note">${eloOf(x.best)}</span></td></tr>`).join("")
+  }</tbody></table></div><p class="note" style="margin:10px 0 0">Media del elo de los jugadores del clan con al menos una partida. Pulsa un clan para ver su ficha completa.</p>`;
+}
+function openClan(c){
+  const all=clanStats(), x=all.find(z=>z.c===c); if(!x) return;
+  const pos=all.filter(z=>z.avg).findIndex(z=>z.c===c)+1;
+  const ranked=Object.keys(S.players).map(id=>({id,...(R.r.all[id]||{elo:startOf(id),games:0,w:0,l:0})})).sort((a,b)=>(b.games>0)-(a.games>0)||b.elo-a.elo);
+  const gpos={}; let n=0; ranked.forEach(p=>{ if(p.games) gpos[p.id]=++n; });
+  const members=x.all.map(id=>({id,st:R.r.all[id]})).sort((a,b)=>(b.st?.games>0)-(a.st?.games>0) || eloOf(b.id)-eloOf(a.id));
+  const mine=new Set(x.all);
+  const ms=R.ordered.filter(m=>[...m.team1,...m.team2].some(id=>mine.has(id)));
+  let mw=0, ml=0; const vs={};
+  ms.forEach(m=>{ const s1=m.team1.filter(id=>mine.has(id)).length, s2=m.team2.filter(id=>mine.has(id)).length;
+    if(s1&&s2) return; const side=s1?1:2, won=m.winner===side; won?mw++:ml++;
+    const opp=side===1?m.team2:m.team1; const oc=new Set(opp.map(clanOf).filter(Boolean)); oc.forEach(o=>{ const v=vs[o] ||= {w:0,l:0}; won?v.w++:v.l++; }); });
+  const delta=id=>{ const st=R.r.all[id]; return st? st.elo-startOf(id) : 0; };
+  const vsRows=Object.entries(vs).sort((a,b)=>(b[1].w+b[1].l)-(a[1].w+a[1].l)).slice(0,6);
+  $("#dlgBody").innerHTML = `<div class="row between"><div><h2>${esc(c)}</h2><span class="note">${pos?`${pos}º de ${all.filter(z=>z.avg).length} clanes`:"Sin partidas todavía"} · ${x.all.length} ${x.all.length===1?"jugador":"jugadores"}</span></div><button id="dlgClose" aria-label="Cerrar">Cerrar</button></div>
+    <div class="stats"><div><b>${x.avg??"–"}</b><small>Elo medio</small></div><div><b>${x.best?eloOf(x.best):"–"}</b><small>Mejor elo</small></div><div><b>${mw}–${ml}</b><small>V–D del clan</small></div><div><b>${mw+ml?Math.round(100*mw/(mw+ml))+"%":"–"}</b><small>% victorias</small></div></div>
+    <div><h3>Jugadores</h3><div class="tbl"><table><thead><tr><th>#</th><th>Jugador</th><th class="num">Elo</th><th class="num">V–D</th><th class="num">Desde inicio</th></tr></thead><tbody>${
+      members.map(({id,st})=>`<tr class="click" data-open-pid="${esc(id)}" tabindex="0"><td class="pos">${gpos[id]||"–"}</td><td><span class="nick">${esc(nick(id))}</span>${playingIds().has(id)?`<span class="playtag">● Jugando</span>`:""}</td><td class="num elo">${eloOf(id)}</td><td class="num">${st?`${st.w}–${st.l}`:"–"}</td><td class="num ${delta(id)>=0?"d-up":"d-down"}">${st?sign(delta(id)):"–"}</td></tr>`).join("")
+    }</tbody></table></div><p class="note" style="margin:6px 0 0"># = puesto en el ranking general. Pulsa un jugador para ver su ficha.</p></div>
+    ${vsRows.length?`<div><h3>Contra otros clanes</h3>${vsRows.map(([o,v])=>`<div class="row between" style="padding:4px 0"><span>${esc(o)}</span><span class="note">${v.w+v.l} ${v.w+v.l===1?"partida":"partidas"} · <span class="d-up">${v.w}V</span> <span class="d-down">${v.l}D</span></span></div>`).join("")}<p class="note" style="margin:4px 0 0">Partidas en las que el rival tenía algún jugador de ese clan. No cuentan las partidas con jugadores del clan en los dos equipos.</p></div>`:""}
+    <div><h3>Últimas partidas del clan</h3>${ms.length?`<div class="mlist">${[...ms].reverse().slice(0,8).map(m=>matchCard(m,"")).join("")}</div>`:`<p class="note" style="margin:0">Todavía no hay partidas.</p>`}</div>
+    <div class="row"><button id="dlgClanFilter" data-clan="${esc(c)}">Ver en el ranking</button></div>`;
+  const d=$("#dlg"); if(!d.open) d.showModal(); d.scrollTop=0; $("#dlgBody").scrollTop=0;
+}
+function renderRanking(){
+  const box = $("#rankBody");
+  renderClanFilter();
+  if(S.loaded.p && S.rview==="clans"){ renderClans(box); return; }
+  if(!S.loaded.p){ box.innerHTML = `<p class="note">Cargando jugadores…</p>`; return; }
+  const ids = Object.keys(S.players);
+  if(!ids.length){ box.innerHTML = `<div class="empty"><strong>Aún no hay jugadores</strong>Añade el primero con el formulario de la derecha. Cada jugador empieza con 1000 de elo.</div>`; return; }
+  const rows = ids.map(id=>({id, ...(R.r.all[id]||{elo:startOf(id),games:0,w:0,l:0,form:[],streak:0})}))
+    .sort((a,b)=> (b.games>0)-(a.games>0) || b.elo-a.elo || a.id.localeCompare(b.id));
+  let pos=0; rows.forEach(p=>{ p.n = p.games ? ++pos : "–"; });
+  const shown = rows.filter(p=> !S.clan || (S.clan==="__none" ? !clanOf(p.id) : clanOf(p.id)===S.clan));
+  box.innerHTML = `<div class="tbl"><table><thead><tr><th>#</th><th>Jugador</th><th>Clan</th><th class="num">Elo</th><th class="num">Partidas</th><th class="num">V–D</th><th class="num">% Vict.</th><th>Últimas 5</th></tr></thead><tbody>${
+    shown.map(p=>{
+      const n = p.n;
+      const pct = p.games ? Math.round(100*p.w/p.games)+"%" : "–";
+      const pl = S.players[p.id];
+      const playing = playingIds().has(p.id);
+      return `<tr class="click ${n===1?"top1":""} ${playing?"playing":""}" data-pid="${esc(p.id)}" tabindex="0"><td class="pos">${n}</td>
+        <td><span class="nick">${esc(pl.nick)}</span>${playing?`<span class="playtag" title="Jugando ahora">● Jugando</span>`:""}${pl.region?`<span class="reg">${esc(pl.region)}</span>`:""}${p.games<PROV?`<span class="prov">${p.games?"Provisional":"Sin jugar"}</span>`:""}</td>
+        <td>${clanOf(p.id)?`<button class="mode clanbtn" data-clan="${esc(clanOf(p.id))}" aria-label="Ver clan ${esc(clanOf(p.id))}">${esc(clanOf(p.id))}</button>`:`<span class="note">—</span>`}</td>
+        <td class="num elo">${p.elo}</td><td class="num">${p.games}</td><td class="num">${p.w}–${p.l}</td><td class="num">${pct}</td>
+        <td><span class="pips">${p.form.slice(-5).map(f=>`<span class="pip ${f}">${f==="w"?"V":"D"}</span>`).join("")}</span></td></tr>`;
+    }).join("")}</tbody></table></div><p class="note" style="margin:10px 0 0">Pulsa un jugador para ver su ficha.</p>`;
+}
+
+function playerOptions(sel, placeholder, exclude=[]){
+  const ids = Object.keys(S.players).filter(id=>!exclude.includes(id)).sort((a,b)=>nick(a).localeCompare(nick(b),"es"));
+  sel.innerHTML = `<option value="">${placeholder}</option>` + ids.map(id=>`<option value="${esc(id)}">${esc(nick(id))}</option>`).join("");
+}
+
+function renderHistory(){
+  const box = $("#histBody"), f = $("#hFilter"), cur = S.filter;
+  playerOptions(f,"Todos"); f.value = S.players[cur] ? cur : ""; S.filter = f.value;
+  if(!S.loaded.m){ box.innerHTML = `<p class="note">Cargando partidas…</p>`; return; }
+  let list = [...S.matches].sort((a,b)=> a.date===b.date ? (b.ts||0)-(a.ts||0) : a.date<b.date?1:-1);
+  if(S.filter) list = list.filter(m=>m.team1.includes(S.filter)||m.team2.includes(S.filter));
+  if(!list.length){ box.innerHTML = `<div class="empty"><strong>${S.matches.length?"Sin partidas para este jugador":"Todavía no hay partidas"}</strong>${S.matches.length?"Prueba con otro filtro.":"Registra la primera con el formulario. Los puntos se calculan solos."}</div>`; return; }
+  box.innerHTML = list.map(m=>matchCard(m, S.readonly?"":(m.disputed
+      ? `<button class="link" data-restore="${esc(m.id)}" aria-label="Quitar la impugnación">Restaurar</button>`
+      : S.confirmDel===m.id
+      ? `<span class="row" style="gap:6px"><button class="danger" data-del-yes="${esc(m.id)}">Impugnar</button><button data-del-no>No</button></span>`
+      : `<button class="link" data-del="${esc(m.id)}" aria-label="Impugnar partida">Impugnar</button>`))).join("");
+}
+function matchCard(m, act){
+  const side = (team,n) => `<div class="side ${n===2?"r":""} ${m.winner===n?"won":""}">${team.map(id=>{
+      const d = R.deltas[m.id]?.[id];
+      return `<div class="p"><span>${esc(nick(id))}</span>${d===undefined?"":`<span class="${d>=0?"d-up":"d-down"}">${sign(d)}</span>`}</div>`;}).join("")}</div>`;
+  return `<div class="match ${m.disputed?"disputed":""}">
+    <div class="mdate">${fmtDate(m.date)}</div>
+    ${side(m.team1,1)}
+    <div class="vs"><span class="row" style="gap:4px;justify-content:center"><span class="mode">${m.team1.length+"v"+m.team2.length}</span>${m.disputed?`<span class="mode disp">Impugnada</span>`:""}${m.source==="auto"?`<span class="mode" title="Registrada automáticamente${m.lobby?": "+esc(m.lobby):""}" style="color:var(--gold);border-color:var(--gold)">Auto</span>`:""}</span><span class="res" style="color:${m.winner===1?"var(--t1)":"var(--t2)"}">${m.winner===1?"◀ Victoria":"Victoria ▶"}</span>${m.map?`<span class="map">${esc(m.map)}</span>`:""}${m.durationSec?`<span class="map" title="Tiempo de juego (tiempo real ${fmtDur(m.durationSec)})">⏱ ${fmtDur(m.durationSec*1.7)}</span>`:""}</div>
+    ${side(m.team2,2)}
+    <div class="act">${act||""}</div>
+  </div>`;
+}
+
+function renderForm(){
+  const fm = S.form, used = [...fm.t1,...fm.t2];
+  [["#team1",fm.t1,1],["#team2",fm.t2,2]].forEach(([sel,arr,n])=>{
+    const el = $(sel);
+    el.classList.toggle("win", fm.win===n);
+    const mode = (fm.t1.length<=1&&fm.t2.length<=1)?"1v1":"tg";
+    el.querySelector(".chips").innerHTML = arr.length ? arr.map(id=>`<span class="chip">${esc(nick(id))} <span class="e">${eloOf(mode,id)}</span><button type="button" data-rm="${n}:${esc(id)}" aria-label="Quitar ${esc(nick(id))}">×</button></span>`).join("") : `<span class="note">Sin jugadores</span>`;
+    playerOptions(el.querySelector("select"), "+ Añadir jugador", used);
+    el.querySelector("[data-win]").setAttribute("aria-pressed", fm.win===n);
+  });
+  const ok = fm.t1.length && fm.t2.length;
+  const pv = $("#mPreview");
+  if(!ok){ pv.innerHTML = `<span class="note">Añade al menos un jugador en cada equipo. Verás aquí cuántos puntos se juega cada uno.</span>`; }
+  else{
+    const mode = (fm.t1.length===1&&fm.t2.length===1)?"1v1":"tg";
+    const a1 = avg(fm.t1.map(id=>eloOf(mode,id))), a2 = avg(fm.t2.map(id=>eloOf(mode,id)));
+    const p1 = expected(a1,a2);
+    const line = (id,opp) => { const e=eloOf(mode,id), x=expected(e,opp); return `<div class="row between"><span>${esc(nick(id))} <span class="note">(${e})</span></span><span><span class="d-up">${sign(Math.max(1,Math.round(K*(1-x))))}</span> / <span class="d-down">${sign(Math.round(K*(0-x)))}</span></span></div>`; };
+    pv.innerHTML = `<h3 style="margin:0">Previsión</h3>
+      <div class="row between"><span style="color:var(--t1)">Eq.1 ${Math.round(p1*100)}%</span><span style="color:var(--t2)">${Math.round((1-p1)*100)}% Eq.2</span></div>
+      <div class="prob"><i style="width:${p1*100}%"></i></div>
+      <span class="note">Si gana / si pierde:</span>${fm.t1.map(id=>line(id,a2)).join("")}${fm.t2.map(id=>line(id,a1)).join("")}`;
+  }
+  $("#mSave").disabled = !(ok && fm.win) || S.readonly || !S.db;
+  if(S.readonly) $("#mMsg").textContent = "Solo lectura: no tienes permiso para registrar partidas.";
+}
+
+function renderSala(){
+  const ids = Object.keys(S.sala).filter(id=>S.players[id]).sort((a,b)=>(S.sala[a].at||0)-(S.sala[b].at||0));
+  playerOptions($("#sAdd"),"Elige jugador…", ids);
+  const box = $("#salaBody");
+  box.innerHTML = !S.loaded.s ? `<p class="note">Cargando sala…</p>` : ids.length
+    ? `<div class="salalist">${ids.map((id,i)=>`<div class="it"><span><span class="note">${i+1}.</span> <b>${esc(nick(id))}</b> <span class="note">· Elo ${eloOf(id)}</span></span><button class="link" data-out="${esc(id)}">Quitar</button></div>`).join("")}</div>`
+    : `<div class="empty"><strong>La sala está vacía</strong>Apunta a los jugadores que van a jugar la próxima partida.</div>`;
+  $("#sBalance").disabled = ids.length<2;
+  const bb = $("#balBody"), bal = S.balance;
+  if(!bal){ bb.innerHTML = ""; return; }
+  const col = (t,n) => `<div class="team t${n}"><h3 style="margin:0;color:var(--t${n})">Equipo ${n} · media ${Math.round(avg(t.map(id=>eloOf(id))))}</h3>${t.map(id=>`<div class="row between"><span>${esc(nick(id))}</span><span class="note">${eloOf(id)}</span></div>`).join("")}</div>`;
+  bb.innerHTML = `<div class="stack"><div class="teams">${col(bal.t1,1)}${col(bal.t2,2)}</div>
+    <div><div class="row between note"><span>Probabilidad Eq.1 ${Math.round(bal.p*100)}%</span><span>${Math.round((1-bal.p)*100)}% Eq.2</span></div><div class="prob"><i style="width:${bal.p*100}%"></i></div></div>
+    <div class="row"><button id="reBal">Otra combinación</button></div></div>`;
+}
+
+function balance(alt=false){
+  const ids = Object.keys(S.sala).filter(id=>S.players[id]);
+  const n = ids.length, half = Math.floor(n/2), combos = [];
+  const rec = (start, pick) => { if(pick.length===half){ combos.push(pick.slice()); return; } for(let i=start;i<n;i++){ pick.push(i); rec(i+1,pick); pick.pop(); } };
+  if(n>14){ toast("Máximo 14 jugadores para equilibrar"); return; }
+  rec(0,[]);
+  const scored = combos.filter(c=>c.includes(0)||n%2===1).map(c=>{
+    const t1 = c.map(i=>ids[i]), t2 = ids.filter((_,i)=>!c.includes(i));
+    const p = expected(avg(t1.map(id=>eloOf(id))), avg(t2.map(id=>eloOf(id))));
+    return {t1,t2,p,diff:Math.abs(p-.5)};
+  }).sort((a,b)=>a.diff-b.diff);
+  const pool = scored.slice(0, Math.max(1, Math.min(4, scored.length)));
+  S.balance = alt ? pool[Math.floor(Math.random()*pool.length)] : pool[0];
+  renderSala();
+}
+
+function calc(){
+  const me = +$("#cMe").value || 0, op = +$("#cOpp").value || 0, x = expected(me,op);
+  $("#calcOut").innerHTML = `<div><span class="big">${Math.round(x*100)}%</span><small>Prob. de ganar</small></div>
+    <div><span class="big d-up">${sign(Math.round(K*(1-x)))}</span><small>Si ganas</small></div>
+    <div><span class="big d-down">${sign(Math.round(K*(0-x)))}</span><small>Si pierdes</small></div>`;
+}
+
+function openPlayer(id){
+  const p = S.players[id]; if(!p) return;
+  const blk = mode => {
+    const s = R.r[mode][id];
+    if(!s) return `<div><h3>Elo</h3><p class="note" style="margin:0">Empieza con ${startOf(id)}. Aún no ha jugado partidas de liga.</p></div>`;
+    const P = s.pts, h = P.map(q=>q.elo), lo = Math.min(...h), hi = Math.max(...h);
+    const W=520, H=190, L=44, Rr=14, T=14, B=34, span = Math.max(hi-lo, 20), base = lo - (span<40 ? (40-span)/2 : 0), top = base + Math.max(span,40);
+    const x = i => L + (P.length>1 ? i*(W-L-Rr)/(P.length-1) : (W-L-Rr)/2), y = v => T + (top-v)*(H-T-B)/(top-base);
+    const pts = P.map((q,i)=>`${x(i).toFixed(1)},${y(q.elo).toFixed(1)}`).join(" ");
+    const short = d => { if(!d) return "Inicio"; const [Y,M,D]=d.split("-"); return `${+D} ${["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"][+M-1]}`; };
+    const yt = [...new Set([top, (top+base)/2, base].map(v=>Math.round(v)))];
+    const nTicks = Math.min(P.length, 5), xt = [...new Set(Array.from({length:nTicks},(_,k)=> nTicks<2?0:Math.round(k*(P.length-1)/(nTicks-1))))];
+    const last = P.length-1;
+    { const seen=new Set(); for(let k=xt.length-1;k>=0;k--){ const lab=short(P[xt[k]].date); if(seen.has(lab)) xt.splice(k,1); else seen.add(lab); } }
+    const chart = `<svg class="spark" viewBox="0 0 ${W} ${H}" role="img" aria-label="Evolución del elo de ${P[0].elo} a ${s.elo}, del ${short(P[1]?.date)} al ${short(P[last].date)}">
+        ${yt.map(v=>`<line x1="${L}" x2="${W-Rr}" y1="${y(v).toFixed(1)}" y2="${y(v).toFixed(1)}" stroke="var(--line)"/><text x="${L-6}" y="${(y(v)+4).toFixed(1)}" text-anchor="end">${v}</text>`).join("")}
+        <line x1="${L}" x2="${W-Rr}" y1="${y(P[0].elo).toFixed(1)}" y2="${y(P[0].elo).toFixed(1)}" stroke="var(--muted)" stroke-dasharray="4 4"/>
+        <polygon points="${x(0).toFixed(1)},${(H-B).toFixed(1)} ${pts} ${x(last).toFixed(1)},${(H-B).toFixed(1)}" fill="var(--gold-soft)"/>
+        <polyline points="${pts}" fill="none" stroke="var(--gold)" stroke-width="2"/>
+        ${P.map((q,i)=>`<circle cx="${x(i).toFixed(1)}" cy="${y(q.elo).toFixed(1)}" r="${i===last?5:3}" fill="${q.start?"var(--surface)":(q.won?"var(--win)":"var(--loss)")}" stroke="var(--gold)" stroke-width="${q.start?2:1}"><title>${q.start?`Elo inicial: ${q.elo}`:`${fmtDate(q.date).replace("<br>"," ")} · ${q.won?"Victoria":"Derrota"} en ${q.map||"?"} · ${sign(q.d)} → ${q.elo}`}</title></circle>`).join("")}
+        <text x="${Math.min(x(last)+0, W-Rr)}" y="${(y(P[last].elo)-10).toFixed(1)}" text-anchor="end" style="fill:var(--fg)">${s.elo}</text>
+        ${xt.map(i=>`<text x="${x(i).toFixed(1)}" y="${H-12}" text-anchor="${i===0?"start":i===last?"end":"middle"}">${short(P[i].date)}</text>`).join("")}
+      </svg>`;
+    const rowsH = P.slice(1).map(q=>q).reverse();
+    return `<div class="stack" style="gap:8px"><h3 style="margin:0">Elo</h3>
+      <div class="stats"><div><b>${s.elo}</b><small>Elo</small></div><div><b>${hi}</b><small>Máximo</small></div><div><b>${s.w}–${s.l}</b><small>V–D</small></div><div><b class="${s.streak>0?"d-up":"d-down"}">${s.streak>0?s.streak+"V":(-s.streak)+"D"}</b><small>Racha</small></div></div>
+      ${chart}
+      <span class="note">Cada punto es una partida (verde victoria, rojo derrota); pasa el ratón por encima para ver la fecha. Línea discontinua: elo inicial (${P[0].elo}${p.eloStartSource==="rm_1v1"?", su 1v1 del juego":""}).</span>
+      <div><h3>Evolución partida a partida</h3><div class="ehist">${rowsH.map(q=>`<div class="it"><span class="note">${fmtDate(q.date).replace("<br>"," ")}</span><span>${q.won?"Victoria":"Derrota"} · ${esc(q.map||"")}</span><span class="${q.d>=0?"d-up":"d-down"}">${sign(q.d)}</span><b>${q.elo}</b></div>`).join("")}<div class="it"><span class="note">Inicio</span><span>Elo inicial${p.eloStartSource==="rm_1v1"?" (1v1 del juego)":""}</span><span></span><b>${P[0].elo}</b></div></div></div></div>`;
+  };
+  // compañeros y rivales más habituales
+  const mates = {}, rivals = {};
+  S.matches.filter(m=>!m.disputed && (m.team1.includes(id)||m.team2.includes(id))).forEach(m=>{
+    const mine = m.team1.includes(id) ? m.team1 : m.team2, other = mine===m.team1 ? m.team2 : m.team1;
+    const won = (mine===m.team1) === (m.winner===1);
+    mine.filter(x=>x!==id).forEach(x=>(mates[x] ||= {w:0,l:0})[won?"w":"l"]++);
+    other.forEach(x=>(rivals[x] ||= {w:0,l:0})[won?"w":"l"]++);
+  });
+  const top = o => Object.entries(o).sort((a,b)=>(b[1].w+b[1].l)-(a[1].w+a[1].l)||b[1].w-a[1].w).slice(0,5);
+  const list = (title,rows,hint) => rows.length?`<div><h3>${title}</h3>${rows.map(([o,s])=>`<div class="row between" style="padding:4px 0"><span>${esc(nick(o))}</span><span class="note">${s.w+s.l} ${s.w+s.l===1?"partida":"partidas"} · <span class="d-up">${s.w}V</span> <span class="d-down">${s.l}D</span> ${hint}</span></div>`).join("")}</div>`:"";
+  const noMatches = !S.matches.some(m=>m.team1.includes(id)||m.team2.includes(id));
+  $("#dlgBody").innerHTML = `<div class="row between"><div><h2>${esc(p.nick)}</h2><span class="note">${esc([p.clan?"Clan "+p.clan:"",p.country?String(p.country).toUpperCase():"",p.region].filter(Boolean).join(" · ")||"Sin clan")}</span></div><button id="dlgClose" aria-label="Cerrar">Cerrar</button></div>
+    <div class="stack" style="gap:6px"><h3 style="margin:0">Perfil en el juego</h3>
+      ${p.profileId?`<span>ID <b>${esc(p.profileId)}</b> · <a href="https://aoe2recs.com/profile/${esc(p.profileId)}" target="_blank" rel="noopener" style="color:var(--gold)">Ver en aoe2recs</a></span>`:`<span class="note">Sin ID: sus partidas no se registran solas.</span>`}
+      ${S.readonly?"":`<div class="row"><input id="dlgAoe" aria-label="ID de perfil o enlace" placeholder="ID o enlace de su perfil" value="${esc(p.profileId||"")}" style="flex:1"><button id="dlgAoeSave" data-id="${esc(id)}">Guardar ID</button></div>`}
+    </div>
+    ${blk("all")}
+    ${list("Compañeros más habituales", top(mates), "juntos")}
+    ${list("Rivales más habituales", top(rivals), "contra él")}
+    ${!S.readonly && noMatches ? `<div class="row"><button class="danger" id="dlgDel" data-id="${esc(id)}">Eliminar jugador</button><span class="note">Solo se puede eliminar sin partidas jugadas.</span></div>`:""}`;
+  const d = $("#dlg"); if(!d.open) d.showModal();
+}
+
+const LIVE_MAX_MS = 2*3600*1000;
+function liveNow(){ const now=Date.now(); return S.live.filter(g=>g.started && now-g.started < LIVE_MAX_MS && Array.isArray(g.team1) && Array.isArray(g.team2)); }
+function playingIds(){ const set=new Set(); liveNow().forEach(g=>[...g.team1,...g.team2].forEach(p=>p.id&&set.add(p.id))); return set; }
+function liveCard(g){
+  const side=(team,n)=>`<div class="side ${n===2?"r":""}">${team.map(p=>`<div class="p"><span>${esc(p.id&&S.players[p.id]?nick(p.id):p.name)}</span>${p.id?`<span class="note">${eloOf(p.id)}</span>`:""}</div>`).join("")}</div>`;
+  const watch = [...g.team1,...g.team2].find(p=>p.profileId);
+  return `<div class="match">
+    <div class="mdate">Empezó<br>${ago(g.started)}</div>
+    ${side(g.team1,1)}
+    <div class="vs"><span class="row" style="gap:4px;justify-content:center"><span class="mode">${g.team1.length}v${g.team2.length}</span><span class="livepill">En curso</span></span>${g.map?`<span class="map">${esc(g.map)}</span>`:""}${g.lobby?`<span class="map">${esc(g.lobby)}</span>`:""}</div>
+    ${side(g.team2,2)}
+    <div class="act">${watch?`<a class="btnlink" href="https://aoe2recs.com/profile/${esc(watch.profileId)}" target="_blank" rel="noopener">Ver en directo ↗</a>`:""}</div>
+  </div>`;
+}
+function lastPlayed(id){ let t=0; for(const m of S.matches) if((m.team1.includes(id)||m.team2.includes(id)) && (m.ts||0)>t) t=m.ts||0; return t; }
+function renderLive(){
+  const ob=$("#ongoingBody"), gs=liveNow().sort((a,b)=>b.started-a.started);
+  const when = S.liveAt ? `Comprobado ${ago(S.liveAt)}.` : "Comprobando…";
+  ob.innerHTML = gs.length ? gs.map(liveCard).join("")+`<p class="note" style="margin:8px 0 0">${when} Se actualiza solo cada minuto.</p>`
+    : `<div class="empty"><strong>Ninguna partida CW en curso</strong>${when} Se actualiza solo cada minuto.</div>`;
+  const box=$("#liveBody"), q=($("#liveSearch").value||"").trim().toLowerCase();
+  if(!S.loaded.p){ box.innerHTML=`<p class="note">Cargando jugadores…</p>`; }
+  else {
+    const ids=Object.keys(S.players).filter(id=>S.players[id].profileId && (!q || nick(id).toLowerCase().includes(q)))
+      .map(id=>({id,t:lastPlayed(id)})).sort((a,b)=>b.t-a.t || nick(a.id).localeCompare(nick(b.id),"es"));
+    box.innerHTML = ids.length ? `<div class="salalist">${ids.map(({id,t})=>`<div class="it"><span><b>${esc(nick(id))}</b>${clanOf(id)?` <span class="mode">${esc(clanOf(id))}</span>`:""} <span class="note">· Elo ${eloOf(id)}${t?` · última partida ${ago(t)}`:""}</span></span><a class="btnlink" href="https://aoe2recs.com/profile/${esc(S.players[id].profileId)}" target="_blank" rel="noopener">Ver en aoe2recs ↗</a></div>`).join("")}</div>`
+      : `<div class="empty"><strong>${q?"Ningún jugador con ese nombre":"Sin jugadores con perfil"}</strong>${q?"Prueba con otra parte del nick.":"Añade el ID de perfil en la ficha de cada jugador."}</div>`;
+  }
+  const rb=$("#recentBody");
+  if(!S.loaded.m){ rb.innerHTML=`<p class="note">Cargando partidas…</p>`; return; }
+  const list=[...R.ordered].reverse().slice(0,12);
+  rb.innerHTML = list.length ? list.map(m=>matchCard(m, m.aoeMatchId?`<a class="btnlink" href="https://www.aoe2companion.com/matches/${esc(m.aoeMatchId)}" target="_blank" rel="noopener">Ver partida ↗</a>`:"")).join("")
+    : `<div class="empty"><strong>Todavía no hay partidas</strong>Aparecerán aquí en cuanto se registren.</div>`;
+}
+function renderAll(){ compute(); renderRanking(); renderHistory(); renderForm(); renderSala(); renderLive();
+  const n = Object.keys(S.players).length;
+  const sy = S.sync?.lastRun ? ` · Datos actualizados ${ago(S.sync.lastRun)}` : "";
+  $("#status").innerHTML = `<span class="note">${n} jugador${n===1?"":"es"} · ${S.matches.length} partida${S.matches.length===1?"":"s"}${sy}</span>`;
+}
+
+/* ---------- Navegación ---------- */
+function route(){
+  const t = ["ranking","partidas","sala","directo"].includes(location.hash.slice(1)) ? location.hash.slice(1) : "ranking";
+  document.querySelectorAll("[data-view]").forEach(v=>v.hidden = v.id!=="v-"+t);
+  document.querySelectorAll("nav a").forEach(a=>a.setAttribute("aria-current", a.dataset.tab===t?"page":"false"));
+}
+addEventListener("hashchange", route);
+
+/* ---------- Eventos ---------- */
+document.querySelectorAll("[data-mode]").forEach(b=>b.onclick=()=>{ S.mode=b.dataset.mode; document.querySelectorAll("[data-mode]").forEach(x=>x.setAttribute("aria-pressed",x===b)); renderRanking(); });
+$("#rankBody").addEventListener("click", e=>{ const c=e.target.closest("[data-clan]"); if(c){ openClan(c.dataset.clan); return; } const tr=e.target.closest("[data-pid]"); if(tr) openPlayer(tr.dataset.pid); });
+function setRview(v){ S.rview=v; document.querySelectorAll("[data-rview]").forEach(x=>x.setAttribute("aria-pressed", x.dataset.rview===v)); renderRanking(); }
+document.querySelectorAll("[data-rview]").forEach(b=>b.onclick=()=>setRview(b.dataset.rview));
+$("#clanFilter").onchange = e=>{ S.clan=e.target.value; renderRanking(); };
+$("#rankBody").addEventListener("keydown", e=>{ if(e.key==="Enter"){ const tr=e.target.closest("[data-pid]"); if(tr) openPlayer(tr.dataset.pid);} });
+$("#dlg").addEventListener("click", async e=>{
+  const op=e.target.closest("[data-open-pid]"); if(op){ openPlayer(op.dataset.openPid); return; }
+  if(e.target.id==="dlgClanFilter"){ S.clan=e.target.dataset.clan; $("#dlg").close(); setRview("players"); return; }
+  if(e.target.id==="dlgClose" || e.target===$("#dlg")) $("#dlg").close();
+  if(e.target.id==="dlgAoeSave"){ const id=e.target.dataset.id, v=$("#dlgAoe").value, aoe=parseAoe(v);
+    if(v.trim() && !aoe){ toast("No reconozco ese ID"); return; }
+    if(aoe && Object.entries(S.players).some(([k,p])=>k!==id && p.profileId===aoe)){ toast("Ese ID ya es de otro jugador"); return; }
+    try{ await S.db.collection("players").doc(id).update({profileId:aoe||""}); toast("ID guardado"); openPlayer(id); }catch(err){ toast("No se pudo guardar"); } }
+  if(e.target.id==="dlgDel"){ const id=e.target.dataset.id;
+    if(e.target.dataset.sure){ try{ await S.db.collection("players").doc(id).delete(); if(S.sala[id]) await S.db.collection("sala").doc(id).delete(); $("#dlg").close(); toast("Jugador eliminado"); }catch(err){ toast("No se pudo eliminar"); } }
+    else { e.target.dataset.sure="1"; e.target.textContent="Pulsa otra vez para confirmar"; } }
+});
+REGIONS.forEach(r=>$("#pReg")?.insertAdjacentHTML("beforeend",`<option>${r}</option>`));
+$("#fPlayer")?.addEventListener("submit", async e=>{
+  e.preventDefault(); const name = $("#pNick").value.trim(), msg=$("#pMsg");
+  if(!name) return;
+  if(!S.db){ msg.textContent="No hay conexión con la base de datos."; return; }
+  if(Object.values(S.players).some(p=>p.nick.toLowerCase()===name.toLowerCase())){ msg.textContent="Ese nick ya está en el ranking."; return; }
+  const aoe = parseAoe($("#pAoe").value);
+  if($("#pAoe").value.trim() && !aoe){ msg.textContent="No reconozco ese ID. Pega el número o el enlace de su perfil."; return; }
+  if(aoe && Object.values(S.players).some(p=>p.profileId===aoe)){ msg.textContent="Ese ID de perfil ya está asignado a otro jugador."; return; }
+  $("#pBtn").disabled = true;
+  try{ await S.db.collection("players").add({nick:name, region:$("#pReg").value, profileId:aoe||"", createdAt:Date.now()}); $("#pNick").value=""; $("#pAoe").value=""; msg.textContent=""; toast(`${name} añadido`); }
+  catch(err){ msg.textContent = err?.code==="invalid_argument" ? "No tienes permiso para añadir jugadores." : "No se pudo guardar. Inténtalo de nuevo."; }
+  $("#pBtn").disabled = false;
+});
+$("#hFilter").onchange = e=>{ S.filter=e.target.value; renderHistory(); };
+$("#histBody").addEventListener("click", async e=>{
+  const d=e.target.closest("[data-del]"), y=e.target.closest("[data-del-yes]"), n=e.target.closest("[data-del-no]");
+  if(d){ S.confirmDel=d.dataset.del; renderHistory(); }
+  if(n){ S.confirmDel=null; renderHistory(); }
+  if(y){ try{ await S.db.collection("matches").doc(y.dataset.delYes).update({disputed:true, disputedAt:Date.now()}); toast("Partida impugnada: ya no cuenta para el elo"); }catch(err){ toast("No se pudo impugnar"); } S.confirmDel=null; renderHistory(); }
+  const r=e.target.closest("[data-restore]");
+  if(r){ try{ await S.db.collection("matches").doc(r.dataset.restore).update({disputed:false}); toast("Impugnación retirada: la partida vuelve a contar"); }catch(err){ toast("No se pudo restaurar"); } }
+});
+["#team1","#team2"].forEach((sel,i)=>{
+  const el=$(sel), key = i?"t2":"t1";
+  el.querySelector("select").onchange = e=>{ if(e.target.value){ S.form[key].push(e.target.value); renderForm(); } };
+  el.querySelector("[data-win]").onclick = ()=>{ S.form.win = S.form.win===i+1?0:i+1; renderForm(); };
+});
+$("#formPanel").addEventListener("click", e=>{ const r=e.target.closest("[data-rm]"); if(!r) return; const [n,id]=r.dataset.rm.split(":"); const k=n==="1"?"t1":"t2"; S.form[k]=S.form[k].filter(x=>x!==id); renderForm(); });
+$("#mClear").onclick = ()=>{ S.form={t1:[],t2:[],win:0}; $("#mMap").value=""; $("#mMsg").textContent=""; renderForm(); };
+$("#mDate").value = today();
+$("#mSave").onclick = async ()=>{
+  const fm=S.form, btn=$("#mSave"); btn.disabled=true;
+  const doc = {date:$("#mDate").value||today(), ts:Date.now(), map:$("#mMap").value.trim(), team1:fm.t1.slice(), team2:fm.t2.slice(), winner:fm.win};
+  try{ await S.db.collection("matches").add(doc); S.form={t1:[],t2:[],win:0}; $("#mMap").value=""; $("#mMsg").textContent=""; toast("Partida guardada"); renderForm(); }
+  catch(err){ $("#mMsg").textContent = err?.code==="invalid_argument" ? "No tienes permiso para registrar partidas." : "No se pudo guardar. Inténtalo de nuevo."; btn.disabled=false; }
+};
+function saveSala(){ try{ localStorage.setItem("eh-sala", JSON.stringify(S.sala)); }catch(e){} }
+$("#sAddBtn").onclick = ()=>{ const id=$("#sAdd").value; if(!id) return; S.sala[id]={at:Date.now()}; S.balance=null; saveSala(); renderSala(); };
+$("#salaBody").addEventListener("click", e=>{ const b=e.target.closest("[data-out]"); if(!b) return; delete S.sala[b.dataset.out]; S.balance=null; saveSala(); renderSala(); });
+$("#sClear").onclick = async e=>{
+  const b=e.currentTarget;
+  if(!b.dataset.sure){ b.dataset.sure="1"; b.textContent="Pulsa otra vez para vaciar"; setTimeout(()=>{delete b.dataset.sure; b.textContent="Vaciar sala";},4000); return; }
+  delete b.dataset.sure; b.textContent="Vaciar sala";
+  S.sala={}; saveSala();
+  S.balance=null; renderSala();
+};
+$("#sBalance").onclick = ()=>balance(false);
+$("#balBody").addEventListener("click", e=>{
+  if(e.target.id==="reBal") balance(true);
+  if(e.target.id==="useBal"){ S.form={t1:S.balance.t1.slice(), t2:S.balance.t2.slice(), win:0}; renderForm(); location.hash="partidas"; }
+});
+["#cMe","#cOpp"].forEach(s=>$(s).addEventListener("input",calc));
+$("#liveSearch").addEventListener("input", renderLive);
+
+/* ---------- Datos ---------- */
+S.readonly = true;
+try{ S.sala = JSON.parse(localStorage.getItem("eh-sala")||"{}")||{}; }catch(e){ S.sala={}; }
+const API = "https://data.aoe2companion.com/api";
+const jre = rx => new RegExp(String(rx||"").replace(/^\(\?i\)/,""), "i");
+route(); calc(); compute(); renderAll();
+async function loadData(){
+  const off=$("#offline");
+  try{
+    const bust="?t="+Math.floor(Date.now()/60000);
+    const [pl,ma,sy,cf] = await Promise.all(["players","matches","sync","config"].map(n=>fetch(`data/${n}.json${bust}`).then(r=>{ if(!r.ok) throw new Error(n); return r.json(); })));
+    S.players=pl; S.matches=Object.entries(ma).map(([id,m])=>({id,...m})).filter(m=>!m.hidden && Array.isArray(m.team1) && Array.isArray(m.team2));
+    S.sync=sy; S.cfg=cf; S.loaded={p:true,m:true,s:true}; off.hidden=true;
+  }catch(e){ off.hidden=false; off.textContent="No se pudieron cargar los datos de la liga. Recarga la página en un momento."; S.loaded={p:true,m:true,s:true}; }
+  renderAll();
+}
+async function pollLive(){
+  if(document.hidden || !S.cfg) return;
+  const ids=[...new Set(Object.values(S.players).map(p=>p.profileId).filter(Boolean))];
+  const lob=jre(S.cfg.lobbyPattern), mp=jre(S.cfg.mapPattern), vs=/\bvs\b/i, now=Date.now(), found={};
+  for(let i=0;i<ids.length;i+=50){
+    try{
+      const d=await fetch(`${API}/matches?profile_ids=${ids.slice(i,i+50).join(",")}&per_page=100&page=1`).then(r=>r.json());
+      for(const m of d.matches||[]){
+        if(m.finished) continue;
+        const name=m.name||"", map=m.mapName||"";
+        if(!(lob.test(name) || (mp.test(map) && vs.test(name)))) continue;
+        const st=Date.parse(m.started); if(!st || now-st>2*3600*1000) continue;
+        const ts=(m.teams||[]).filter(t=>t.players&&t.players.length); if(ts.length!==2) continue;
+        const side=t=>t.players.map(p=>({name:p.name, profileId:String(p.profileId), id:S.players["p-"+p.profileId]?"p-"+p.profileId:null}));
+        found[m.matchId]={id:"live-"+m.matchId, started:st, map, lobby:name, aoeMatchId:m.matchId, team1:side(ts[0]), team2:side(ts[1])};
+      }
+    }catch(e){ /* sin conexión con aoe2companion: se reintenta en el próximo ciclo */ }
+  }
+  S.live=Object.values(found); S.liveAt=Date.now(); renderAll();
+}
+loadData().then(pollLive);
+setInterval(pollLive, 60*1000);
+setInterval(loadData, 5*60*1000);
+document.addEventListener("visibilitychange", ()=>{ if(!document.hidden) pollLive(); });
+</script>
+
+</body>
+</html>
