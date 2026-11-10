@@ -2552,5 +2552,61 @@
   ],
   "ts": 1794343894000,
   "winner": 2
+ },
+ "aoe-520226379": {
+  "aoeMatchId": 520226379,
+  "civs": {
+   "p-15408392": "Koreans",
+   "p-2081072": "Malians",
+   "p-24287923": "Byzantines",
+   "p-4718632": "Bengalis",
+   "p-575546": "Chinese",
+   "p-9950254": "Sicilians"
+  },
+  "date": "2026-11-10",
+  "durationSec": 1751,
+  "lobby": "CW7",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-9950254",
+   "p-24287923",
+   "p-15408392"
+  ],
+  "team2": [
+   "p-2081072",
+   "p-575546",
+   "p-4718632"
+  ],
+  "ts": 1794345193000,
+  "winner": 2
+ },
+ "aoe-520227891": {
+  "aoeMatchId": 520227891,
+  "civs": {
+   "p-18313886": "Koreans",
+   "p-19562554": "Britons",
+   "p-19629440": "Ethiopians",
+   "p-24274928": "Shu",
+   "p-36653": "Lithuanians",
+   "p-6433681": "Magyars"
+  },
+  "date": "2026-11-10",
+  "durationSec": 954,
+  "lobby": "Cw7 dynBvsDonquiskong",
+  "map": "CW7 Socotra (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-18313886",
+   "p-24274928",
+   "p-6433681"
+  ],
+  "team2": [
+   "p-19629440",
+   "p-19562554",
+   "p-36653"
+  ],
+  "ts": 1794345657000,
+  "winner": 1
  }
 }
