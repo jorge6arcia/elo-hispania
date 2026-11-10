@@ -1,9 +1,9 @@
-# Rastrea aoe2companion cada 15 minutos y guarda las partidas nuevas de la liga.
+# Rastrea aoe2companion cada 5 minutos y guarda las partidas nuevas de la liga.
 name: Sincronizar liga
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -16,7 +16,7 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -26,7 +26,8 @@ jobs:
         run: python scripts/sync.py
       - name: Guardar cambios
         run: |
-          if git diff --quiet -- data; then
+          # Solo se guarda si cambian partidas, jugadores o config (no basta con lastRun de sync.json)
+          if git diff --quiet -- data ':!data/sync.json'; then
             echo "Sin cambios"
             exit 0
           fi
