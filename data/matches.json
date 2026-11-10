@@ -2468,5 +2468,89 @@
   ],
   "ts": 1794336712000,
   "winner": 1
+ },
+ "aoe-520210003": {
+  "aoeMatchId": 520210003,
+  "civs": {
+   "p-15408392": "Maya",
+   "p-2081072": "Franks",
+   "p-24287923": "Hindustanis",
+   "p-4718632": "Britons",
+   "p-575546": "Saracens",
+   "p-9950254": "Slavs"
+  },
+  "date": "2026-11-10",
+  "durationSec": 1561,
+  "lobby": "CW7",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-24287923",
+   "p-15408392",
+   "p-9950254"
+  ],
+  "team2": [
+   "p-4718632",
+   "p-575546",
+   "p-2081072"
+  ],
+  "ts": 1794341724000,
+  "winner": 2
+ },
+ "aoe-520211476": {
+  "aoeMatchId": 520211476,
+  "civs": {
+   "p-12271904": "Mapuche",
+   "p-17557006": "Japanese",
+   "p-18313886": "Persians",
+   "p-19629440": "Vietnamese",
+   "p-19702504": "Italians",
+   "p-36653": "Huns"
+  },
+  "date": "2026-11-10",
+  "durationSec": 3114,
+  "lobby": "CW7 - DYN vs DonQuis",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-19702504",
+   "p-12271904",
+   "p-18313886"
+  ],
+  "team2": [
+   "p-19629440",
+   "p-36653",
+   "p-17557006"
+  ],
+  "ts": 1794341666000,
+  "winner": 1
+ },
+ "aoe-520221918": {
+  "aoeMatchId": 520221918,
+  "civs": {
+   "p-15408392": "Berbers",
+   "p-2081072": "Magyars",
+   "p-24287923": "Malay",
+   "p-4718632": "Dravidians",
+   "p-575546": "Italians",
+   "p-9950254": "Khitans"
+  },
+  "date": "2026-11-10",
+  "durationSec": 1018,
+  "lobby": "CW7",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-15408392",
+   "p-9950254",
+   "p-24287923"
+  ],
+  "team2": [
+   "p-575546",
+   "p-2081072",
+   "p-4718632"
+  ],
+  "ts": 1794343894000,
+  "winner": 2
  }
 }
