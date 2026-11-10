@@ -2608,5 +2608,33 @@
   ],
   "ts": 1794345657000,
   "winner": 1
+ },
+ "aoe-520233395": {
+  "aoeMatchId": 520233395,
+  "civs": {
+   "p-12271904": "Wei",
+   "p-17557006": "Bengalis",
+   "p-19629440": "Tatars",
+   "p-24274928": "Saracens",
+   "p-36653": "Franks",
+   "p-6433681": "Spanish"
+  },
+  "date": "2026-11-10",
+  "durationSec": 1564,
+  "lobby": "Cw7 dynBvsDonquiskong",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-12271904",
+   "p-24274928",
+   "p-6433681"
+  ],
+  "team2": [
+   "p-19629440",
+   "p-17557006",
+   "p-36653"
+  ],
+  "ts": 1794347440000,
+  "winner": 1
  }
 }
