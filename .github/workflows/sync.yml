@@ -26,7 +26,6 @@ jobs:
         run: python scripts/sync.py
       - name: Guardar cambios
         run: |
-          # Solo se guarda si cambian partidas, jugadores o config (no basta con lastRun de sync.json)
           if git diff --quiet -- data ':!data/sync.json'; then
             echo "Sin cambios"
             exit 0
