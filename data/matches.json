@@ -2832,5 +2832,33 @@
   ],
   "ts": 1794432342000,
   "winner": 2
+ },
+ "aoe-520472736": {
+  "aoeMatchId": 520472736,
+  "civs": {
+   "p-11427701": "Maya",
+   "p-18858603": "Franks",
+   "p-1886379": "Berbers",
+   "p-237920": "Persians",
+   "p-5066226": "Portuguese",
+   "p-8487446": "Tatars"
+  },
+  "date": "2026-11-11",
+  "durationSec": 1677,
+  "lobby": "[Revancha] CW",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-8487446",
+   "p-1886379",
+   "p-11427701"
+  ],
+  "team2": [
+   "p-18858603",
+   "p-5066226",
+   "p-237920"
+  ],
+  "ts": 1794435172000,
+  "winner": 2
  }
 }
