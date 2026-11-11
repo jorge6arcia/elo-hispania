@@ -2860,5 +2860,33 @@
   ],
   "ts": 1794435172000,
   "winner": 2
+ },
+ "aoe-520479654": {
+  "aoeMatchId": 520479654,
+  "civs": {
+   "p-11427701": "Bohemians",
+   "p-18858603": "Vikings",
+   "p-1886379": "Italians",
+   "p-237920": "Poles",
+   "p-5066226": "Britons",
+   "p-8487446": "Burgundians"
+  },
+  "date": "2026-11-11",
+  "durationSec": 1750,
+  "lobby": "[Revancha] CW",
+  "map": "CW7 Fortress (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1886379",
+   "p-11427701",
+   "p-8487446"
+  ],
+  "team2": [
+   "p-5066226",
+   "p-237920",
+   "p-18858603"
+  ],
+  "ts": 1794437225000,
+  "winner": 1
  }
 }
