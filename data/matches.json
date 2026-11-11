@@ -2636,5 +2636,201 @@
   ],
   "ts": 1794347440000,
   "winner": 1
+ },
+ "aoe-520433799": {
+  "aoeMatchId": 520433799,
+  "civs": {
+   "p-18747331": "Turks",
+   "p-215042": "Slavs",
+   "p-478118": "Cumans",
+   "p-5741031": "Vietnamese",
+   "p-6347572": "Koreans",
+   "p-6742741": "Khmer"
+  },
+  "date": "2026-11-11",
+  "durationSec": 1675,
+  "lobby": "Clan Wars VII Oro",
+  "map": "CW7 Fortress (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-5741031",
+   "p-6742741",
+   "p-478118"
+  ],
+  "team2": [
+   "p-18747331",
+   "p-6347572",
+   "p-215042"
+  ],
+  "ts": 1794424938000,
+  "winner": 1
+ },
+ "aoe-520442110": {
+  "aoeMatchId": 520442110,
+  "civs": {
+   "p-10179079": "Vietnamese",
+   "p-1229488": "Ethiopians",
+   "p-2152015": "Maya",
+   "p-2598337": "Persians",
+   "p-4566248": "Cumans",
+   "p-5829315": "Bohemians"
+  },
+  "date": "2026-11-11",
+  "durationSec": 1588,
+  "lobby": "Clan Wars - Potassium",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1229488",
+   "p-2152015",
+   "p-2598337"
+  ],
+  "team2": [
+   "p-5829315",
+   "p-10179079",
+   "p-4566248"
+  ],
+  "ts": 1794426809000,
+  "winner": 1
+ },
+ "aoe-520442377": {
+  "aoeMatchId": 520442377,
+  "civs": {
+   "p-113764": "Mongols",
+   "p-18747331": "Tupi",
+   "p-215042": "Georgians",
+   "p-2604970": "Spanish",
+   "p-478118": "Saracens",
+   "p-6347572": "Muisca"
+  },
+  "date": "2026-11-11",
+  "durationSec": 1769,
+  "lobby": "Clan Wars VII Oro",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-2604970",
+   "p-478118",
+   "p-113764"
+  ],
+  "team2": [
+   "p-215042",
+   "p-18747331",
+   "p-6347572"
+  ],
+  "ts": 1794427100000,
+  "winner": 2
+ },
+ "aoe-520449887": {
+  "aoeMatchId": 520449887,
+  "civs": {
+   "p-263513": "Saxons",
+   "p-2836315": "Koreans",
+   "p-3140712": "Franks",
+   "p-4048309": "Magyars",
+   "p-5029300": "Saracens",
+   "p-6046048": "Japanese"
+  },
+  "date": "2026-11-11",
+  "durationSec": 999,
+  "lobby": "CW7 Conquis vs Emp",
+  "map": "CW7 Socotra (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-2836315",
+   "p-4048309",
+   "p-5029300"
+  ],
+  "team2": [
+   "p-3140712",
+   "p-6046048",
+   "p-263513"
+  ],
+  "ts": 1794428950000,
+  "winner": 2
+ },
+ "aoe-520451221": {
+  "aoeMatchId": 520451221,
+  "civs": {
+   "p-18747331": "Britons",
+   "p-215042": "Franks",
+   "p-2604970": "Malay",
+   "p-478118": "Celts",
+   "p-6347572": "Aztecs",
+   "p-6742741": "Burmese"
+  },
+  "date": "2026-11-11",
+  "durationSec": 1387,
+  "lobby": "Clan Wars VII Oro",
+  "map": "CW7 Socotra (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-2604970",
+   "p-478118",
+   "p-6742741"
+  ],
+  "team2": [
+   "p-215042",
+   "p-6347572",
+   "p-18747331"
+  ],
+  "ts": 1794429367000,
+  "winner": 2
+ },
+ "aoe-520455621": {
+  "aoeMatchId": 520455621,
+  "civs": {
+   "p-263513": "Cumans",
+   "p-2836315": "Huns",
+   "p-4048309": "Hindustanis",
+   "p-4063407": "Britons",
+   "p-5029300": "Vietnamese",
+   "p-6046048": "Portuguese"
+  },
+  "date": "2026-11-11",
+  "durationSec": 1167,
+  "lobby": "CW7 Conquis vs Emp",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-5029300",
+   "p-2836315",
+   "p-4048309"
+  ],
+  "team2": [
+   "p-263513",
+   "p-6046048",
+   "p-4063407"
+  ],
+  "ts": 1794430524000,
+  "winner": 2
+ },
+ "aoe-520462006": {
+  "aoeMatchId": 520462006,
+  "civs": {
+   "p-2836315": "Malians",
+   "p-3140712": "Persians",
+   "p-4048309": "Berbers",
+   "p-4063407": "Maya",
+   "p-5029300": "Italians",
+   "p-6046048": "Dravidians"
+  },
+  "date": "2026-11-11",
+  "durationSec": 1119,
+  "lobby": "cw7 conquis vs emp",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-4048309",
+   "p-5029300",
+   "p-2836315"
+  ],
+  "team2": [
+   "p-4063407",
+   "p-3140712",
+   "p-6046048"
+  ],
+  "ts": 1794432342000,
+  "winner": 2
  }
 }

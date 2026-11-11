@@ -77,6 +77,19 @@
   "profileId": "1136264",
   "region": ""
  },
+ "p-113764": {
+  "approved": true,
+  "auto": true,
+  "clan": "RANK1",
+  "country": "gb",
+  "createdAt": 1794434321898,
+  "eloStart": 1545,
+  "eloStartDate": "2026-10-27T18:02:53.000Z",
+  "eloStartSource": "rm_1v1",
+  "nick": "[R1] andres_rod",
+  "profileId": "113764",
+  "region": ""
+ },
  "p-11427701": {
   "approved": true,
   "auto": true,
@@ -935,6 +948,19 @@
   "profileId": "2599637",
   "region": ""
  },
+ "p-2604970": {
+  "approved": true,
+  "auto": true,
+  "clan": "KBRA",
+  "country": "es",
+  "createdAt": 1794434321898,
+  "eloStart": 1754,
+  "eloStartDate": "2026-10-28T22:18:11.000Z",
+  "eloStartSource": "rm_1v1",
+  "nick": "[KBRA] Huracan_Parre",
+  "profileId": "2604970",
+  "region": ""
+ },
  "p-260973": {
   "approved": true,
   "auto": true,
@@ -1492,6 +1518,19 @@
   "eloStartSource": "rm_1v1",
   "nick": "SILES",
   "profileId": "4872369",
+  "region": ""
+ },
+ "p-5029300": {
+  "approved": true,
+  "auto": true,
+  "clan": "",
+  "country": "es",
+  "createdAt": 1794434321898,
+  "eloStart": 1312,
+  "eloStartDate": "2024-04-20T20:12:09.000Z",
+  "eloStartSource": "rm_1v1",
+  "nick": "pauito79_ator",
+  "profileId": "5029300",
   "region": ""
  },
  "p-5043635": {
