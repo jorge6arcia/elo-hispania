@@ -2916,5 +2916,61 @@
   ],
   "ts": 1794506950000,
   "winner": 2
+ },
+ "aoe-520665703": {
+  "aoeMatchId": 520665703,
+  "civs": {
+   "p-214269": "Persians",
+   "p-254537": "Koreans",
+   "p-329032": "Japanese",
+   "p-6216515": "Celts",
+   "p-8179071": "Varangians",
+   "p-903143": "Vietnamese"
+  },
+  "date": "2026-11-12",
+  "durationSec": 1694,
+  "lobby": "CW7 bingo vs conquis",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-8179071",
+   "p-903143",
+   "p-254537"
+  ],
+  "team2": [
+   "p-214269",
+   "p-6216515",
+   "p-329032"
+  ],
+  "ts": 1794514284000,
+  "winner": 1
+ },
+ "aoe-520672863": {
+  "aoeMatchId": 520672863,
+  "civs": {
+   "p-13235": "Franks",
+   "p-214269": "Britons",
+   "p-254537": "Maya",
+   "p-6216515": "Italians",
+   "p-8179071": "Khmer",
+   "p-903143": "Shu"
+  },
+  "date": "2026-11-12",
+  "durationSec": 1535,
+  "lobby": "CW7 bingo vs conquis",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-254537",
+   "p-8179071",
+   "p-903143"
+  ],
+  "team2": [
+   "p-214269",
+   "p-13235",
+   "p-6216515"
+  ],
+  "ts": 1794516470000,
+  "winner": 2
  }
 }
