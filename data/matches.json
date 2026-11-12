@@ -2888,5 +2888,33 @@
   ],
   "ts": 1794437225000,
   "winner": 1
+ },
+ "aoe-520635884": {
+  "aoeMatchId": 520635884,
+  "civs": {
+   "p-1136264": "Poles",
+   "p-1229488": "Ethiopians",
+   "p-1472624": "Vietnamese",
+   "p-1758789": "Malians",
+   "p-2152015": "Cumans",
+   "p-5829315": "Maya"
+  },
+  "date": "2026-11-12",
+  "durationSec": 1477,
+  "lobby": "Clan Wars - P&BA vs CronaVicio ",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1136264",
+   "p-1758789",
+   "p-1472624"
+  ],
+  "team2": [
+   "p-2152015",
+   "p-5829315",
+   "p-1229488"
+  ],
+  "ts": 1794506950000,
+  "winner": 2
  }
 }
