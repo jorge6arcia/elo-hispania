@@ -3084,5 +3084,89 @@
   ],
   "ts": 1794603786000,
   "winner": 2
+ },
+ "aoe-520908652": {
+  "aoeMatchId": 520908652,
+  "civs": {
+   "p-18947729": "Magyars",
+   "p-2604970": "Mongols",
+   "p-382573": "Japanese",
+   "p-4269127": "Maya",
+   "p-478118": "Lithuanians",
+   "p-5741031": "Berbers"
+  },
+  "date": "2026-11-13",
+  "durationSec": 2297,
+  "lobby": "CW - No es personal vs DKtaratas",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-18947729",
+   "p-382573",
+   "p-4269127"
+  ],
+  "team2": [
+   "p-478118",
+   "p-2604970",
+   "p-5741031"
+  ],
+  "ts": 1794603945000,
+  "winner": 1
+ },
+ "aoe-520914726": {
+  "aoeMatchId": 520914726,
+  "civs": {
+   "p-1988166": "Mapuche",
+   "p-5043635": "Japanese",
+   "p-5162605": "Maya",
+   "p-646085": "Georgians",
+   "p-669752": "Huns",
+   "p-824070": "Portuguese"
+  },
+  "date": "2026-11-13",
+  "durationSec": 1799,
+  "lobby": "DK B vs Conquis B",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-5162605",
+   "p-669752",
+   "p-1988166"
+  ],
+  "team2": [
+   "p-646085",
+   "p-824070",
+   "p-5043635"
+  ],
+  "ts": 1794605352000,
+  "winner": 1
+ },
+ "aoe-520921358": {
+  "aoeMatchId": 520921358,
+  "civs": {
+   "p-18947729": "Magyars",
+   "p-2604970": "Mongols",
+   "p-382573": "Japanese",
+   "p-4269127": "Maya",
+   "p-478118": "Lithuanians",
+   "p-5741031": "Berbers"
+  },
+  "date": "2026-11-13",
+  "durationSec": 659,
+  "lobby": "CW - No es personal vs DKtaratas",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-382573",
+   "p-18947729",
+   "p-4269127"
+  ],
+  "team2": [
+   "p-5741031",
+   "p-2604970",
+   "p-478118"
+  ],
+  "ts": 1794606853000,
+  "winner": 1
  }
 }
