@@ -3000,5 +3000,33 @@
   ],
   "ts": 1794594576000,
   "winner": 1
+ },
+ "aoe-520878113": {
+  "aoeMatchId": 520878113,
+  "civs": {
+   "p-1136264": "Khmer",
+   "p-1502305": "Vikings",
+   "p-2286345": "Armenians",
+   "p-4323388": "Britons",
+   "p-59289": "Inca",
+   "p-846645": "Lithuanians"
+  },
+  "date": "2026-11-13",
+  "durationSec": 1159,
+  "lobby": "CW 7 Cachopos Voladores vs Súbditos de Hilariano",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-846645",
+   "p-4323388",
+   "p-59289"
+  ],
+  "team2": [
+   "p-2286345",
+   "p-1502305",
+   "p-1136264"
+  ],
+  "ts": 1794596111000,
+  "winner": 2
  }
 }
