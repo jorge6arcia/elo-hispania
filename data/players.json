@@ -636,6 +636,19 @@
   "profileId": "2081072",
   "region": ""
  },
+ "p-21392940": {
+  "approved": true,
+  "auto": true,
+  "clan": "MNKD",
+  "country": "es",
+  "createdAt": 1794611166567,
+  "eloStart": 1162,
+  "eloStartDate": "2026-11-13T21:11:10.000Z",
+  "eloStartSource": "rm_1v1",
+  "nick": "[MNKD] JokinG",
+  "profileId": "21392940",
+  "region": ""
+ },
  "p-214269": {
   "approved": true,
   "auto": true,
@@ -699,6 +712,19 @@
   "eloStartSource": "rm_1v1",
   "nick": "Vlad von Carstein",
   "profileId": "2221150",
+  "region": ""
+ },
+ "p-22336597": {
+  "approved": true,
+  "auto": true,
+  "clan": "MNKD",
+  "country": "es",
+  "createdAt": 1794611166567,
+  "eloStart": 1262,
+  "eloStartDate": "2026-08-30T10:29:48.000Z",
+  "eloStartSource": "rm_1v1",
+  "nick": "[MNKD] Rolerus Magnificus",
+  "profileId": "22336597",
   "region": ""
  },
  "p-22842704": {
