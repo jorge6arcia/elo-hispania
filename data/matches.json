@@ -3028,5 +3028,33 @@
   ],
   "ts": 1794596111000,
   "winner": 2
+ },
+ "aoe-520883698": {
+  "aoeMatchId": 520883698,
+  "civs": {
+   "p-1131746": "Japanese",
+   "p-1136264": "Persians",
+   "p-1502305": "Mongols",
+   "p-4323388": "Italians",
+   "p-59289": "Malians",
+   "p-846645": "Portuguese"
+  },
+  "date": "2026-11-13",
+  "durationSec": 2255,
+  "lobby": "CW 7 Cachopos Voladores vs Súbditos de Hilariano",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1502305",
+   "p-1136264",
+   "p-1131746"
+  ],
+  "team2": [
+   "p-59289",
+   "p-4323388",
+   "p-846645"
+  ],
+  "ts": 1794597601000,
+  "winner": 1
  }
 }
