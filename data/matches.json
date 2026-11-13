@@ -2972,5 +2972,33 @@
   ],
   "ts": 1794516470000,
   "winner": 2
+ },
+ "aoe-520871699": {
+  "aoeMatchId": 520871699,
+  "civs": {
+   "p-1136264": "Maya",
+   "p-1472624": "Saracens",
+   "p-1502305": "Magyars",
+   "p-4323388": "Ethiopians",
+   "p-59289": "Khitans",
+   "p-846645": "Romans"
+  },
+  "date": "2026-11-13",
+  "durationSec": 1203,
+  "lobby": "CW 7 Cachopos Voladores vs Súbditos de Hilariano",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1136264",
+   "p-1472624",
+   "p-1502305"
+  ],
+  "team2": [
+   "p-4323388",
+   "p-846645",
+   "p-59289"
+  ],
+  "ts": 1794594576000,
+  "winner": 1
  }
 }
