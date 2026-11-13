@@ -3252,5 +3252,85 @@
   ],
   "ts": 1794608234000,
   "winner": 1
+ },
+ "aoe-520932516": {
+  "aoeMatchId": 520932516,
+  "civs": {
+   "p-113764": "Italians",
+   "p-18947729": "Chinese",
+   "p-2604970": "Bengalis",
+   "p-4269127": "Spanish",
+   "p-478118": "Tupi",
+   "p-9737913": "Dravidians"
+  },
+  "date": "2026-11-13",
+  "durationSec": 1591,
+  "lobby": "cw7",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-4269127",
+   "p-9737913",
+   "p-18947729"
+  ],
+  "team2": [
+   "p-2604970",
+   "p-113764",
+   "p-478118"
+  ],
+  "ts": 1794610139000,
+  "winner": 2
+ },
+ "aoe-520933989": {
+  "aoeMatchId": 520933989,
+  "civs": {
+   "p-2513083": "Dravidians",
+   "p-266577": "Tatars",
+   "p-4063407": "Jurchens",
+   "p-6046048": "Persians"
+  },
+  "date": "2026-11-13",
+  "durationSec": 2686,
+  "lobby": "cw7 conquis vs emp",
+  "map": "Arabia",
+  "source": "auto",
+  "team1": [
+   "p-4063407",
+   "p-2513083"
+  ],
+  "team2": [
+   "p-266577",
+   "p-6046048"
+  ],
+  "ts": 1794610343000,
+  "winner": 2
+ },
+ "aoe-520934397": {
+  "aoeMatchId": 520934397,
+  "civs": {
+   "p-110352": "Wu",
+   "p-15716475": "Khmer",
+   "p-21392940": "Portuguese",
+   "p-2969298": "Mongols",
+   "p-3403169": "Maya",
+   "p-4779204": "Teutons"
+  },
+  "date": "2026-11-13",
+  "durationSec": 1444,
+  "lobby": "cw7 mankomunistas vs wololocos",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-3403169",
+   "p-2969298",
+   "p-21392940"
+  ],
+  "team2": [
+   "p-15716475",
+   "p-110352",
+   "p-4779204"
+  ],
+  "ts": 1794610498000,
+  "winner": 1
  }
 }

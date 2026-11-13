@@ -896,6 +896,19 @@
   "profileId": "2443606",
   "region": ""
  },
+ "p-2513083": {
+  "approved": true,
+  "auto": true,
+  "clan": "EmPut",
+  "country": "es",
+  "createdAt": 1794613492883,
+  "eloStart": 1030,
+  "eloStartDate": "2026-10-25T00:41:38.000Z",
+  "eloStartSource": "rm_1v1",
+  "nick": "[EmPut] Ersabo",
+  "profileId": "2513083",
+  "region": ""
+ },
  "p-254537": {
   "approved": true,
   "auto": true,
@@ -1050,6 +1063,19 @@
   "eloStartSource": "rm_1v1",
   "nick": "Ux'TheNovack",
   "profileId": "264709",
+  "region": ""
+ },
+ "p-266577": {
+  "approved": true,
+  "auto": true,
+  "clan": "EmPut",
+  "country": "es",
+  "createdAt": 1794613492883,
+  "eloStart": 913,
+  "eloStartDate": "2026-08-10T21:02:10.000Z",
+  "eloStartSource": "rm_1v1",
+  "nick": "antoniosar69",
+  "profileId": "266577",
   "region": ""
  },
  "p-271761": {
@@ -1544,6 +1570,19 @@
   "eloStartSource": "rm_1v1",
   "nick": "Elamb",
   "profileId": "4756136",
+  "region": ""
+ },
+ "p-4779204": {
+  "approved": true,
+  "auto": true,
+  "clan": "",
+  "country": "es",
+  "createdAt": 1794613492883,
+  "eloStart": 657,
+  "eloStartDate": "2026-11-03T00:05:50.000Z",
+  "eloStartSource": "rm_1v1",
+  "nick": "biky",
+  "profileId": "4779204",
   "region": ""
  },
  "p-478118": {
