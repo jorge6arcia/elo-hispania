@@ -610,6 +610,19 @@
   "profileId": "197388",
   "region": ""
  },
+ "p-1988166": {
+  "approved": true,
+  "auto": true,
+  "clan": "TDKTS",
+  "country": "es",
+  "createdAt": 1794605625085,
+  "eloStart": 1717,
+  "eloStartDate": "2026-11-12T19:06:58.000Z",
+  "eloStartSource": "rm_1v1",
+  "nick": "DK_Dani",
+  "profileId": "1988166",
+  "region": ""
+ },
  "p-2081072": {
   "approved": true,
   "auto": true,
@@ -1572,6 +1585,19 @@
   "profileId": "5066226",
   "region": ""
  },
+ "p-5162605": {
+  "approved": true,
+  "auto": true,
+  "clan": "TDKTS",
+  "country": "es",
+  "createdAt": 1794605625085,
+  "eloStart": 1806,
+  "eloStartDate": "2026-11-12T11:29:21.000Z",
+  "eloStartSource": "rm_1v1",
+  "nick": "DK_Exmerior",
+  "profileId": "5162605",
+  "region": ""
+ },
  "p-542233": {
   "approved": true,
   "auto": true,
@@ -1765,6 +1791,19 @@
   "eloStartSource": "rm_1v1",
   "nick": "CQ.Revenge",
   "profileId": "646085",
+  "region": ""
+ },
+ "p-669752": {
+  "approved": true,
+  "auto": true,
+  "clan": "TDKTS",
+  "country": "es",
+  "createdAt": 1794605625085,
+  "eloStart": 1697,
+  "eloStartDate": "2026-11-11T21:36:39.000Z",
+  "eloStartSource": "rm_1v1",
+  "nick": "DK_Nightclaim",
+  "profileId": "669752",
   "region": ""
  },
  "p-6742741": {

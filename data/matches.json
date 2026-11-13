@@ -3056,5 +3056,33 @@
   ],
   "ts": 1794597601000,
   "winner": 1
+ },
+ "aoe-520907361": {
+  "aoeMatchId": 520907361,
+  "civs": {
+   "p-1988166": "Khitans",
+   "p-5043635": "Malay",
+   "p-5162605": "Koreans",
+   "p-646085": "Magyars",
+   "p-669752": "Tupi",
+   "p-824070": "Britons"
+  },
+  "date": "2026-11-13",
+  "durationSec": 1264,
+  "lobby": "DK B vs Conquis B",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1988166",
+   "p-669752",
+   "p-5162605"
+  ],
+  "team2": [
+   "p-646085",
+   "p-5043635",
+   "p-824070"
+  ],
+  "ts": 1794603786000,
+  "winner": 2
  }
 }
