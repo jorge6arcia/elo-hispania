@@ -24,6 +24,7 @@ Ranking ELO de partidas preparadas (lobbies) de Age of Empires II entre jugadore
 - **Impugnar una partida:** en `data/matches.json`, añade `"disputed": true` a la partida. Para quitar la impugnación, pon `false`.
 - **Ocultar una partida errónea:** añade `"hidden": true`. El rastreo no la vuelve a crear.
 - **Cambiar las reglas:** edita `data/config.json`.
+- **Asignar un clan a mano:** en `data/config.json`, añade el ID de perfil del jugador y su clan en `clanOverrides` (por ejemplo `"96571": "RANK1"`). Manda sobre el clan que tenga en el juego y vale también para jugadores que aún no han jugado.
 
 ## Reglas del elo
 

@@ -154,6 +154,9 @@ def main():
         d = get("profiles", profile_ids=",".join(all_ids[i:i + 20]), per_page=50, page=1)
         for p in (d or {}).get("profiles", []):
             clans[str(p["profileId"])] = (p.get("clan") or "").strip()
+    # Clanes asignados a mano (config.json → clanOverrides): mandan sobre el del juego
+    for pr, clan in cfg.get("clanOverrides", {}).items():
+        clans[str(pr)] = clan
 
     # Elo inicial de los nuevos: su 1v1 justo antes de su primera partida de liga
     now = int(time.time() * 1000)
