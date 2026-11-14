@@ -3332,5 +3332,33 @@
   ],
   "ts": 1794610498000,
   "winner": 1
+ },
+ "aoe-520941091": {
+  "aoeMatchId": 520941091,
+  "civs": {
+   "p-110352": "Mapuche",
+   "p-18410803": "Vietnamese",
+   "p-1914324": "Japanese",
+   "p-22336597": "Wei",
+   "p-2969298": "Tatars",
+   "p-4756136": "Berbers"
+  },
+  "date": "2026-11-14",
+  "durationSec": 1443,
+  "lobby": "CW7 Manko vs Wololocos",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1914324",
+   "p-22336597",
+   "p-2969298"
+  ],
+  "team2": [
+   "p-18410803",
+   "p-4756136",
+   "p-110352"
+  ],
+  "ts": 1794612554000,
+  "winner": 1
  }
 }
