@@ -3472,5 +3472,117 @@
   ],
   "ts": 1794774950000,
   "winner": 1
+ },
+ "aoe-521457878": {
+  "aoeMatchId": 521457878,
+  "civs": {
+   "p-10179079": "Britons",
+   "p-1758789": "Byzantines",
+   "p-2152015": "Armenians",
+   "p-236313": "Persians",
+   "p-4566248": "Cumans",
+   "p-5829315": "Saracens"
+  },
+  "date": "2026-11-15",
+  "durationSec": 1893,
+  "lobby": "No Clan Wars 3v3",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-4566248",
+   "p-2152015",
+   "p-1758789"
+  ],
+  "team2": [
+   "p-5829315",
+   "p-10179079",
+   "p-236313"
+  ],
+  "ts": 1794776149000,
+  "winner": 1
+ },
+ "aoe-521458072": {
+  "aoeMatchId": 521458072,
+  "civs": {
+   "p-11427701": "Ethiopians",
+   "p-18749773": "Maya",
+   "p-1886379": "Saracens",
+   "p-2589122": "Magyars",
+   "p-4279580": "Shu",
+   "p-8487446": "Georgians"
+  },
+  "date": "2026-11-15",
+  "durationSec": 1881,
+  "lobby": "[Revancha] CW7",
+  "map": "CW7 Socotra (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-8487446",
+   "p-11427701",
+   "p-1886379"
+  ],
+  "team2": [
+   "p-4279580",
+   "p-18749773",
+   "p-2589122"
+  ],
+  "ts": 1794775876000,
+  "winner": 2
+ },
+ "aoe-521462710": {
+  "aoeMatchId": 521462710,
+  "civs": {
+   "p-17557006": "Britons",
+   "p-19562554": "Saracens",
+   "p-19572031": "Teutons",
+   "p-21392940": "Portuguese",
+   "p-22336597": "Bohemians",
+   "p-4712135": "Burgundians"
+  },
+  "date": "2026-11-15",
+  "durationSec": 1969,
+  "lobby": "CW7 - MANKO vs DONQUIS",
+  "map": "CW7 Fortress (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-17557006",
+   "p-19562554",
+   "p-19572031"
+  ],
+  "team2": [
+   "p-22336597",
+   "p-21392940",
+   "p-4712135"
+  ],
+  "ts": 1794776812000,
+  "winner": 2
+ },
+ "aoe-521464856": {
+  "aoeMatchId": 521464856,
+  "civs": {
+   "p-10721552": "Shu",
+   "p-10728048": "Hindustanis",
+   "p-18947729": "Franks",
+   "p-2871715": "Saracens",
+   "p-4269127": "Dravidians",
+   "p-9737913": "Ethiopians"
+  },
+  "date": "2026-11-15",
+  "durationSec": 1119,
+  "lobby": "cw7",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-18947729",
+   "p-4269127",
+   "p-9737913"
+  ],
+  "team2": [
+   "p-10728048",
+   "p-2871715",
+   "p-10721552"
+  ],
+  "ts": 1794777256000,
+  "winner": 2
  }
 }
