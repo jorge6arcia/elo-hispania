@@ -3612,5 +3612,33 @@
   ],
   "ts": 1794778166000,
   "winner": 2
+ },
+ "aoe-521476546": {
+  "aoeMatchId": 521476546,
+  "civs": {
+   "p-11427701": "Spanish",
+   "p-18749773": "Turks",
+   "p-1886379": "Malay",
+   "p-2589122": "Khmer",
+   "p-4279580": "Malians",
+   "p-8487446": "Burgundians"
+  },
+  "date": "2026-11-15",
+  "durationSec": 3266,
+  "lobby": "[Revancha] CW7",
+  "map": "CW7 Fortress (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-18749773",
+   "p-2589122",
+   "p-4279580"
+  ],
+  "team2": [
+   "p-1886379",
+   "p-11427701",
+   "p-8487446"
+  ],
+  "ts": 1794780366000,
+  "winner": 1
  }
 }
