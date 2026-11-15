@@ -148,6 +148,29 @@ svg.spark text{font:600 11px var(--cond);fill:var(--muted)}
 .ehist .it{display:grid;grid-template-columns:7.5em minmax(0,1fr) 3em 3.5em;text-align:left;gap:10px;align-items:center;padding:6px 0;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums;font-size:.88rem}
 .ehist .it > :nth-child(3),.ehist .it > :nth-child(4){text-align:right}
 .ehist .it span:nth-child(2){overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+/* Draft: asistente de civis por mapa */
+#v-draft .grid2{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr)}
+@media (max-width:820px){#v-draft .grid2{grid-template-columns:minmax(0,1fr)}}
+.dr-in{display:flex;gap:8px}
+.dr-in input{flex:1}
+.dr-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--muted);margin-right:6px;vertical-align:middle}
+.dr-dot.on{background:var(--win)}
+.dr-turn{background:var(--win-soft);border:1px solid var(--win);border-radius:8px;padding:12px 14px;font-size:1rem}
+.dr-turn b{color:var(--win)}
+.dr-turn .c{font:700 1.25rem var(--cond);color:var(--gold);letter-spacing:.02em}
+.dr-maps td{white-space:normal;vertical-align:top}
+.dr-maps td.m{font:600 .95rem var(--cond);letter-spacing:.04em;text-transform:uppercase;color:var(--muted);width:30%;padding-top:13px}
+.dr-chips{display:flex;flex-wrap:wrap;gap:6px}
+.dr-chip{display:inline-flex;align-items:center;gap:4px;border:1px solid var(--line);background:var(--sunk);border-radius:999px;padding:3px 11px;font-size:.92rem}
+.dr-chip.mine{background:var(--win-soft);border-color:var(--win);color:var(--win);font-weight:700}
+.dr-chip.rec{background:var(--gold-soft);border-color:var(--gold);color:var(--gold);font-weight:700}
+.dr-prep td{white-space:normal;vertical-align:top}
+.dr-prep td.m{font-weight:600;width:32%;padding-top:16px}
+.dr-prep input{width:100%}
+.dr-ok{color:var(--muted);font-size:.8rem;margin-top:3px}
+.dr-bad{color:var(--loss);font-size:.8rem;margin-top:3px}
+details.dr-more summary{cursor:pointer;color:var(--muted);font-size:.9rem}
+details.dr-more textarea{width:100%;min-height:150px;font:500 .85rem/1.4 ui-monospace,Consolas,monospace;color:var(--fg);background:var(--sunk);border:1px solid var(--line);border-radius:8px;padding:8px 10px;margin-top:8px}
 .toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--fg);color:var(--bg);padding:10px 16px;border-radius:8px;font-weight:600;font-size:.9rem;z-index:20}
 .how{font-size:.9rem;color:var(--muted)}
 .how p{margin:0 0 8px;max-width:62ch}
@@ -174,6 +197,7 @@ code{font-family:var(--cond);font-size:1rem;color:var(--fg)}
   <a href="#partidas" data-tab="partidas">Partidas</a>
   <a href="#sala" data-tab="sala">Sala y equipos</a>
   <a href="#directo" data-tab="directo">En directo</a>
+  <a href="#draft" data-tab="draft">Draft</a>
 </nav>
 
 <div id="offline" class="banner" hidden></div>
@@ -261,6 +285,44 @@ code{font-family:var(--cond);font-size:1rem;color:var(--fg)}
       <div class="row between"><h2>Jugadores</h2><span class="note">Su perfil en aoe2recs muestra al momento si están jugando</span></div>
       <input id="liveSearch" placeholder="Buscar jugador…" aria-label="Buscar jugador" autocomplete="off">
       <div id="liveBody"></div>
+    </div>
+  </div>
+</section>
+
+<!-- DRAFT -->
+<section id="v-draft" data-view hidden>
+  <div class="grid2">
+    <div class="panel stack">
+      <div class="row between">
+        <h2>Draft de civis</h2>
+        <span id="drCivLink"></span>
+      </div>
+      <div class="dr-in">
+        <input id="drCivCode" placeholder="Código o link del draft de civis" aria-label="Código o link del draft de civis" autocomplete="off">
+        <button class="primary" id="drCivGo">Seguir</button>
+      </div>
+      <div id="drLive"></div>
+    </div>
+    <div class="stack">
+      <div class="panel stack">
+        <h2>Preparar</h2>
+        <div id="drLinkBox"></div>
+        <div id="drPrep"></div>
+      </div>
+      <div class="panel stack">
+        <h3 style="margin:0">Tú</h3>
+        <div class="row">
+          <label for="drNick" style="flex:1">Tu nick en aoe2cm<input id="drNick" list="drNicks" placeholder="Tu nick" autocomplete="off"></label>
+          <label for="drSide">Lado<select id="drSide"><option value="auto">Automático</option><option value="HOST">Anfitrión</option><option value="GUEST">Invitado</option></select></label>
+        </div>
+        <datalist id="drNicks"></datalist>
+        <label for="drUnique" style="flex-direction:row;align-items:center;gap:8px;text-transform:none;letter-spacing:0;font:500 .9rem var(--body);color:var(--fg)"><input type="checkbox" id="drUnique"> Cada civi solo en un mapa</label>
+        <details class="dr-more"><summary>Copiar o pegar tus listas en texto</summary>
+          <p class="note" style="margin:8px 0 0">Una línea por mapa: <code>Arabia: Francos, Mongoles, Hunos</code>. <code>Resto:</code> vale para los mapas sin lista. Sirve para pasarlas desde el script de Tampermonkey.</p>
+          <textarea id="drText" aria-label="Tus listas en texto"></textarea>
+        </details>
+        <p class="note" style="margin:0">Tus listas se guardan solo en este navegador. El pick se hace en aoe2cm.net; esta página lo sigue en directo como espectador.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -617,7 +679,8 @@ function renderAll(){ compute(); renderRanking(); renderHistory(); renderForm();
 
 /* ---------- Navegación ---------- */
 function route(){
-  const t = ["ranking","partidas","sala","directo"].includes(location.hash.slice(1)) ? location.hash.slice(1) : "ranking";
+  const h = location.hash.slice(1).split("?")[0];
+  const t = ["ranking","partidas","sala","directo","draft"].includes(h) ? h : "ranking";
   document.querySelectorAll("[data-view]").forEach(v=>v.hidden = v.id!=="v-"+t);
   document.querySelectorAll("nav a").forEach(a=>a.setAttribute("aria-current", a.dataset.tab===t?"page":"false"));
 }
@@ -737,6 +800,387 @@ loadData().then(pollLive);
 setInterval(pollLive, 60*1000);
 setInterval(loadData, 5*60*1000);
 document.addEventListener("visibilitychange", ()=>{ if(!document.hidden) pollLive(); });
+</script>
+
+<!-- ---------- Draft: asistente de civis por mapa (sigue los drafts de aoe2cm.net en directo) ---------- -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.min.js"></script>
+<script>
+(() => {
+const CM = "https://aoe2cm.net";
+// Orden exacto con el que aoe2cm codifica las civis (no cambiar).
+const CIVS = ["Aztecs","Berbers","Britons","Burmese","Byzantines","Celts","Chinese","Ethiopians","Franks","Goths","Huns","Incas","Indians","Italians","Japanese","Khmer","Koreans","Magyars","Malay","Malians","Mayans","Mongols","Persians","Portuguese","Saracens","Slavs","Spanish","Teutons","Turks","Vietnamese","Vikings","Bulgarians","Cumans","Lithuanians","Tatars","Burgundians","Sicilians","Bohemians","Poles","Bengalis","Dravidians","Gurjaras","Hindustanis","Romans","Armenians","Georgians","Achaemenids","Athenians","Spartans","Shu","Wu","Wei","Jurchens","Khitans","Macedonians","Thracians","Puru","Mapuche","Muisca","Tupi","Danes","Saxons","Varangians"];
+const NOT_ACTIVE = ["Indians","Achaemenids","Athenians","Spartans","Macedonians","Thracians","Puru","Danes","Saxons","Varangians"];
+const ES = {Aztecs:"Aztecas",Berbers:"Bereberes",Britons:"Britanos",Burmese:"Birmanos",Byzantines:"Bizantinos",Celts:"Celtas",Chinese:"Chinos",Ethiopians:"Etíopes",Franks:"Francos",Goths:"Godos",Huns:"Hunos",Incas:"Incas",Indians:"Indios",Italians:"Italianos",Japanese:"Japoneses",Khmer:"Jemeres",Koreans:"Coreanos",Magyars:"Magiares",Malay:"Malayos",Malians:"Malíes",Mayans:"Mayas",Mongols:"Mongoles",Persians:"Persas",Portuguese:"Portugueses",Saracens:"Sarracenos",Slavs:"Eslavos",Spanish:"Españoles",Teutons:"Teutones",Turks:"Turcos",Vietnamese:"Vietnamitas",Vikings:"Vikingos",Bulgarians:"Búlgaros",Cumans:"Cumanos",Lithuanians:"Lituanos",Tatars:"Tártaros",Burgundians:"Borgoñones",Sicilians:"Sicilianos",Bohemians:"Bohemios",Poles:"Polacos",Bengalis:"Bengalíes",Dravidians:"Drávidas",Gurjaras:"Gurjaras",Hindustanis:"Indostanos",Romans:"Romanos",Armenians:"Armenios",Georgians:"Georgianos",Achaemenids:"Aqueménidas",Athenians:"Atenienses",Spartans:"Espartanos",Shu:"Shu",Wu:"Wu",Wei:"Wei",Jurchens:"Yurchen",Khitans:"Kitanes",Macedonians:"Macedonios",Thracians:"Tracios",Puru:"Puru",Mapuche:"Mapuches",Muisca:"Muiscas",Tupi:"Tupís",Danes:"Daneses",Saxons:"Sajones",Varangians:"Varegos"};
+const ALIASES = {Hindustanis:["hindustanos","hindustani"],Jurchens:["jurchen","jurchenes","yurchenes"],Khitans:["khitan","kitan","khitanes"],Khmer:["jemer","khmers"],Malay:["malasios","malayo"],Tupi:["tupi","tupies"],Bohemians:["bohemos"],Gurjaras:["gurjara"],Dravidians:["dravidas","dravidianos"],Bengalis:["bengalies","bengali"],Burgundians:["burgundios"],Malians:["malienses"],Byzantines:["bizas","bizantino"],Britons:["britones"],Saracens:["sarras"]};
+const HIDDEN_IDS = ["HIDDEN_PICK","HIDDEN_BAN","HIDDEN_SNIPE","HIDDEN_STEAL","HIDDEN","RANDOM"];
+const REST_KEYS = ["resto","otros","default","todos","general","rest","any"];
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const norm = s => String(s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().replace(/[^a-z0-9]/g,"");
+const load = (k,d) => { try{ const v=localStorage.getItem("eh-draft-"+k); return v===null?d:JSON.parse(v); }catch(e){ return d; } };
+const save = (k,v) => { try{ localStorage.setItem("eh-draft-"+k, JSON.stringify(v)); }catch(e){ /* sin almacenamiento */ } };
+const isCiv = id => CIVS.includes(id);
+const civLabel = c => ES[c] || c;
+const isRestKey = left => REST_KEYS.includes(norm(left)) || left.trim()==="*";
+
+const LOOK = {};
+CIVS.forEach(c => [c, ES[c], ...(ALIASES[c]||[])].forEach(n => { LOOK[norm(n)] = c; }));
+function civFromText(t){
+  const n = norm(t); if(!n) return null;
+  if(LOOK[n]) return LOOK[n];
+  for(const cut of ["es","s"]){
+    if(n.endsWith(cut) && LOOK[n.slice(0,-cut.length)]) return LOOK[n.slice(0,-cut.length)];
+    if(LOOK[n+cut]) return LOOK[n+cut];
+  }
+  return null;
+}
+function decodeCivs(enc){
+  if(enc==="e3e3fffffffefff") return CIVS.filter(c=>!NOT_ACTIVE.includes(c));
+  const bits=[];
+  for(const ch of String(enc)){ const n=parseInt(ch,16); if(isNaN(n)) return []; n.toString(2).padStart(4,"0").split("").forEach(b=>bits.push(b==="1")); }
+  const out=[]; bits.forEach((b,i)=>{ const c=CIVS[bits.length-1-i]; if(b && c) out.push(c); }); return out;
+}
+
+/* ---------- Estado ---------- */
+const D = {
+  nick: load("nick",""), side: load("side","auto"), unique: load("unique",true), prefs: load("prefs",""),
+  linked: load("linked",""), linkedIsDraft: load("linkedIsDraft",false), poolMaps: load("poolMaps",[]), series: load("series",[]),
+  civCode: load("civCode",""),
+  civSock:null, civDraft:null, civState:"", civDone:false,
+  mapSock:null, mapDone:false,
+  status:"", editingLink:false
+};
+
+/* ---------- Lectura de drafts de aoe2cm ---------- */
+function parseCode(text){
+  const t=String(text||"").trim(); if(!t) return null;
+  const m=t.match(/(draft|spectate|preset)\/([A-Za-z0-9_-]+)/);
+  if(m) return {type:m[1]==="preset"?"preset":"draft", id:m[2]};
+  const id=t.replace(/[^A-Za-z0-9_-]/g,""); return id?{type:"any",id}:null;
+}
+function optionKind(o){
+  const img=JSON.stringify(o.imageUrls||{}).toLowerCase(), tag=`${o.name||""} ${o.i18nPrefix||""}`.toLowerCase();
+  if(/\/images\/(aomgods|aoe1|aoe3|aoe4|aoe4-maps)\//.test(img) || /aomgods|aoe1|aoe3|aoe4/.test(tag)) return "other";
+  if(isCiv(o.id)) return "civ";
+  if(img.includes("/maps/") || !o.i18nPrefix) return "map";
+  return "other";
+}
+function poolOptions(preset, poolId){
+  const pools=preset.pools||[], pool=pools.find(p=>p.id===(poolId||"default"))||pools[0], src=pool||preset;
+  if(Array.isArray(src.draftOptions) && src.draftOptions.length) return src.draftOptions.map(o=>({id:o.id, name:o.name||o.id, imageUrls:o.imageUrls, i18nPrefix:o.i18nPrefix}));
+  if(src.encodedCivilisations) return decodeCivs(src.encodedCivilisations).map(c=>({id:c,name:c}));
+  return CIVS.filter(c=>!NOT_ACTIVE.includes(c)).map(c=>({id:c,name:c}));
+}
+function analyse(d){
+  const preset=d.preset||{}, turns=preset.turns||[], events=d.events||[], used=new Array(turns.length).fill(false), cache={};
+  const optsFor = p => cache[p||"default"] || (cache[p||"default"]=poolOptions(preset,p));
+  const kindOf = p => { const n={civ:0,map:0,other:0}; optsFor(p).forEach(o=>n[optionKind(o)]++); return n.civ>=n.map&&n.civ>=n.other?"civ":(n.map>=n.other?"map":"other"); };
+  const choosing = t => ["PICK","BAN","SNIPE","STEAL"].includes(t.action);
+  const actions=[]; let ptr=0;
+  for(const ev of events){
+    const isAdmin=!ev.actionType;
+    while(ptr<turns.length && used[ptr]) ptr++;
+    // Revelados y pausas no siempre quedan registrados: si llega un evento de jugador, se dan por hechos.
+    if(!isAdmin && ev.player!=="NONE") while(ptr<turns.length && (used[ptr] || (turns[ptr].player==="NONE" && !choosing(turns[ptr])))){ used[ptr]=true; ptr++; }
+    let idx=-1;
+    for(let i=ptr;i<Math.min(turns.length,ptr+4);i++){
+      if(used[i]) continue;
+      const t=turns[i], who=ev.executingPlayer&&ev.executingPlayer!=="NONE"?ev.executingPlayer:ev.player;
+      if(isAdmin ? t.player==="NONE" : (t.executingPlayer||t.player)===who && (t.action||"").toLowerCase()===ev.actionType){ idx=i; break; }
+      if(!t.parallel) break;
+    }
+    if(idx===-1) idx=ptr<turns.length?ptr:-1;
+    if(idx>=0) used[idx]=true;
+    const t=idx>=0?turns[idx]:{};
+    if(["pick","ban","snipe","steal"].includes(ev.actionType))
+      actions.push({type:ev.actionType, player:ev.player, id:ev.chosenOptionId, hidden:HIDDEN_IDS.includes(ev.chosenOptionId), exclusivity:t.exclusivity||"EXCLUSIVE", poolId:t.poolId||"default", kind:kindOf(t.poolId)});
+  }
+  const next=[];
+  for(let i=0;i<turns.length;i++){
+    if(used[i]) continue;
+    if(turns[i].player==="NONE"){ if(!next.length) next.push({...turns[i],kind:"admin"}); break; }
+    next.push({...turns[i],kind:kindOf(turns[i].poolId)});
+    if(!turns[i].parallel) break;
+  }
+  const kinds=new Set(turns.filter(t=>t.player!=="NONE").map(t=>kindOf(t.poolId)));
+  return {turns, actions, next, kinds, optsFor};
+}
+function sideState(a, kind, me){
+  const opp=me==="HOST"?"GUEST":"HOST", picks={HOST:[],GUEST:[],NONE:[]};
+  const blocked=new Set(), lost=new Set();
+  for(const x of a.actions.filter(y=>y.kind===kind)){
+    if(x.hidden) continue;
+    const other=x.player==="HOST"?"GUEST":"HOST";
+    if(x.player==="NONE"){ if(x.type==="pick") picks.NONE.push(x.id); blocked.add(x.id); continue; }
+    if(x.type==="pick"){ picks[x.player].push(x.id); if(x.exclusivity==="GLOBAL") blocked.add(x.id); }
+    else if(x.type==="ban"){ if(x.exclusivity==="GLOBAL" || other===me) blocked.add(x.id); }
+    else if(x.type==="snipe"){ const i=picks[other].indexOf(x.id); if(i>=0) picks[other].splice(i,1); if(other===me) lost.add(x.id); }
+    else if(x.type==="steal"){ const i=picks[other].indexOf(x.id); if(i>=0){ picks[other].splice(i,1); picks[x.player].push(x.id); } if(other===me) lost.add(x.id); }
+  }
+  return {me, opp, picks, blocked, lost};
+}
+function whoAmI(d){
+  if(D.side==="HOST"||D.side==="GUEST") return {side:D.side, sure:true};
+  const n=norm(D.nick);
+  if(n && norm(d.nameHost)===n) return {side:"HOST", sure:true};
+  if(n && norm(d.nameGuest)===n) return {side:"GUEST", sure:true};
+  return {side:"HOST", sure:false};
+}
+function playedMaps(d){
+  const a=analyse(d); if(!a.kinds.has("map")) return [];
+  const st=sideState(a,"map",whoAmI(d).side), names={};
+  a.turns.forEach(t=>a.optsFor(t.poolId).forEach(o=>{ names[o.id]=o.name; }));
+  return [...st.picks[st.me], ...st.picks[st.opp], ...st.picks.NONE].map(id=>names[id]||id);
+}
+function poolMapNames(preset){
+  const out=[], add=o=>{ if(o&&o.id&&optionKind(o)==="map"&&!HIDDEN_IDS.includes(o.id)){ const n=o.name||o.id; if(!out.includes(n)) out.push(n); } };
+  (preset.pools||[]).forEach(p=>(p.draftOptions||[]).forEach(add)); (preset.draftOptions||[]).forEach(add);
+  return out;
+}
+function openSock(id, onState){
+  const s=io(CM,{query:{draftId:id}, transports:["websocket"], reconnection:true});
+  s.on("draft_state", d=>onState(d,false));
+  s.on("replay", d=>onState(d,true));
+  s.on("playerEvent", ev=>onState(null,false,ev));
+  s.on("adminEvent", ae=>onState(null,false,null,ae));
+  return s;
+}
+function draftOnce(id){
+  return new Promise((res,rej)=>{
+    if(typeof io!=="function"){ rej(new Error("sin socket")); return; }
+    const s=io(CM,{query:{draftId:id}, transports:["websocket"], reconnection:false, forceNew:true});
+    const done=(v,e)=>{ clearTimeout(to); try{ s.disconnect(); }catch(x){} e?rej(e):res(v); };
+    const to=setTimeout(()=>done(null,new Error("tiempo agotado")),9000);
+    s.on("draft_state", d=>done(d)); s.on("replay", d=>done(d));
+    s.on("message", m=>done(null,new Error(String(m)))); s.on("connect_error", ()=>done(null,new Error("sin conexión")));
+  });
+}
+// Aplica un evento en directo sobre el estado guardado de un draft.
+function applyLive(cur, d, ev, ae){
+  if(d) return d;
+  if(!cur) return cur;
+  if(ev) cur.events=[...(cur.events||[]), ev];
+  if(ae){ const marker={player:ae.player, action:ae.action}; cur.events=Array.isArray(ae.events)?[...ae.events, marker]:[...(cur.events||[]), marker]; }
+  return cur;
+}
+
+/* ---------- Preferencias ---------- */
+function parsePrefs(text){
+  const maps={}; let rest=[];
+  for(const raw of String(text).split("\n")){
+    const line=raw.trim(); if(!line||line.startsWith("#")||!line.includes(":")) continue;
+    const i=line.indexOf(":"), left=line.slice(0,i), civs=[];
+    line.slice(i+1).split(/[,;/]+/).forEach(c=>{ const v=civFromText(c); if(v && !civs.includes(v)) civs.push(v); });
+    if(isRestKey(left)) rest=civs; else maps[norm(left)]=civs;
+  }
+  return {maps, rest};
+}
+function listFor(p, map){
+  const k=norm(map);
+  if(p.maps[k]) return {civs:p.maps[k], own:true};
+  const hit=Object.keys(p.maps).find(m=>m && (k.includes(m)||m.includes(k)));
+  return hit ? {civs:p.maps[hit], own:true} : {civs:p.rest, own:false};
+}
+function score(p, map, civ){
+  const l=listFor(p,map), i=l.civs.indexOf(civ);
+  if(i<0){ const f=p.rest.indexOf(civ); return f<0?0:Math.max(1,30-f*2); }
+  return l.own ? Math.max(5,100-i*6) : Math.max(1,30-i*2);
+}
+function assign(p, maps, civs){
+  const res={};
+  if(!D.unique){ maps.forEach(m=>{ let best=null; civs.forEach(c=>{ const s=score(p,m,c); if(s>0&&(!best||s>best.s)) best={c,s}; }); res[m]=best; }); return res; }
+  const pairs=[]; maps.forEach(m=>civs.forEach(c=>{ const s=score(p,m,c); if(s>0) pairs.push({m,c,s}); }));
+  pairs.sort((x,y)=>y.s-x.s); const usedC=new Set();
+  pairs.forEach(q=>{ if(!res[q.m] && !usedC.has(q.c)){ res[q.m]={c:q.c,s:q.s}; usedC.add(q.c); } });
+  return res;
+}
+const total = r => Object.values(r).reduce((a,v)=>a+(v?v.s:0),0);
+function rawLines(){
+  const out={};
+  String(D.prefs).split("\n").forEach(line=>{ const l=line.trim(); if(!l||l.startsWith("#")||!l.includes(":")) return; const i=l.indexOf(":"), left=l.slice(0,i); out[isRestKey(left)?"resto":norm(left)]=l.slice(i+1).trim(); });
+  return out;
+}
+function setLine(map, value){
+  const rest=map==="Resto", lines=String(D.prefs).split("\n"), v=value.trim();
+  const idx=lines.findIndex(line=>{ const l=line.trim(); if(!l||l.startsWith("#")||!l.includes(":")) return false; const left=l.slice(0,l.indexOf(":")); return rest?isRestKey(left):(!isRestKey(left)&&norm(left)===norm(map)); });
+  if(idx>=0){ if(v) lines[idx]=`${map}: ${v}`; else lines.splice(idx,1); } else if(v) lines.push(`${map}: ${v}`);
+  D.prefs=lines.filter((l,i)=>l.trim()||i<lines.length-1).join("\n").replace(/^\n+/,""); save("prefs",D.prefs);
+}
+function checkLine(v){
+  const items=String(v).split(/[,;/]+/).map(x=>x.trim()).filter(Boolean), bad=items.filter(x=>!civFromText(x));
+  if(bad.length) return `<div class="dr-bad">No reconozco: ${esc(bad.join(", "))}</div>`;
+  return items.length ? `<div class="dr-ok">✓ ${items.map(x=>esc(civLabel(civFromText(x)))).join(", ")}</div>` : "";
+}
+
+/* ---------- Vistas ---------- */
+const chip = (t,cls) => `<span class="dr-chip ${cls||""}">${esc(t)}</span>`;
+function renderLive(){
+  const box=$("#drLive"), linkEl=$("#drCivLink");
+  linkEl.innerHTML = D.civCode ? `<span class="note"><span class="dr-dot ${D.civState==="en directo"?"on":""}"></span>${esc(D.civState||"")}</span> <a class="btnlink" href="${CM}/draft/${encodeURIComponent(D.civCode)}" target="_blank" rel="noopener">Abrir en aoe2cm ↗</a>` : "";
+  if(!D.civCode){ box.innerHTML=`<div class="empty"><strong>Sigue tu draft de civis</strong>Pega su código o link cuando empiece. Aquí verás tus civis para cada mapa de la serie y cuál te conviene pickear.</div>`; return; }
+  const d=D.civDraft;
+  if(!d){ box.innerHTML=`<p class="note">${D.civState==="no existe"?"No encuentro ese draft. Revisa el código.":"Conectando con aoe2cm…"}</p>`; return; }
+  const a=analyse(d);
+  if(!a.kinds.has("civ")){
+    if(a.kinds.has("map")){
+      const pm=playedMaps(d);
+      box.innerHTML=`<div class="banner" style="margin:0">Este es un draft de <b>mapas</b>, no de civis.${D.linked===D.civCode?"":` <button class="link" data-act="useAsMaps">Usarlo como draft de mapas</button>`}</div>`+
+        (pm.length?`<div class="dr-chips">${pm.map(m=>chip(m,"mine")).join("")}</div>`:"");
+    } else box.innerHTML=`<p class="note">Este draft no es de civis de AoE2.</p>`;
+    return;
+  }
+  const who=whoAmI(d), me=who.side, st=sideState(a,"civ",me), p=parsePrefs(D.prefs), maps=D.series;
+  const poolIds=[...new Set(a.turns.filter(t=>t.player!=="NONE").map(t=>t.poolId||"default"))];
+  const pool=new Set(poolIds.flatMap(id=>a.optsFor(id).map(o=>o.id)).filter(isCiv));
+  const mine=st.picks[me], picked=c=>mine.includes(c);
+  const gone=c=>!picked(c) && (!pool.has(c) || st.blocked.has(c) || st.picks[st.opp].includes(c) || st.picks.NONE.includes(c) || st.lost.has(c));
+  let h="";
+  if(!who.sure) h+=`<div class="banner" style="margin:0">Pon tu nick (${esc(d.nameHost||"?")} o ${esc(d.nameGuest||"?")}) para saber qué picks son tuyos.</div>`;
+  if(!maps.length){ box.innerHTML=h+`<div class="empty"><strong>Faltan los mapas de la serie</strong>Pega el draft de mapas en «Preparar».</div>`; return; }
+  let rec=null;
+  const finished = D.civDone || (a.turns.length>0 && !a.next.length);
+  const myTurn=!finished && a.next.find(t=>t.kind==="civ" && t.action==="PICK" && (t.executingPlayer||t.player)===me);
+  if(myTurn){
+    const base=total(assign(p,maps,mine));
+    maps.forEach(m=>listFor(p,m).civs.forEach(c=>{
+      if(gone(c)||picked(c)) return;
+      const r=assign(p,maps,[...mine,c]), gain=total(r)-base, forMap=Object.keys(r).find(k=>r[k]&&r[k].c===c);
+      if(gain>0 && (!rec||gain>rec.gain)) rec={c,gain,forMap};
+    }));
+    h+=`<div class="dr-turn"><b>Te toca pickear:</b> ${rec?`<span class="c">★ ${esc(civLabel(rec.c))}</span>${rec.forMap?` <span class="note">para ${esc(rec.forMap)}</span>`:""}`:`<span class="note">ninguna civi de tus listas mejora tus mapas</span>`}</div>`;
+  } else if(finished) h+=`<p class="note" style="margin:0">Draft terminado.</p>`;
+  h+=`<div class="tbl"><table class="dr-maps"><tbody>`;
+  maps.forEach(m=>{
+    const civs=listFor(p,m).civs.filter(c=>!gone(c));
+    const cells=civs.map(c=>picked(c)?chip("✓ "+civLabel(c),"mine"):(rec&&rec.c===c?chip("★ "+civLabel(c),"rec"):chip(civLabel(c)))).join("");
+    h+=`<tr><td class="m">${esc(m)}</td><td>${cells?`<div class="dr-chips">${cells}</div>`:`<span class="note">${listFor(p,m).civs.length?"No te queda ninguna civi de tu lista":"Sin lista: añádela en «Preparar»"}</span>`}</td></tr>`;
+  });
+  box.innerHTML=h+`</tbody></table></div>`;
+}
+function renderLinkBox(){
+  const box=$("#drLinkBox");
+  if(D.linked && !D.editingLink){
+    box.innerHTML=`<div class="row between"><span class="note">Draft de mapas: <b style="color:var(--fg)">${esc(D.linked)}</b>${D.linkedIsDraft&&!D.mapDone&&D.mapSock?` <span class="dr-dot on" style="margin-left:6px"></span>en directo`:""}</span><span class="row" style="gap:8px">${D.linkedIsDraft?`<a class="btnlink" href="${CM}/draft/${encodeURIComponent(D.linked)}" target="_blank" rel="noopener">Abrir ↗</a>`:""}<button data-act="changeLink">Cambiar</button></span></div>`+
+      (D.status?`<p class="note" style="margin:6px 0 0">${esc(D.status)}</p>`:"");
+  } else {
+    box.innerHTML=`<label for="drMapCode">Draft de mapas</label><div class="dr-in" style="margin-top:4px"><input id="drMapCode" placeholder="Código o link (ej. IpRWB)" autocomplete="off"><button class="primary" data-act="loadMaps">Cargar</button></div>`+
+      (D.status?`<p class="note" style="margin:6px 0 0">${esc(D.status)}</p>`:"");
+  }
+}
+function renderPrep(){
+  const box=$("#drPrep"), raw=rawLines();
+  const maps=D.series.length?D.series:D.poolMaps;
+  if(!maps.length){ box.innerHTML=D.linked?"":`<p class="note" style="margin:0">Pega el código del draft de mapas del torneo. Saldrán sus mapas para que pongas tus civis de mejor a peor.</p>`; return; }
+  let h=`<h3 style="margin:0 0 4px">${D.series.length?"Tus civis para los mapas de la serie":"Tus civis por mapa"}</h3><table class="dr-prep"><tbody>`;
+  maps.forEach(m=>{ const v=raw[norm(m)]||""; h+=`<tr><td class="m">${esc(m)}</td><td><input data-map="${esc(m)}" value="${esc(v)}" placeholder="Francos, Mongoles…" aria-label="Civis para ${esc(m)}"><div class="chk">${checkLine(v)}</div></td></tr>`; });
+  h+=`</tbody></table>`;
+  box.innerHTML=h;
+}
+function renderAll(){ renderLinkBox(); renderPrep(); renderLive(); syncText(); }
+function syncText(){ const t=$("#drText"); if(document.activeElement!==t) t.value=D.prefs; }
+
+/* ---------- Conexiones ---------- */
+function setSeries(list, from){
+  if(!list.length || list.join("\n")===D.series.join("\n")) return false;
+  D.series=list; save("series",list); return true;
+}
+function connectLinked(){
+  if(D.mapSock){ try{ D.mapSock.disconnect(); }catch(e){} D.mapSock=null; }
+  D.mapDone=false;
+  if(!D.linked || !D.linkedIsDraft || typeof io!=="function") return;
+  let cur=null;
+  D.mapSock=openSock(D.linked,(d,done,ev,ae)=>{
+    cur=applyLive(cur,d,ev,ae); if(!cur) return;
+    if(done){ D.mapDone=true; try{ D.mapSock.disconnect(); }catch(e){} D.mapSock=null; }
+    const pool=poolMapNames(cur.preset||{});
+    if(pool.length && JSON.stringify(pool)!==JSON.stringify(D.poolMaps)){ D.poolMaps=pool; save("poolMaps",pool); }
+    if(setSeries(playedMaps(cur))){ D.status=`Mapas de la serie: ${D.series.join(", ")}.`; renderPrep(); renderLive(); }
+    renderLinkBox();
+  });
+}
+function connectCiv(code){
+  if(D.civSock){ try{ D.civSock.disconnect(); }catch(e){} D.civSock=null; }
+  D.civCode=code; save("civCode",code); D.civDraft=null; D.civDone=false; D.civState=code?"conectando…":"";
+  $("#drCivCode").value=code||"";
+  if(code && typeof io==="function"){
+    D.civSock=openSock(code,(d,done,ev,ae)=>{
+      D.civDraft=applyLive(D.civDraft,d,ev,ae);
+      if(done){ D.civDone=true; D.civState="terminado"; try{ D.civSock.disconnect(); }catch(e){} }
+      else if(D.civState!=="terminado") D.civState="en directo";
+      renderLive();
+    });
+    D.civSock.on("message", ()=>{ D.civState="no existe"; renderLive(); });
+    D.civSock.on("connect_error", ()=>{ if(!D.civDraft){ D.civState="sin conexión"; renderLive(); } });
+  } else if(code) D.civState="sin conexión";
+  renderLive();
+}
+async function loadMaps(text){
+  const c=parseCode(text);
+  if(!c){ D.status="Pega un código o un link de aoe2cm."; renderLinkBox(); return; }
+  D.status="Cargando "+c.id+"…"; renderLinkBox();
+  let preset=null, full=null;
+  if(c.type!=="draft"){ try{ const r=await fetch(`${CM}/api/preset/${encodeURIComponent(c.id)}`); if(r.ok) preset=await r.json(); }catch(e){ /* se prueba como draft */ } }
+  if(!preset && c.type!=="preset"){ try{ full=await draftOnce(c.id); preset=full&&full.preset; }catch(e){ /* no existe */ } }
+  if(!preset){ D.status=`No encuentro «${c.id}» en aoe2cm.`; renderLinkBox(); return; }
+  const pool=poolMapNames(preset);
+  if(!pool.length){ D.status=`«${c.id}» no tiene mapas de AoE2. ¿Es el draft de civis?`; renderLinkBox(); return; }
+  D.linked=c.id; save("linked",c.id); D.linkedIsDraft=!!full; save("linkedIsDraft",!!full);
+  D.poolMaps=pool; save("poolMaps",pool);
+  const pm=full?playedMaps(full):[];
+  D.series=pm; save("series",pm);
+  D.status = pm.length ? `Mapas de la serie: ${pm.join(", ")}.` : (full?"Aún no hay mapas elegidos: se cogerán solos cuando se elijan.":`${pool.length} mapas del preset.`);
+  D.editingLink=false; renderAll(); connectLinked();
+}
+
+/* ---------- Eventos ---------- */
+$("#v-draft").addEventListener("click", e=>{
+  const b=e.target.closest("[data-act]"); if(!b) return;
+  const act=b.dataset.act;
+  if(act==="loadMaps") loadMaps($("#drMapCode").value);
+  if(act==="changeLink"){ D.editingLink=true; D.status=""; renderLinkBox(); $("#drMapCode")?.focus(); }
+  if(act==="useAsMaps") loadMaps(D.civCode).then(()=>connectCiv(""));
+});
+$("#v-draft").addEventListener("keydown", e=>{
+  if(e.key!=="Enter") return;
+  if(e.target.id==="drMapCode"){ e.preventDefault(); loadMaps(e.target.value); }
+  if(e.target.id==="drCivCode"){ e.preventDefault(); const c=parseCode(e.target.value); connectCiv(c?c.id:""); }
+});
+$("#drCivGo").onclick = ()=>{ const c=parseCode($("#drCivCode").value); connectCiv(c?c.id:""); };
+let tmr=null;
+$("#drPrep").addEventListener("input", e=>{
+  const m=e.target.dataset.map; if(!m) return;
+  setLine(m, e.target.value);
+  e.target.parentElement.querySelector(".chk").innerHTML=checkLine(e.target.value);
+  syncText(); clearTimeout(tmr); tmr=setTimeout(renderLive,250);
+});
+$("#drText").addEventListener("input", e=>{ D.prefs=e.target.value; save("prefs",D.prefs); clearTimeout(tmr); tmr=setTimeout(()=>{ renderPrep(); renderLive(); },400); });
+$("#drNick").value=D.nick; $("#drSide").value=D.side; $("#drUnique").checked=!!D.unique;
+$("#drNick").addEventListener("input", e=>{ D.nick=e.target.value; save("nick",D.nick); renderLive(); });
+$("#drSide").onchange = e=>{ D.side=e.target.value; save("side",D.side); renderLive(); };
+$("#drUnique").onchange = e=>{ D.unique=e.target.checked; save("unique",D.unique); renderLive(); };
+
+// Nicks de la liga como sugerencias.
+function fillNicks(){
+  try{ const pl=(typeof S!=="undefined"&&S.players)||{}; const ns=[...new Set(Object.values(pl).map(p=>p.nick).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"es"));
+    $("#drNicks").innerHTML=ns.map(n=>`<option value="${esc(n)}">`).join(""); }catch(e){}
+}
+setTimeout(fillNicks,3000); setTimeout(fillNicks,10000);
+
+// Enlaces directos: #draft?mapas=CODIGO&civis=CODIGO
+function fromHash(){
+  const [base, q]=location.hash.slice(1).split("?"); if(base!=="draft" || !q) return;
+  const ps=new URLSearchParams(q), m=parseCode(ps.get("mapas")), c=parseCode(ps.get("civis"));
+  if(m && m.id!==D.linked) loadMaps(m.id);
+  if(c && c.id!==D.civCode) connectCiv(c.id);
+}
+addEventListener("hashchange", fromHash);
+
+renderAll();
+connectLinked();
+if(D.civCode) connectCiv(D.civCode);
+fromHash();
+})();
 </script>
 
 </body>
