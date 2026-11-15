@@ -863,8 +863,8 @@ function optionKind(o){
   const img=JSON.stringify(o.imageUrls||{}).toLowerCase(), tag=`${o.name||""} ${o.i18nPrefix||""}`.toLowerCase();
   if(/\/images\/(aomgods|aoe1|aoe3|aoe4|aoe4-maps)\//.test(img) || /aomgods|aoe1|aoe3|aoe4/.test(tag)) return "other";
   if(isCiv(o.id)) return "civ";
-  if(img.includes("/maps/") || !o.i18nPrefix) return "map";
-  return "other";
+  // Todo lo demás son mapas (estándar o personalizados con imagen propia).
+  return "map";
 }
 function poolOptions(preset, poolId){
   const pools=preset.pools||[], pool=pools.find(p=>p.id===(poolId||"default"))||pools[0], src=pool||preset;
@@ -1030,14 +1030,18 @@ function renderLive(){
     } else box.innerHTML=`<p class="note">Este draft no es de civis de AoE2.</p>`;
     return;
   }
-  const who=whoAmI(d), me=who.side, st=sideState(a,"civ",me), p=parsePrefs(D.prefs), maps=D.series;
+  // Si el mismo draft trae los mapas (mapas y civis juntos), manda lo que se ha elegido en él.
+  const own=a.kinds.has("map")?playedMaps(d):[];
+  if(own.length && D.linked!==D.civCode){ D.linked=D.civCode; save("linked",D.civCode); D.linkedIsDraft=true; save("linkedIsDraft",true); const pool=poolMapNames(d.preset||{}); if(pool.length){ D.poolMaps=pool; save("poolMaps",pool); } D.status=""; setTimeout(()=>{ renderLinkBox(); renderPrep(); },0); }
+  if(own.length && setSeries(own)) setTimeout(renderPrep,0);
+  const who=whoAmI(d), me=who.side, st=sideState(a,"civ",me), p=parsePrefs(D.prefs), maps=a.kinds.has("map")?own:D.series;
   const poolIds=[...new Set(a.turns.filter(t=>t.player!=="NONE").map(t=>t.poolId||"default"))];
   const pool=new Set(poolIds.flatMap(id=>a.optsFor(id).map(o=>o.id)).filter(isCiv));
   const mine=st.picks[me], picked=c=>mine.includes(c);
   const gone=c=>!picked(c) && (!pool.has(c) || st.blocked.has(c) || st.picks[st.opp].includes(c) || st.picks.NONE.includes(c) || st.lost.has(c));
   let h="";
   if(!who.sure) h+=`<div class="banner" style="margin:0">Pon tu nick (${esc(d.nameHost||"?")} o ${esc(d.nameGuest||"?")}) para saber qué picks son tuyos.</div>`;
-  if(!maps.length){ box.innerHTML=h+`<div class="empty"><strong>Faltan los mapas de la serie</strong>Pega el draft de mapas en «Preparar».</div>`; return; }
+  if(!maps.length){ box.innerHTML=h+(a.kinds.has("map")?`<div class="empty"><strong>Aún no se han elegido los mapas</strong>En cuanto se elijan en este draft, saldrán aquí con tus civis.</div>`:`<div class="empty"><strong>Faltan los mapas de la serie</strong>Pega el draft de mapas en «Preparar».</div>`); return; }
   let rec=null;
   const finished = D.civDone || (a.turns.length>0 && !a.next.length);
   const myTurn=!finished && a.next.find(t=>t.kind==="civ" && t.action==="PICK" && (t.executingPlayer||t.player)===me);
