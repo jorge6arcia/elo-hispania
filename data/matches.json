@@ -3416,5 +3416,61 @@
   ],
   "ts": 1794772908000,
   "winner": 1
+ },
+ "aoe-521453558": {
+  "aoeMatchId": 521453558,
+  "civs": {
+   "p-17557006": "Italians",
+   "p-19572031": "Franks",
+   "p-21392940": "Vikings",
+   "p-3403169": "Koreans",
+   "p-36653": "Georgians",
+   "p-4712135": "Wei"
+  },
+  "date": "2026-11-15",
+  "durationSec": 1433,
+  "lobby": "CW7 - MANKO vs DONQUIS",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-4712135",
+   "p-21392940",
+   "p-3403169"
+  ],
+  "team2": [
+   "p-17557006",
+   "p-19572031",
+   "p-36653"
+  ],
+  "ts": 1794774890000,
+  "winner": 1
+ },
+ "aoe-521454413": {
+  "aoeMatchId": 521454413,
+  "civs": {
+   "p-10721552": "Malay",
+   "p-10728048": "Georgians",
+   "p-18947729": "Chinese",
+   "p-2871715": "Spanish",
+   "p-382573": "Vietnamese",
+   "p-4269127": "Bengalis"
+  },
+  "date": "2026-11-15",
+  "durationSec": 1769,
+  "lobby": "CW - DKtaratas vs TdB.Caimanes",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-4269127",
+   "p-18947729",
+   "p-382573"
+  ],
+  "team2": [
+   "p-10721552",
+   "p-10728048",
+   "p-2871715"
+  ],
+  "ts": 1794774950000,
+  "winner": 1
  }
 }
