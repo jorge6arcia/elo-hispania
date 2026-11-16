@@ -3640,5 +3640,89 @@
   ],
   "ts": 1794780366000,
   "winner": 1
+ },
+ "aoe-521677601": {
+  "aoeMatchId": 521677601,
+  "civs": {
+   "p-1136264": "Maya",
+   "p-1502305": "Magyars",
+   "p-2286345": "Ethiopians",
+   "p-4299412": "Varangians",
+   "p-6400696": "Armenians",
+   "p-8569019": "Bulgarians"
+  },
+  "date": "2026-11-16",
+  "durationSec": 488,
+  "lobby": "CW 7 Cachopos Voladores vs TdB Bueyes",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1136264",
+   "p-2286345",
+   "p-1502305"
+  ],
+  "team2": [
+   "p-8569019",
+   "p-6400696",
+   "p-4299412"
+  ],
+  "ts": 1794861616000,
+  "winner": 2
+ },
+ "aoe-521679736": {
+  "aoeMatchId": 521679736,
+  "civs": {
+   "p-15019418": "Japanese",
+   "p-15770941": "Persians",
+   "p-1937895": "Muisca",
+   "p-2836315": "Huns",
+   "p-4048309": "Malians",
+   "p-5029300": "Byzantines"
+  },
+  "date": "2026-11-16",
+  "durationSec": 913,
+  "lobby": "CW 7 ",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-15019418",
+   "p-1937895",
+   "p-15770941"
+  ],
+  "team2": [
+   "p-4048309",
+   "p-2836315",
+   "p-5029300"
+  ],
+  "ts": 1794861929000,
+  "winner": 1
+ },
+ "aoe-521681783": {
+  "aoeMatchId": 521681783,
+  "civs": {
+   "p-1136264": "Koreans",
+   "p-1472624": "Vietnamese",
+   "p-2286345": "Portuguese",
+   "p-4299412": "Vikings",
+   "p-6400696": "Dravidians",
+   "p-8569019": "Italians"
+  },
+  "date": "2026-11-16",
+  "durationSec": 849,
+  "lobby": "[Rematch] CW 7 Cachopos Voladores vs TdB Bueyes",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1136264",
+   "p-1472624",
+   "p-2286345"
+  ],
+  "team2": [
+   "p-6400696",
+   "p-4299412",
+   "p-8569019"
+  ],
+  "ts": 1794862292000,
+  "winner": 1
  }
 }

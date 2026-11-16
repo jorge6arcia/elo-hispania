@@ -1481,6 +1481,19 @@
   "profileId": "429847",
   "region": ""
  },
+ "p-4299412": {
+  "approved": true,
+  "auto": true,
+  "clan": "TdBar",
+  "country": "es",
+  "createdAt": 1794863982704,
+  "eloStart": 1418,
+  "eloStartDate": "2026-11-16T15:17:46.000Z",
+  "eloStartSource": "rm_1v1",
+  "nick": "TdB. OJETE EL BONDADOSO",
+  "profileId": "4299412",
+  "region": ""
+ },
  "p-4323388": {
   "approved": true,
   "auto": true,
@@ -1832,6 +1845,19 @@
   "profileId": "6347572",
   "region": ""
  },
+ "p-6400696": {
+  "approved": true,
+  "auto": true,
+  "clan": "FyB1",
+  "country": "es",
+  "createdAt": 1794863982704,
+  "eloStart": 1617,
+  "eloStartDate": "2026-11-06T21:16:53.000Z",
+  "eloStartSource": "rm_1v1",
+  "nick": "The Vill's Gambit",
+  "profileId": "6400696",
+  "region": ""
+ },
  "p-6433681": {
   "approved": true,
   "auto": true,
@@ -1973,6 +1999,19 @@
   "eloStartSource": "rm_1v1",
   "nick": "TdB.Espisao",
   "profileId": "8487446",
+  "region": ""
+ },
+ "p-8569019": {
+  "approved": true,
+  "auto": true,
+  "clan": "TdBar",
+  "country": "es",
+  "createdAt": 1794863982704,
+  "eloStart": 1461,
+  "eloStartDate": "2026-11-15T05:05:29.000Z",
+  "eloStartSource": "rm_1v1",
+  "nick": "TdB.Julitroll",
+  "profileId": "8569019",
   "region": ""
  },
  "p-861763": {
