@@ -3864,5 +3864,117 @@
   ],
   "ts": 1794948739000,
   "winner": 2
+ },
+ "aoe-521901289": {
+  "aoeMatchId": 521901289,
+  "civs": {
+   "p-242561": "Vikings",
+   "p-271761": "Saracens",
+   "p-2887868": "Shu",
+   "p-314216": "Byzantines",
+   "p-3276518": "Magyars",
+   "p-3469310": "Lithuanians"
+  },
+  "date": "2026-11-17",
+  "durationSec": 1523,
+  "lobby": "CW7 Cmoyos vs Conquis C",
+  "map": "CW7 Crescent (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-3469310",
+   "p-2887868",
+   "p-314216"
+  ],
+  "team2": [
+   "p-242561",
+   "p-3276518",
+   "p-271761"
+  ],
+  "ts": 1794950348000,
+  "winner": 1
+ },
+ "aoe-521903696": {
+  "aoeMatchId": 521903696,
+  "civs": {
+   "p-1229488": "Saracens",
+   "p-1758789": "Byzantines",
+   "p-2548076": "Franks",
+   "p-2569133": "Maya",
+   "p-4566248": "Slavs",
+   "p-5447824": "Ethiopians"
+  },
+  "date": "2026-11-17",
+  "durationSec": 1259,
+  "lobby": "Clan Wars - Potassium vs DK",
+  "map": "CW7 Socotra (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-5447824",
+   "p-2569133",
+   "p-2548076"
+  ],
+  "team2": [
+   "p-4566248",
+   "p-1229488",
+   "p-1758789"
+  ],
+  "ts": 1794950725000,
+  "winner": 2
+ },
+ "aoe-521908281": {
+  "aoeMatchId": 521908281,
+  "civs": {
+   "p-17557006": "Shu",
+   "p-19572031": "Persians",
+   "p-19629440": "Britons",
+   "p-4746585": "Persians",
+   "p-4872369": "Ethiopians",
+   "p-593571": "Maya"
+  },
+  "date": "2026-11-17",
+  "durationSec": 532,
+  "lobby": "CW7 - Donquis vs Rosaleda",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-19629440",
+   "p-17557006",
+   "p-19572031"
+  ],
+  "team2": [
+   "p-593571",
+   "p-4746585",
+   "p-4872369"
+  ],
+  "ts": 1794951965000,
+  "winner": 2
+ },
+ "aoe-521909578": {
+  "aoeMatchId": 521909578,
+  "civs": {
+   "p-242561": "Britons",
+   "p-271761": "Japanese",
+   "p-2887868": "Koreans",
+   "p-314216": "Vietnamese",
+   "p-3276518": "Georgians",
+   "p-861763": "Malians"
+  },
+  "date": "2026-11-17",
+  "durationSec": 1523,
+  "lobby": "[Revancha] CW7 Cmoyos vs Conquis C",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-861763",
+   "p-314216",
+   "p-2887868"
+  ],
+  "team2": [
+   "p-271761",
+   "p-242561",
+   "p-3276518"
+  ],
+  "ts": 1794952426000,
+  "winner": 1
  }
 }
