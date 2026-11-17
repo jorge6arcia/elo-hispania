@@ -3780,5 +3780,89 @@
   ],
   "ts": 1794863395000,
   "winner": 1
+ },
+ "aoe-521883345": {
+  "aoeMatchId": 521883345,
+  "civs": {
+   "p-17557006": "Japanese",
+   "p-19629440": "Koreans",
+   "p-2775595": "Italians",
+   "p-36653": "Magyars",
+   "p-4872369": "Varangians",
+   "p-593571": "Berbers"
+  },
+  "date": "2026-11-17",
+  "durationSec": 1809,
+  "lobby": "CW - Rosaleda VS DQK",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-17557006",
+   "p-19629440",
+   "p-36653"
+  ],
+  "team2": [
+   "p-593571",
+   "p-2775595",
+   "p-4872369"
+  ],
+  "ts": 1794948067000,
+  "winner": 2
+ },
+ "aoe-521894587": {
+  "aoeMatchId": 521894587,
+  "civs": {
+   "p-242561": "Dravidians",
+   "p-271761": "Hindustanis",
+   "p-2887868": "Ethiopians",
+   "p-314216": "Varangians",
+   "p-3276518": "Cumans",
+   "p-861763": "Huns"
+  },
+  "date": "2026-11-17",
+  "durationSec": 1526,
+  "lobby": "CW7 Cmoyos vs Conquis C",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-2887868",
+   "p-861763",
+   "p-314216"
+  ],
+  "team2": [
+   "p-242561",
+   "p-3276518",
+   "p-271761"
+  ],
+  "ts": 1794948253000,
+  "winner": 1
+ },
+ "aoe-521895246": {
+  "aoeMatchId": 521895246,
+  "civs": {
+   "p-1758789": "Berbers",
+   "p-2299693": "Burmese",
+   "p-2548076": "Mongols",
+   "p-2569133": "Vietnamese",
+   "p-5447824": "Lithuanians",
+   "p-5829315": "Koreans"
+  },
+  "date": "2026-11-17",
+  "durationSec": 1142,
+  "lobby": "Clan Wars - Potassium",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-2569133",
+   "p-2548076",
+   "p-5447824"
+  ],
+  "team2": [
+   "p-1758789",
+   "p-2299693",
+   "p-5829315"
+  ],
+  "ts": 1794948739000,
+  "winner": 2
  }
 }
