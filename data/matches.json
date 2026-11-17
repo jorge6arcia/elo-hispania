@@ -3976,5 +3976,61 @@
   ],
   "ts": 1794952426000,
   "winner": 1
+ },
+ "aoe-521910800": {
+  "aoeMatchId": 521910800,
+  "civs": {
+   "p-2152015": "Armenians",
+   "p-2443606": "Bohemians",
+   "p-2569133": "Dravidians",
+   "p-4566248": "Italians",
+   "p-5447824": "Wei",
+   "p-5829315": "Cumans"
+  },
+  "date": "2026-11-17",
+  "durationSec": 1778,
+  "lobby": "[Rematch] Clan Wars - Potassium",
+  "map": "CW7 Fortress (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-2569133",
+   "p-2443606",
+   "p-5447824"
+  ],
+  "team2": [
+   "p-2152015",
+   "p-5829315",
+   "p-4566248"
+  ],
+  "ts": 1794952843000,
+  "winner": 2
+ },
+ "aoe-521912674": {
+  "aoeMatchId": 521912674,
+  "civs": {
+   "p-17557006": "Mongols",
+   "p-19572031": "Bengalis",
+   "p-230285": "Portuguese",
+   "p-2775595": "Hindustanis",
+   "p-36653": "Franks",
+   "p-4746585": "Teutons"
+  },
+  "date": "2026-11-17",
+  "durationSec": 2265,
+  "lobby": "CW7 - Donquis vs Rosaleda",
+  "map": "CW7 Fortress (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-17557006",
+   "p-36653",
+   "p-19572031"
+  ],
+  "team2": [
+   "p-230285",
+   "p-4746585",
+   "p-2775595"
+  ],
+  "ts": 1794953539000,
+  "winner": 2
  }
 }
