@@ -4060,5 +4060,145 @@
   ],
   "ts": 1795022791000,
   "winner": 2
+ },
+ "aoe-522068298": {
+  "aoeMatchId": 522068298,
+  "civs": {
+   "p-12278112": "Lithuanians",
+   "p-1988166": "Italians",
+   "p-217558": "Vietnamese",
+   "p-5162605": "Koreans",
+   "p-669752": "Dravidians",
+   "p-810914": "Bohemians"
+  },
+  "date": "2026-11-18",
+  "durationSec": 1583,
+  "lobby": "CW7 La Orden Humo Verde vs DKpataces de obra",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-5162605",
+   "p-1988166",
+   "p-669752"
+  ],
+  "team2": [
+   "p-810914",
+   "p-217558",
+   "p-12278112"
+  ],
+  "ts": 1795025150000,
+  "winner": 1
+ },
+ "aoe-522068401": {
+  "aoeMatchId": 522068401,
+  "civs": {
+   "p-12465743": "Vietnamese",
+   "p-16504982": "Bengalis",
+   "p-232252": "Lithuanians",
+   "p-3266401": "Malians",
+   "p-3319907": "Italians",
+   "p-6161511": "Berbers"
+  },
+  "date": "2026-11-18",
+  "durationSec": 1525,
+  "lobby": "Clan Wars VII CW7",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-3319907",
+   "p-16504982",
+   "p-6161511"
+  ],
+  "team2": [
+   "p-232252",
+   "p-3266401",
+   "p-12465743"
+  ],
+  "ts": 1795025265000,
+  "winner": 2
+ },
+ "aoe-522074147": {
+  "aoeMatchId": 522074147,
+  "civs": {
+   "p-12278112": "Franks",
+   "p-1988166": "Tatars",
+   "p-217558": "Hindustanis",
+   "p-5162605": "Maya",
+   "p-669752": "Huns",
+   "p-810914": "Armenians"
+  },
+  "date": "2026-11-18",
+  "durationSec": 1003,
+  "lobby": "CW7 La Orden Humo Verde vs DKpataces de obra",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-217558",
+   "p-12278112",
+   "p-810914"
+  ],
+  "team2": [
+   "p-669752",
+   "p-5162605",
+   "p-1988166"
+  ],
+  "ts": 1795027187000,
+  "winner": 1
+ },
+ "aoe-522074358": {
+  "aoeMatchId": 522074358,
+  "civs": {
+   "p-12465743": "Franks",
+   "p-16504982": "Maya",
+   "p-22842704": "Ethiopians",
+   "p-3266401": "Saracens",
+   "p-3319907": "Magyars",
+   "p-5114545": "Shu"
+  },
+  "date": "2026-11-18",
+  "durationSec": 983,
+  "lobby": "Clan Wars VII CW7",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-5114545",
+   "p-3319907",
+   "p-16504982"
+  ],
+  "team2": [
+   "p-12465743",
+   "p-3266401",
+   "p-22842704"
+  ],
+  "ts": 1795027343000,
+  "winner": 1
+ },
+ "aoe-522078845": {
+  "aoeMatchId": 522078845,
+  "civs": {
+   "p-12278112": "Magyars",
+   "p-1988166": "Varangians",
+   "p-217558": "Ethiopians",
+   "p-5162605": "Shu",
+   "p-669752": "Tupi",
+   "p-810914": "Saracens"
+  },
+  "date": "2026-11-18",
+  "durationSec": 1161,
+  "lobby": "CW7 La Orden Humo Verde vs DKpataces de obra",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-217558",
+   "p-810914",
+   "p-12278112"
+  ],
+  "team2": [
+   "p-1988166",
+   "p-5162605",
+   "p-669752"
+  ],
+  "ts": 1795028449000,
+  "winner": 1
  }
 }

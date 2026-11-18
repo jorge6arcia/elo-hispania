@@ -1689,6 +1689,19 @@
   "profileId": "5066226",
   "region": ""
  },
+ "p-5114545": {
+  "approved": true,
+  "auto": true,
+  "clan": "KBRA",
+  "country": "es",
+  "createdAt": 1795029768528,
+  "eloStart": 1454,
+  "eloStartDate": "2026-05-20T17:26:55.000Z",
+  "eloStartSource": "rm_1v1",
+  "nick": "[KBRA] SiGMe",
+  "profileId": "5114545",
+  "region": ""
+ },
  "p-5162605": {
   "approved": true,
   "auto": true,
