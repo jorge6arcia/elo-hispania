@@ -4200,5 +4200,61 @@
   ],
   "ts": 1795028449000,
   "winner": 1
+ },
+ "aoe-522092312": {
+  "aoeMatchId": 522092312,
+  "civs": {
+   "p-10721552": "Saracens",
+   "p-10728048": "Khmer",
+   "p-2604970": "Britons",
+   "p-2871715": "Ethiopians",
+   "p-5741031": "Maya",
+   "p-6742741": "Franks"
+  },
+  "date": "2026-11-18",
+  "durationSec": 699,
+  "lobby": "TdB.Caimanes vs no es personal, es Isratur",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-10728048",
+   "p-2871715",
+   "p-10721552"
+  ],
+  "team2": [
+   "p-5741031",
+   "p-2604970",
+   "p-6742741"
+  ],
+  "ts": 1795032574000,
+  "winner": 1
+ },
+ "aoe-522097046": {
+  "aoeMatchId": 522097046,
+  "civs": {
+   "p-10721552": "Malay",
+   "p-10728048": "Portuguese",
+   "p-113764": "Italians",
+   "p-2604970": "Bengalis",
+   "p-2871715": "Vietnamese",
+   "p-5741031": "Dravidians"
+  },
+  "date": "2026-11-18",
+  "durationSec": 1544,
+  "lobby": "TdB.Caimanes vs no es personal, es Isratur",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-5741031",
+   "p-2604970",
+   "p-113764"
+  ],
+  "team2": [
+   "p-10728048",
+   "p-10721552",
+   "p-2871715"
+  ],
+  "ts": 1795033785000,
+  "winner": 1
  }
 }
