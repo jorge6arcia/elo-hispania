@@ -4032,5 +4032,33 @@
   ],
   "ts": 1794953539000,
   "winner": 2
+ },
+ "aoe-522061879": {
+  "aoeMatchId": 522061879,
+  "civs": {
+   "p-12465743": "Tatars",
+   "p-16504982": "Saxons",
+   "p-232252": "Huns",
+   "p-3266401": "Dravidians",
+   "p-3319907": "Georgians",
+   "p-6161511": "Japanese"
+  },
+  "date": "2026-11-18",
+  "durationSec": 1999,
+  "lobby": "Clan Wars VII CW7",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-16504982",
+   "p-6161511",
+   "p-3319907"
+  ],
+  "team2": [
+   "p-12465743",
+   "p-3266401",
+   "p-232252"
+  ],
+  "ts": 1795022791000,
+  "winner": 2
  }
 }
