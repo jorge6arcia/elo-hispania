@@ -4256,5 +4256,117 @@
   ],
   "ts": 1795033785000,
   "winner": 1
+ },
+ "aoe-522102906": {
+  "aoeMatchId": 522102906,
+  "civs": {
+   "p-2548076": "Aztecs",
+   "p-2569133": "Saracens",
+   "p-263513": "Persians",
+   "p-4063407": "Maya",
+   "p-5447824": "Slavs",
+   "p-6046048": "Portuguese"
+  },
+  "date": "2026-11-18",
+  "durationSec": 1333,
+  "lobby": "CW7 Emp vs DK",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-5447824",
+   "p-2569133",
+   "p-2548076"
+  ],
+  "team2": [
+   "p-263513",
+   "p-6046048",
+   "p-4063407"
+  ],
+  "ts": 1795035607000,
+  "winner": 2
+ },
+ "aoe-522103921": {
+  "aoeMatchId": 522103921,
+  "civs": {
+   "p-10721552": "Japanese",
+   "p-10728048": "Georgians",
+   "p-2604970": "Tatars",
+   "p-2871715": "Koreans",
+   "p-5741031": "Magyars",
+   "p-6742741": "Lithuanians"
+  },
+  "date": "2026-11-18",
+  "durationSec": 1171,
+  "lobby": "TdB.Caimanes vs no es personal, es Isratur",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-5741031",
+   "p-6742741",
+   "p-2604970"
+  ],
+  "team2": [
+   "p-10721552",
+   "p-10728048",
+   "p-2871715"
+  ],
+  "ts": 1795035850000,
+  "winner": 2
+ },
+ "aoe-522111710": {
+  "aoeMatchId": 522111710,
+  "civs": {
+   "p-2548076": "Magyars",
+   "p-2569133": "Ethiopians",
+   "p-263513": "Vikings",
+   "p-3140712": "Franks",
+   "p-5447824": "Dravidians",
+   "p-6046048": "Japanese"
+  },
+  "date": "2026-11-18",
+  "durationSec": 322,
+  "lobby": "CW7 emp vs dk",
+  "map": "CW7 Socotra (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-6046048",
+   "p-263513",
+   "p-3140712"
+  ],
+  "team2": [
+   "p-2548076",
+   "p-2569133",
+   "p-5447824"
+  ],
+  "ts": 1795037831000,
+  "winner": 2
+ },
+ "aoe-522113263": {
+  "aoeMatchId": 522113263,
+  "civs": {
+   "p-2548076": "Magyars",
+   "p-2569133": "Ethiopians",
+   "p-263513": "Vikings",
+   "p-3140712": "Franks",
+   "p-5447824": "Dravidians",
+   "p-6046048": "Japanese"
+  },
+  "date": "2026-11-18",
+  "durationSec": 1334,
+  "lobby": "[Rematch] CW7 emp vs dk",
+  "map": "CW7 Socotra (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-6046048",
+   "p-263513",
+   "p-3140712"
+  ],
+  "team2": [
+   "p-2548076",
+   "p-5447824",
+   "p-2569133"
+  ],
+  "ts": 1795038302000,
+  "winner": 2
  }
 }
