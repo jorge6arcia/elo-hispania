@@ -4368,5 +4368,33 @@
   ],
   "ts": 1795038302000,
   "winner": 2
+ },
+ "aoe-522118133": {
+  "aoeMatchId": 522118133,
+  "civs": {
+   "p-2443606": "Teutons",
+   "p-2569133": "Shu",
+   "p-263513": "Lithuanians",
+   "p-4063407": "Koreans",
+   "p-5447824": "Italians",
+   "p-6046048": "Mongols"
+  },
+  "date": "2026-11-18",
+  "durationSec": 1378,
+  "lobby": "CW7 Emp vs DK",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-4063407",
+   "p-6046048",
+   "p-263513"
+  ],
+  "team2": [
+   "p-5447824",
+   "p-2569133",
+   "p-2443606"
+  ],
+  "ts": 1795040216000,
+  "winner": 1
  }
 }
