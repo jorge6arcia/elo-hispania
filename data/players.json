@@ -961,6 +961,19 @@
   "profileId": "2548076",
   "region": ""
  },
+ "p-256609": {
+  "approved": true,
+  "auto": true,
+  "clan": "CQE",
+  "country": "ch",
+  "createdAt": 1795127012214,
+  "eloStart": 1000,
+  "eloStartDate": null,
+  "eloStartSource": "default",
+  "nick": "Williems",
+  "profileId": "256609",
+  "region": ""
+ },
  "p-2569133": {
   "approved": true,
   "auto": true,
@@ -1193,6 +1206,19 @@
   "eloStartSource": "rm_1v1",
   "nick": "vagos.fran",
   "profileId": "2836315",
+  "region": ""
+ },
+ "p-2846058": {
+  "approved": true,
+  "auto": true,
+  "clan": "TdBar",
+  "country": "es",
+  "createdAt": 1795127012214,
+  "eloStart": 1016,
+  "eloStartDate": "2026-11-08T15:58:46.000Z",
+  "eloStartSource": "rm_1v1",
+  "nick": "TdB.kobukguille",
+  "profileId": "2846058",
   "region": ""
  },
  "p-2859826": {
