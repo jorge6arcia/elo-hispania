@@ -1169,6 +1169,19 @@
   "profileId": "2836315",
   "region": ""
  },
+ "p-2859826": {
+  "approved": true,
+  "auto": true,
+  "clan": "FOE",
+  "country": "es",
+  "createdAt": 1795120636321,
+  "eloStart": 1763,
+  "eloStartDate": "2026-11-18T22:09:53.000Z",
+  "eloStartSource": "rm_1v1",
+  "nick": "TAKII13",
+  "profileId": "2859826",
+  "region": ""
+ },
  "p-2867863": {
   "approved": true,
   "auto": true,
@@ -1349,6 +1362,19 @@
   "eloStartSource": "rm_1v1",
   "nick": "[MNKD] pajaromosca",
   "profileId": "3403169",
+  "region": ""
+ },
+ "p-3450823": {
+  "approved": true,
+  "auto": true,
+  "clan": "KBRA",
+  "country": "es",
+  "createdAt": 1795120636321,
+  "eloStart": 1244,
+  "eloStartDate": "2025-02-09T12:14:34.000Z",
+  "eloStartSource": "rm_1v1",
+  "nick": "[KBRA] Comunero Padilla",
+  "profileId": "3450823",
   "region": ""
  },
  "p-3469310": {

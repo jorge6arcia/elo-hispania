@@ -4480,5 +4480,89 @@
   ],
   "ts": 1795112720000,
   "winner": 2
+ },
+ "aoe-522283926": {
+  "aoeMatchId": 522283926,
+  "civs": {
+   "p-15408392": "Koreans",
+   "p-16504982": "Bengalis",
+   "p-24287923": "Malay",
+   "p-3319907": "Chinese",
+   "p-5114545": "Vietnamese",
+   "p-9950254": "Georgians"
+  },
+  "date": "2026-11-19",
+  "durationSec": 1757,
+  "lobby": "Clan Wars VII CW7",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-16504982",
+   "p-5114545",
+   "p-3319907"
+  ],
+  "team2": [
+   "p-24287923",
+   "p-9950254",
+   "p-15408392"
+  ],
+  "ts": 1795116249000,
+  "winner": 1
+ },
+ "aoe-522285990": {
+  "aoeMatchId": 522285990,
+  "civs": {
+   "p-12264186": "Berbers",
+   "p-1382231": "Japanese",
+   "p-1988166": "Varangians",
+   "p-2859826": "Italians",
+   "p-5162605": "Vikings",
+   "p-669752": "Wu"
+  },
+  "date": "2026-11-19",
+  "durationSec": 1996,
+  "lobby": "CW 7 Tdb Espadas vs DKpataces de obra",
+  "map": "CW7 Crescent (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-12264186",
+   "p-2859826",
+   "p-1382231"
+  ],
+  "team2": [
+   "p-669752",
+   "p-1988166",
+   "p-5162605"
+  ],
+  "ts": 1795116703000,
+  "winner": 2
+ },
+ "aoe-522291565": {
+  "aoeMatchId": 522291565,
+  "civs": {
+   "p-15408392": "Ethiopians",
+   "p-16504982": "Maya",
+   "p-24287923": "Varangians",
+   "p-3319907": "Shu",
+   "p-3450823": "Magyars",
+   "p-9950254": "Bulgarians"
+  },
+  "date": "2026-11-19",
+  "durationSec": 900,
+  "lobby": "Clan Wars VII CW7",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-3319907",
+   "p-3450823",
+   "p-16504982"
+  ],
+  "team2": [
+   "p-15408392",
+   "p-24287923",
+   "p-9950254"
+  ],
+  "ts": 1795118540000,
+  "winner": 1
  }
 }
