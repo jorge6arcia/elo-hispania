@@ -4900,5 +4900,145 @@
   ],
   "ts": 1795125101000,
   "winner": 1
+ },
+ "aoe-522316680": {
+  "aoeMatchId": 522316680,
+  "civs": {
+   "p-1914324": "Maya",
+   "p-22336597": "Persians",
+   "p-230285": "Byzantines",
+   "p-2775595": "Spanish",
+   "p-2969298": "Mongols",
+   "p-4872369": "Japanese"
+  },
+  "date": "2026-11-19",
+  "durationSec": 1950,
+  "lobby": "CW7 Mankomunidad vs Rosaleda FC",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1914324",
+   "p-2969298",
+   "p-22336597"
+  ],
+  "team2": [
+   "p-4872369",
+   "p-230285",
+   "p-2775595"
+  ],
+  "ts": 1795126487000,
+  "winner": 1
+ },
+ "aoe-522316901": {
+  "aoeMatchId": 522316901,
+  "civs": {
+   "p-11520176": "Malay",
+   "p-314216": "Vietnamese",
+   "p-3469310": "Malians",
+   "p-4299412": "Vikings",
+   "p-6400696": "Chinese",
+   "p-861763": "Hindustanis"
+  },
+  "date": "2026-11-19",
+  "durationSec": 1648,
+  "lobby": "cw 7",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-3469310",
+   "p-861763",
+   "p-314216"
+  ],
+  "team2": [
+   "p-11520176",
+   "p-4299412",
+   "p-6400696"
+  ],
+  "ts": 1795126120000,
+  "winner": 2
+ },
+ "aoe-522320034": {
+  "aoeMatchId": 522320034,
+  "civs": {
+   "p-1554380": "Saracens",
+   "p-1879291": "Teutons",
+   "p-197388": "Tupi",
+   "p-260973": "Magyars",
+   "p-2626999": "Shu",
+   "p-279036": "Mongols"
+  },
+  "date": "2026-11-19",
+  "durationSec": 558,
+  "lobby": "CW7 R1 vs Conquis A",
+  "map": "CW7 Socotra (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-197388",
+   "p-2626999",
+   "p-1879291"
+  ],
+  "team2": [
+   "p-1554380",
+   "p-279036",
+   "p-260973"
+  ],
+  "ts": 1795127043000,
+  "winner": 2
+ },
+ "aoe-522320246": {
+  "aoeMatchId": 522320246,
+  "civs": {
+   "p-11427701": "Tupi",
+   "p-1886379": "Varangians",
+   "p-2599637": "Berbers",
+   "p-8179071": "Spanish",
+   "p-8487446": "Chinese",
+   "p-903143": "Dravidians"
+  },
+  "date": "2026-11-19",
+  "durationSec": 1440,
+  "lobby": "[Revancha] CW7",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1886379",
+   "p-11427701",
+   "p-8487446"
+  ],
+  "team2": [
+   "p-8179071",
+   "p-2599637",
+   "p-903143"
+  ],
+  "ts": 1795127262000,
+  "winner": 2
+ },
+ "aoe-522322110": {
+  "aoeMatchId": 522322110,
+  "civs": {
+   "p-197388": "Lithuanians",
+   "p-256609": "Maya",
+   "p-260973": "Malians",
+   "p-2626999": "Ethiopians",
+   "p-279036": "Britons",
+   "p-340055": "Bohemians"
+  },
+  "date": "2026-11-19",
+  "durationSec": 1168,
+  "lobby": "CW7 R1 vs Conquis A",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-2626999",
+   "p-197388",
+   "p-256609"
+  ],
+  "team2": [
+   "p-340055",
+   "p-260973",
+   "p-279036"
+  ],
+  "ts": 1795127817000,
+  "winner": 2
  }
 }
