@@ -4564,5 +4564,173 @@
   ],
   "ts": 1795118540000,
   "winner": 1
+ },
+ "aoe-522294498": {
+  "aoeMatchId": 522294498,
+  "civs": {
+   "p-11520176": "Tupi",
+   "p-2887868": "Britons",
+   "p-314216": "Maya",
+   "p-3469310": "Franks",
+   "p-4299412": "Saracens",
+   "p-6400696": "Lithuanians"
+  },
+  "date": "2026-11-19",
+  "durationSec": 1577,
+  "lobby": "[Revancha] CW7 tdB vs Conquis C",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-314216",
+   "p-3469310",
+   "p-2887868"
+  ],
+  "team2": [
+   "p-11520176",
+   "p-4299412",
+   "p-6400696"
+  ],
+  "ts": 1795119405000,
+  "winner": 2
+ },
+ "aoe-522294499": {
+  "aoeMatchId": 522294499,
+  "civs": {
+   "p-12264186": "Lithuanians",
+   "p-1382231": "Inca",
+   "p-1988166": "Khmer",
+   "p-2859826": "Maya",
+   "p-5162605": "Shu",
+   "p-669752": "Ethiopians"
+  },
+  "date": "2026-11-19",
+  "durationSec": 3972,
+  "lobby": "CW 7 Tdb Espadas vs DKpataces de obra",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1382231",
+   "p-2859826",
+   "p-12264186"
+  ],
+  "team2": [
+   "p-5162605",
+   "p-669752",
+   "p-1988166"
+  ],
+  "ts": 1795119218000,
+  "winner": 1
+ },
+ "aoe-522296773": {
+  "aoeMatchId": 522296773,
+  "civs": {
+   "p-15408392": "Tupi",
+   "p-16504982": "Hindustanis",
+   "p-24287923": "Berbers",
+   "p-2681270": "Dravidians",
+   "p-3319907": "Japanese",
+   "p-5114545": "Byzantines"
+  },
+  "date": "2026-11-19",
+  "durationSec": 1264,
+  "lobby": "Clan Wars VII CW7",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-3319907",
+   "p-16504982",
+   "p-5114545"
+  ],
+  "team2": [
+   "p-15408392",
+   "p-2681270",
+   "p-24287923"
+  ],
+  "ts": 1795120650000,
+  "winner": 1
+ },
+ "aoe-522298585": {
+  "aoeMatchId": 522298585,
+  "civs": {
+   "p-10179079": "Ethiopians",
+   "p-1342495": "Koreans",
+   "p-18749773": "Vikings",
+   "p-236313": "Franks",
+   "p-2589122": "Khmer",
+   "p-4279580": "Malay"
+  },
+  "date": "2026-11-19",
+  "durationSec": 1430,
+  "lobby": "clan wars 7",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-4279580",
+   "p-2589122",
+   "p-18749773"
+  ],
+  "team2": [
+   "p-1342495",
+   "p-236313",
+   "p-10179079"
+  ],
+  "ts": 1795120651000,
+  "winner": 1
+ },
+ "aoe-522300388": {
+  "aoeMatchId": 522300388,
+  "civs": {
+   "p-1914324": "Ethiopians",
+   "p-21392940": "Koreans",
+   "p-2775595": "Magyars",
+   "p-2969298": "Franks",
+   "p-4872369": "Romans",
+   "p-593571": "Celts"
+  },
+  "date": "2026-11-19",
+  "durationSec": 2026,
+  "lobby": "CW7 Mankomunidad vs Rosaleda FC",
+  "map": "CW7 Socotra (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1914324",
+   "p-2969298",
+   "p-21392940"
+  ],
+  "team2": [
+   "p-2775595",
+   "p-593571",
+   "p-4872369"
+  ],
+  "ts": 1795121190000,
+  "winner": 2
+ },
+ "aoe-522302639": {
+  "aoeMatchId": 522302639,
+  "civs": {
+   "p-11520176": "Wei",
+   "p-2887868": "Ethiopians",
+   "p-314216": "Dravidians",
+   "p-4299412": "Japanese",
+   "p-6400696": "Burgundians",
+   "p-861763": "Magyars"
+  },
+  "date": "2026-11-19",
+  "durationSec": 1621,
+  "lobby": "[Revancha] CW7 tdB vs Conquis C",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-314216",
+   "p-861763",
+   "p-2887868"
+  ],
+  "team2": [
+   "p-6400696",
+   "p-4299412",
+   "p-11520176"
+  ],
+  "ts": 1795121612000,
+  "winner": 1
  }
 }

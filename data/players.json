@@ -103,6 +103,19 @@
   "profileId": "11427701",
   "region": ""
  },
+ "p-11520176": {
+  "approved": true,
+  "auto": true,
+  "clan": "TdBar",
+  "country": "es",
+  "createdAt": 1795123756266,
+  "eloStart": 1544,
+  "eloStartDate": "2026-10-22T18:29:06.000Z",
+  "eloStartSource": "rm_1v1",
+  "nick": "TdB.Red Matador",
+  "profileId": "11520176",
+  "region": ""
+ },
  "p-1156287": {
   "approved": true,
   "auto": true,
@@ -1089,6 +1102,19 @@
   "eloStartSource": "rm_1v1",
   "nick": "antoniosar69",
   "profileId": "266577",
+  "region": ""
+ },
+ "p-2681270": {
+  "approved": true,
+  "auto": true,
+  "clan": "TdBar",
+  "country": "ar",
+  "createdAt": 1795123756266,
+  "eloStart": 1502,
+  "eloStartDate": "2026-08-07T11:15:50.000Z",
+  "eloStartSource": "rm_1v1",
+  "nick": "Facundin",
+  "profileId": "2681270",
   "region": ""
  },
  "p-271761": {
