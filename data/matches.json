@@ -4396,5 +4396,61 @@
   ],
   "ts": 1795040216000,
   "winner": 1
+ },
+ "aoe-522262282": {
+  "aoeMatchId": 522262282,
+  "civs": {
+   "p-18060565": "Japanese",
+   "p-2221150": "Berbers",
+   "p-2574050": "Mongols",
+   "p-542233": "Mapuche",
+   "p-5473258": "Maya",
+   "p-96571": "Hindustanis"
+  },
+  "date": "2026-11-19",
+  "durationSec": 1185,
+  "lobby": "[Rematch] CW7",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-542233",
+   "p-2221150",
+   "p-2574050"
+  ],
+  "team2": [
+   "p-5473258",
+   "p-18060565",
+   "p-96571"
+  ],
+  "ts": 1795109097000,
+  "winner": 2
+ },
+ "aoe-522267040": {
+  "aoeMatchId": 522267040,
+  "civs": {
+   "p-18060565": "Koreans",
+   "p-2574050": "Lithuanians",
+   "p-3810018": "Vietnamese",
+   "p-542233": "Dravidians",
+   "p-5473258": "Dravidians",
+   "p-96571": "Malians"
+  },
+  "date": "2026-11-19",
+  "durationSec": 1445,
+  "lobby": "[Rematch] CW7",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-2574050",
+   "p-3810018",
+   "p-542233"
+  ],
+  "team2": [
+   "p-18060565",
+   "p-5473258",
+   "p-96571"
+  ],
+  "ts": 1795110702000,
+  "winner": 1
  }
 }
