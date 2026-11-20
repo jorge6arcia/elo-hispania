@@ -5068,5 +5068,33 @@
   ],
   "ts": 1795207929000,
   "winner": 2
+ },
+ "aoe-522518488": {
+  "aoeMatchId": 522518488,
+  "civs": {
+   "p-1229488": "Italians",
+   "p-2299693": "Burmese",
+   "p-263513": "Dravidians",
+   "p-3140712": "Malians",
+   "p-4566248": "Hindustanis",
+   "p-6046048": "Byzantines"
+  },
+  "date": "2026-11-20",
+  "durationSec": 1880,
+  "lobby": "Clan Wars - Potassium vs Emputors",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1229488",
+   "p-2299693",
+   "p-4566248"
+  ],
+  "team2": [
+   "p-6046048",
+   "p-263513",
+   "p-3140712"
+  ],
+  "ts": 1795209130000,
+  "winner": 1
  }
 }
