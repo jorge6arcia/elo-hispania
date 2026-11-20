@@ -5096,5 +5096,33 @@
   ],
   "ts": 1795209130000,
   "winner": 1
+ },
+ "aoe-522527340": {
+  "aoeMatchId": 522527340,
+  "civs": {
+   "p-1758789": "Vikings",
+   "p-263513": "Portuguese",
+   "p-3140712": "Lithuanians",
+   "p-4063407": "Maya",
+   "p-4566248": "Slavs",
+   "p-5829315": "Britons"
+  },
+  "date": "2026-11-20",
+  "durationSec": 916,
+  "lobby": "Clan Wars - Potassium",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-4063407",
+   "p-3140712",
+   "p-263513"
+  ],
+  "team2": [
+   "p-1758789",
+   "p-5829315",
+   "p-4566248"
+  ],
+  "ts": 1795211419000,
+  "winner": 2
  }
 }
