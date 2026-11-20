@@ -5040,5 +5040,33 @@
   ],
   "ts": 1795127817000,
   "winner": 2
+ },
+ "aoe-522514663": {
+  "aoeMatchId": 522514663,
+  "civs": {
+   "p-1229488": "Koreans",
+   "p-1758789": "Franks",
+   "p-263513": "Huns",
+   "p-4063407": "Malay",
+   "p-5829315": "Shu",
+   "p-6046048": "Japanese"
+  },
+  "date": "2026-11-20",
+  "durationSec": 578,
+  "lobby": "Clan Wars - Potassium",
+  "map": "CW7 Socotra (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-4063407",
+   "p-6046048",
+   "p-263513"
+  ],
+  "team2": [
+   "p-5829315",
+   "p-1758789",
+   "p-1229488"
+  ],
+  "ts": 1795207929000,
+  "winner": 2
  }
 }
