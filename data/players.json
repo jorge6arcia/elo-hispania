@@ -2027,6 +2027,19 @@
   "profileId": "6742741",
   "region": ""
  },
+ "p-786723": {
+  "approved": true,
+  "auto": true,
+  "clan": "TdBar",
+  "country": "es",
+  "createdAt": 1795284950357,
+  "eloStart": 1500,
+  "eloStartDate": "2026-04-11T21:08:18.000Z",
+  "eloStartSource": "rm_1v1",
+  "nick": "TdB.victor2.01",
+  "profileId": "786723",
+  "region": ""
+ },
  "p-810914": {
   "approved": true,
   "auto": true,
