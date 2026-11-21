@@ -5208,5 +5208,89 @@
   ],
   "ts": 1795282771000,
   "winner": 1
+ },
+ "aoe-522728031": {
+  "aoeMatchId": 522728031,
+  "civs": {
+   "p-11520176": "Bengalis",
+   "p-3905401": "Berbers",
+   "p-4299412": "Japanese",
+   "p-59289": "Malians",
+   "p-846645": "Hindustanis",
+   "p-8569019": "Chinese"
+  },
+  "date": "2026-11-21",
+  "durationSec": 1048,
+  "lobby": "[Revancha] CW7 TdB Bueyes vs Hilarianos",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-11520176",
+   "p-8569019",
+   "p-4299412"
+  ],
+  "team2": [
+   "p-3905401",
+   "p-846645",
+   "p-59289"
+  ],
+  "ts": 1795284670000,
+  "winner": 1
+ },
+ "aoe-522729856": {
+  "aoeMatchId": 522729856,
+  "civs": {
+   "p-110352": "Ethiopians",
+   "p-12271904": "Magyars",
+   "p-15716475": "Mongols",
+   "p-18313886": "Britons",
+   "p-19702504": "Italians",
+   "p-2951669": "Lithuanians"
+  },
+  "date": "2026-11-21",
+  "durationSec": 1974,
+  "lobby": "CW7 Dynamic B vs Wololocos",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-19702504",
+   "p-18313886",
+   "p-12271904"
+  ],
+  "team2": [
+   "p-2951669",
+   "p-110352",
+   "p-15716475"
+  ],
+  "ts": 1795285251000,
+  "winner": 2
+ },
+ "aoe-522733522": {
+  "aoeMatchId": 522733522,
+  "civs": {
+   "p-3905401": "Vietnamese",
+   "p-4299412": "Saracens",
+   "p-59289": "Georgians",
+   "p-786723": "Koreans",
+   "p-846645": "Portuguese",
+   "p-8569019": "Persians"
+  },
+  "date": "2026-11-21",
+  "durationSec": 1578,
+  "lobby": "[Revancha] CW7 TdB Bueyes vs Hilarianos",
+  "map": "CW7 Fortress (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-8569019",
+   "p-786723",
+   "p-4299412"
+  ],
+  "team2": [
+   "p-59289",
+   "p-846645",
+   "p-3905401"
+  ],
+  "ts": 1795286084000,
+  "winner": 1
  }
 }
