@@ -5124,5 +5124,33 @@
   ],
   "ts": 1795211419000,
   "winner": 2
+ },
+ "aoe-522713515": {
+  "aoeMatchId": 522713515,
+  "civs": {
+   "p-110352": "Wu",
+   "p-12271904": "Franks",
+   "p-18313886": "Maya",
+   "p-18410803": "Muisca",
+   "p-4756136": "Persians",
+   "p-6433681": "Wei"
+  },
+  "date": "2026-11-21",
+  "durationSec": 1143,
+  "lobby": "CW7 - DYN B vs Wololocos",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-12271904",
+   "p-6433681",
+   "p-18313886"
+  ],
+  "team2": [
+   "p-110352",
+   "p-4756136",
+   "p-18410803"
+  ],
+  "ts": 1795280572000,
+  "winner": 2
  }
 }
