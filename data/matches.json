@@ -5825,6 +5825,34 @@
   "ts": 1795377023000,
   "winner": 1
  },
+ "aoe-523010232": {
+  "aoeMatchId": 523010232,
+  "civs": {
+   "p-19572031": "Bengalis",
+   "p-19629440": "Chinese",
+   "p-197388": "Hindustanis",
+   "p-314216": "Turks",
+   "p-3469310": "Khmer",
+   "p-861763": "Goths"
+  },
+  "date": "2026-11-22",
+  "durationSec": 4453,
+  "lobby": "cw 7",
+  "map": "CW7 Fortress (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-861763",
+   "p-3469310",
+   "p-314216"
+  ],
+  "team2": [
+   "p-197388",
+   "p-19629440",
+   "p-19572031"
+  ],
+  "ts": 1795376690000,
+  "winner": 2
+ },
  "aoe-523014826": {
   "aoeMatchId": 523014826,
   "civs": {
@@ -5851,6 +5879,34 @@
    "p-305399"
   ],
   "ts": 1795377810000,
+  "winner": 2
+ },
+ "aoe-523022610": {
+  "aoeMatchId": 523022610,
+  "civs": {
+   "p-11427701": "Maya",
+   "p-1886379": "Khitans",
+   "p-214269": "Magyars",
+   "p-329032": "Franks",
+   "p-6216515": "Ethiopians",
+   "p-8487446": "Tatars"
+  },
+  "date": "2026-11-22",
+  "durationSec": 1807,
+  "lobby": "[Revancha] CW7",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-11427701",
+   "p-8487446",
+   "p-1886379"
+  ],
+  "team2": [
+   "p-214269",
+   "p-6216515",
+   "p-329032"
+  ],
+  "ts": 1795379456000,
   "winner": 2
  }
 }
