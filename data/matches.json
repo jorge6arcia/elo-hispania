@@ -5741,6 +5741,34 @@
   "ts": 1795374741000,
   "winner": 1
  },
+ "aoe-523006111": {
+  "aoeMatchId": 523006111,
+  "civs": {
+   "p-11520176": "Koreans",
+   "p-242561": "Dravidians",
+   "p-3276518": "Berbers",
+   "p-4299412": "Japanese",
+   "p-6932296": "Wei",
+   "p-786723": "Turks"
+  },
+  "date": "2026-11-22",
+  "durationSec": 1487,
+  "lobby": "[Revancha] CW 7- Panatimankos vs TdBBueyes",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-6932296",
+   "p-3276518",
+   "p-242561"
+  ],
+  "team2": [
+   "p-786723",
+   "p-4299412",
+   "p-11520176"
+  ],
+  "ts": 1795376217000,
+  "winner": 2
+ },
  "aoe-523006736": {
   "aoeMatchId": 523006736,
   "civs": {
@@ -5767,6 +5795,62 @@
    "p-305399"
   ],
   "ts": 1795375999000,
+  "winner": 2
+ },
+ "aoe-523008638": {
+  "aoeMatchId": 523008638,
+  "civs": {
+   "p-11427701": "Japanese",
+   "p-1886379": "Italians",
+   "p-214269": "Portuguese",
+   "p-329032": "Vikings",
+   "p-6216515": "Dravidians",
+   "p-8487446": "Persians"
+  },
+  "date": "2026-11-22",
+  "durationSec": 1436,
+  "lobby": "[Revancha] CW7",
+  "map": "CW7 Crescent (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1886379",
+   "p-11427701",
+   "p-8487446"
+  ],
+  "team2": [
+   "p-214269",
+   "p-6216515",
+   "p-329032"
+  ],
+  "ts": 1795377023000,
+  "winner": 1
+ },
+ "aoe-523014826": {
+  "aoeMatchId": 523014826,
+  "civs": {
+   "p-13714194": "Tupi",
+   "p-16504982": "Maya",
+   "p-17170708": "Khmer",
+   "p-305399": "Sicilians",
+   "p-3319907": "Shu",
+   "p-3450823": "Magyars"
+  },
+  "date": "2026-11-22",
+  "durationSec": 1662,
+  "lobby": "Clan Wars VII CW7",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-3450823",
+   "p-16504982",
+   "p-3319907"
+  ],
+  "team2": [
+   "p-13714194",
+   "p-17170708",
+   "p-305399"
+  ],
+  "ts": 1795377810000,
   "winner": 2
  }
 }
