@@ -5376,5 +5376,33 @@
   ],
   "ts": 1795344031000,
   "winner": 2
+ },
+ "aoe-522916123": {
+  "aoeMatchId": 522916123,
+  "civs": {
+   "p-13714194": "Koreans",
+   "p-17170708": "Hindustanis",
+   "p-2081072": "Lithuanians",
+   "p-305399": "Japanese",
+   "p-4718632": "Britons",
+   "p-575546": "Saracens"
+  },
+  "date": "2026-11-22",
+  "durationSec": 2288,
+  "lobby": "Clan Wars 7",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-13714194",
+   "p-305399",
+   "p-17170708"
+  ],
+  "team2": [
+   "p-2081072",
+   "p-575546",
+   "p-4718632"
+  ],
+  "ts": 1795351813000,
+  "winner": 1
  }
 }
