@@ -5629,6 +5629,34 @@
   "ts": 1795369824000,
   "winner": 2
  },
+ "aoe-522985350": {
+  "aoeMatchId": 522985350,
+  "civs": {
+   "p-242561": "Cumans",
+   "p-3276518": "Spanish",
+   "p-4299412": "Vikings",
+   "p-6932296": "Burmese",
+   "p-786723": "Byzantines",
+   "p-8569019": "Burgundians"
+  },
+  "date": "2026-11-22",
+  "durationSec": 4682,
+  "lobby": "[Revancha] CW 7- Panatimankos vs TdBBueyes",
+  "map": "CW7 Fortress (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-242561",
+   "p-6932296",
+   "p-3276518"
+  ],
+  "team2": [
+   "p-8569019",
+   "p-4299412",
+   "p-786723"
+  ],
+  "ts": 1795370745000,
+  "winner": 1
+ },
  "aoe-522989791": {
   "aoeMatchId": 522989791,
   "civs": {
@@ -5655,6 +5683,90 @@
    "p-2626999"
   ],
   "ts": 1795371735000,
+  "winner": 2
+ },
+ "aoe-522998493": {
+  "aoeMatchId": 522998493,
+  "civs": {
+   "p-13714194": "Britons",
+   "p-16504982": "Vietnamese",
+   "p-17170708": "Saracens",
+   "p-305399": "Ethiopians",
+   "p-3319907": "Tatars",
+   "p-3450823": "Franks"
+  },
+  "date": "2026-11-22",
+  "durationSec": 1388,
+  "lobby": "Clan Wars VII CW7",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-13714194",
+   "p-305399",
+   "p-17170708"
+  ],
+  "team2": [
+   "p-16504982",
+   "p-3450823",
+   "p-3319907"
+  ],
+  "ts": 1795373845000,
+  "winner": 1
+ },
+ "aoe-523001930": {
+  "aoeMatchId": 523001930,
+  "civs": {
+   "p-17557006": "Lithuanians",
+   "p-19572031": "Celts",
+   "p-197388": "Portuguese",
+   "p-314216": "Koreans",
+   "p-3469310": "Franks",
+   "p-861763": "Ethiopians"
+  },
+  "date": "2026-11-22",
+  "durationSec": 1591,
+  "lobby": "cw 7",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-314216",
+   "p-3469310",
+   "p-861763"
+  ],
+  "team2": [
+   "p-19572031",
+   "p-17557006",
+   "p-197388"
+  ],
+  "ts": 1795374741000,
+  "winner": 1
+ },
+ "aoe-523006736": {
+  "aoeMatchId": 523006736,
+  "civs": {
+   "p-13714194": "Malay",
+   "p-16504982": "Italians",
+   "p-17170708": "Burgundians",
+   "p-305399": "Vikings",
+   "p-3319907": "Portuguese",
+   "p-3450823": "Lithuanians"
+  },
+  "date": "2026-11-22",
+  "durationSec": 1410,
+  "lobby": "Clan Wars VII CW7",
+  "map": "CW7 Crescent (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-16504982",
+   "p-3319907",
+   "p-3450823"
+  ],
+  "team2": [
+   "p-13714194",
+   "p-17170708",
+   "p-305399"
+  ],
+  "ts": 1795375999000,
   "winner": 2
  }
 }
