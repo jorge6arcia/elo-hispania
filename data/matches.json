@@ -5516,5 +5516,33 @@
   ],
   "ts": 1795361704000,
   "winner": 2
+ },
+ "aoe-522959420": {
+  "aoeMatchId": 522959420,
+  "civs": {
+   "p-1156287": "Malay",
+   "p-2221150": "Italians",
+   "p-2574050": "Lithuanians",
+   "p-3566006": "Chinese",
+   "p-4392035": "Koreans",
+   "p-542233": "Dravidians"
+  },
+  "date": "2026-11-22",
+  "durationSec": 1457,
+  "lobby": "[Rematch] CW7",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-4392035",
+   "p-3566006",
+   "p-1156287"
+  ],
+  "team2": [
+   "p-542233",
+   "p-2574050",
+   "p-2221150"
+  ],
+  "ts": 1795363879000,
+  "winner": 2
  }
 }
