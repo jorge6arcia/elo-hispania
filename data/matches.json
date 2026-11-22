@@ -5320,5 +5320,61 @@
   ],
   "ts": 1795339905000,
   "winner": 2
+ },
+ "aoe-522891578": {
+  "aoeMatchId": 522891578,
+  "civs": {
+   "p-12465743": "Tupi",
+   "p-2081072": "Mongols",
+   "p-232252": "Lithuanians",
+   "p-3266401": "Malians",
+   "p-4718632": "Bengalis",
+   "p-575546": "Chinese"
+  },
+  "date": "2026-11-22",
+  "durationSec": 1614,
+  "lobby": "CW7 Mankos vs chiris ",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-232252",
+   "p-3266401",
+   "p-12465743"
+  ],
+  "team2": [
+   "p-4718632",
+   "p-575546",
+   "p-2081072"
+  ],
+  "ts": 1795341942000,
+  "winner": 1
+ },
+ "aoe-522895752": {
+  "aoeMatchId": 522895752,
+  "civs": {
+   "p-12465743": "Tatars",
+   "p-2081072": "Magyars",
+   "p-232252": "Berbers",
+   "p-3266401": "Dravidians",
+   "p-4718632": "Japanese",
+   "p-575546": "Saracens"
+  },
+  "date": "2026-11-22",
+  "durationSec": 1449,
+  "lobby": "CW7 Mankos vs chiris ",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-12465743",
+   "p-232252",
+   "p-3266401"
+  ],
+  "team2": [
+   "p-575546",
+   "p-2081072",
+   "p-4718632"
+  ],
+  "ts": 1795344031000,
+  "winner": 2
  }
 }
