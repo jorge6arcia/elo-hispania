@@ -5432,5 +5432,33 @@
   ],
   "ts": 1795354517000,
   "winner": 2
+ },
+ "aoe-522930558": {
+  "aoeMatchId": 522930558,
+  "civs": {
+   "p-13714194": "Tupi",
+   "p-17170708": "Wei",
+   "p-2081072": "Franks",
+   "p-305399": "Sicilians",
+   "p-4718632": "Vietnamese",
+   "p-575546": "Shu"
+  },
+  "date": "2026-11-22",
+  "durationSec": 1877,
+  "lobby": "Clan Wars 7",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-305399",
+   "p-13714194",
+   "p-17170708"
+  ],
+  "team2": [
+   "p-575546",
+   "p-2081072",
+   "p-4718632"
+  ],
+  "ts": 1795356217000,
+  "winner": 1
  }
 }
