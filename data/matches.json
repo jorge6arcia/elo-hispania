@@ -5544,5 +5544,89 @@
   ],
   "ts": 1795363879000,
   "winner": 2
+ },
+ "aoe-522975835": {
+  "aoeMatchId": 522975835,
+  "civs": {
+   "p-242561": "Malay",
+   "p-3276518": "Franks",
+   "p-4299412": "Ethiopians",
+   "p-6932296": "Maya",
+   "p-786723": "Lithuanians",
+   "p-8569019": "Bulgarians"
+  },
+  "date": "2026-11-22",
+  "durationSec": 2094,
+  "lobby": "CW 7- Panatimankos vs TdBBueyes",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-6932296",
+   "p-242561",
+   "p-3276518"
+  ],
+  "team2": [
+   "p-8569019",
+   "p-4299412",
+   "p-786723"
+  ],
+  "ts": 1795368318000,
+  "winner": 2
+ },
+ "aoe-522977019": {
+  "aoeMatchId": 522977019,
+  "civs": {
+   "p-1156287": "Malay",
+   "p-1848728": "Vietnamese",
+   "p-1879291": "Dravidians",
+   "p-197388": "Magyars",
+   "p-236788": "Mongols",
+   "p-3566006": "Chinese"
+  },
+  "date": "2026-11-22",
+  "durationSec": 1053,
+  "lobby": "[Revancha] CW conquis vs Tdbar",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-236788",
+   "p-3566006",
+   "p-1156287"
+  ],
+  "team2": [
+   "p-197388",
+   "p-1848728",
+   "p-1879291"
+  ],
+  "ts": 1795368408000,
+  "winner": 2
+ },
+ "aoe-522981937": {
+  "aoeMatchId": 522981937,
+  "civs": {
+   "p-1156287": "Lithuanians",
+   "p-1879291": "Bengalis",
+   "p-197388": "Mapuche",
+   "p-236788": "Ethiopians",
+   "p-2626999": "Varangians",
+   "p-4392035": "Japanese"
+  },
+  "date": "2026-11-22",
+  "durationSec": 1455,
+  "lobby": "[Revancha] CW conquis vs Tdbar",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-4392035",
+   "p-1156287",
+   "p-236788"
+  ],
+  "team2": [
+   "p-197388",
+   "p-2626999",
+   "p-1879291"
+  ],
+  "ts": 1795369824000,
+  "winner": 2
  }
 }

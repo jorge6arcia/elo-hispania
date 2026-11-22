@@ -2040,6 +2040,19 @@
   "profileId": "6742741",
   "region": ""
  },
+ "p-6932296": {
+  "approved": true,
+  "auto": true,
+  "clan": "Cmoyo",
+  "country": "es",
+  "createdAt": 1795371373361,
+  "eloStart": 1186,
+  "eloStartDate": "2026-10-03T16:36:27.000Z",
+  "eloStartSource": "rm_1v1",
+  "nick": "Cigarrín Zidane",
+  "profileId": "6932296",
+  "region": ""
+ },
  "p-786723": {
   "approved": true,
   "auto": true,
