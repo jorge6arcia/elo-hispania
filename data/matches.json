@@ -5628,5 +5628,33 @@
   ],
   "ts": 1795369824000,
   "winner": 2
+ },
+ "aoe-522989791": {
+  "aoeMatchId": 522989791,
+  "civs": {
+   "p-1156287": "Georgians",
+   "p-1879291": "Maya",
+   "p-197388": "Franks",
+   "p-2626999": "Portuguese",
+   "p-3566006": "Vikings",
+   "p-4392035": "Britons"
+  },
+  "date": "2026-11-22",
+  "durationSec": 1248,
+  "lobby": "CW Conquis vs Tdbar",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-3566006",
+   "p-4392035",
+   "p-1156287"
+  ],
+  "team2": [
+   "p-197388",
+   "p-1879291",
+   "p-2626999"
+  ],
+  "ts": 1795371735000,
+  "winner": 2
  }
 }
