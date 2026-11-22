@@ -5460,5 +5460,61 @@
   ],
   "ts": 1795356217000,
   "winner": 1
+ },
+ "aoe-522941927": {
+  "aoeMatchId": 522941927,
+  "civs": {
+   "p-236788": "Berbers",
+   "p-2574050": "Georgians",
+   "p-3566006": "Vietnamese",
+   "p-4392035": "Byzantines",
+   "p-542233": "Shu",
+   "p-841889": "Teutons"
+  },
+  "date": "2026-11-22",
+  "durationSec": 1527,
+  "lobby": "CW7 tdb vs dekko",
+  "map": "CW7 Socotra (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-2574050",
+   "p-841889",
+   "p-542233"
+  ],
+  "team2": [
+   "p-3566006",
+   "p-236788",
+   "p-4392035"
+  ],
+  "ts": 1795359721000,
+  "winner": 1
+ },
+ "aoe-522950631": {
+  "aoeMatchId": 522950631,
+  "civs": {
+   "p-1156287": "Khmer",
+   "p-2221150": "Cumans",
+   "p-236788": "Britons",
+   "p-2574050": "Maya",
+   "p-3566006": "Wu",
+   "p-841889": "Ethiopians"
+  },
+  "date": "2026-11-22",
+  "durationSec": 1753,
+  "lobby": "[Rematch] CW7",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-3566006",
+   "p-1156287",
+   "p-236788"
+  ],
+  "team2": [
+   "p-2221150",
+   "p-2574050",
+   "p-841889"
+  ],
+  "ts": 1795361704000,
+  "winner": 2
  }
 }
