@@ -5404,5 +5404,33 @@
   ],
   "ts": 1795351813000,
   "winner": 1
+ },
+ "aoe-522924603": {
+  "aoeMatchId": 522924603,
+  "civs": {
+   "p-13714194": "Bohemians",
+   "p-17170708": "Persians",
+   "p-2081072": "Burmese",
+   "p-305399": "Bengalis",
+   "p-4718632": "Dravidians",
+   "p-575546": "Bohemians"
+  },
+  "date": "2026-11-22",
+  "durationSec": 1385,
+  "lobby": "Clan Wars 7",
+  "map": "CW7 Fortress (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-305399",
+   "p-17170708",
+   "p-13714194"
+  ],
+  "team2": [
+   "p-4718632",
+   "p-2081072",
+   "p-575546"
+  ],
+  "ts": 1795354517000,
+  "winner": 2
  }
 }
