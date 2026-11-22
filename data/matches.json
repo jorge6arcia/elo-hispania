@@ -5908,5 +5908,89 @@
   ],
   "ts": 1795379456000,
   "winner": 2
+ },
+ "aoe-523030903": {
+  "aoeMatchId": 523030903,
+  "civs": {
+   "p-17557006": "Italians",
+   "p-19629440": "Vietnamese",
+   "p-197388": "Dravidians",
+   "p-314216": "Japanese",
+   "p-3469310": "Malians",
+   "p-861763": "Spanish"
+  },
+  "date": "2026-11-22",
+  "durationSec": 1711,
+  "lobby": "cw 7",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-3469310",
+   "p-314216",
+   "p-861763"
+  ],
+  "team2": [
+   "p-17557006",
+   "p-19629440",
+   "p-197388"
+  ],
+  "ts": 1795381663000,
+  "winner": 2
+ },
+ "aoe-523032423": {
+  "aoeMatchId": 523032423,
+  "civs": {
+   "p-10179079": "Koreans",
+   "p-1229488": "Ethiopians",
+   "p-2152015": "Cumans",
+   "p-2299693": "Persians",
+   "p-236313": "Maya",
+   "p-2598337": "Magyars"
+  },
+  "date": "2026-11-22",
+  "durationSec": 1948,
+  "lobby": "Mike Vs El que le trae la pizza ",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-236313",
+   "p-2598337",
+   "p-1229488"
+  ],
+  "team2": [
+   "p-2299693",
+   "p-2152015",
+   "p-10179079"
+  ],
+  "ts": 1795382321000,
+  "winner": 1
+ },
+ "aoe-523034519": {
+  "aoeMatchId": 523034519,
+  "civs": {
+   "p-11427701": "Spanish",
+   "p-13235": "Khmer",
+   "p-1886379": "Malians",
+   "p-214269": "Berbers",
+   "p-6216515": "Malay",
+   "p-8487446": "Saracens"
+  },
+  "date": "2026-11-22",
+  "durationSec": 2219,
+  "lobby": "[Revancha] CW7",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-8487446",
+   "p-1886379",
+   "p-11427701"
+  ],
+  "team2": [
+   "p-6216515",
+   "p-13235",
+   "p-214269"
+  ],
+  "ts": 1795382350000,
+  "winner": 2
  }
 }
