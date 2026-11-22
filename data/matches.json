@@ -5292,5 +5292,33 @@
   ],
   "ts": 1795286084000,
   "winner": 1
+ },
+ "aoe-522887101": {
+  "aoeMatchId": 522887101,
+  "civs": {
+   "p-12465743": "Persians",
+   "p-2081072": "Franks",
+   "p-232252": "Portuguese",
+   "p-3266401": "Vikings",
+   "p-4718632": "Maya",
+   "p-575546": "Ethiopians"
+  },
+  "date": "2026-11-22",
+  "durationSec": 1112,
+  "lobby": "CW7 Mankos vs chiris ",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-3266401",
+   "p-232252",
+   "p-12465743"
+  ],
+  "team2": [
+   "p-4718632",
+   "p-2081072",
+   "p-575546"
+  ],
+  "ts": 1795339905000,
+  "winner": 2
  }
 }
