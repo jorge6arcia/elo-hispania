@@ -5992,5 +5992,61 @@
   ],
   "ts": 1795382350000,
   "winner": 2
+ },
+ "aoe-523219389": {
+  "aoeMatchId": 523219389,
+  "civs": {
+   "p-242561": "Bohemians",
+   "p-3276518": "Burmese",
+   "p-3905401": "Mongols",
+   "p-4323388": "Lithuanians",
+   "p-59289": "Hindustanis",
+   "p-985424": "Magyars"
+  },
+  "date": "2026-11-23",
+  "durationSec": 2787,
+  "lobby": "[Revancha] CW 7- Panatimankos vs Subditos de Hilariano",
+  "map": "CW7 Fortress (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-242561",
+   "p-3276518",
+   "p-985424"
+  ],
+  "team2": [
+   "p-59289",
+   "p-4323388",
+   "p-3905401"
+  ],
+  "ts": 1795461595000,
+  "winner": 1
+ },
+ "aoe-523230120": {
+  "aoeMatchId": 523230120,
+  "civs": {
+   "p-242561": "Chinese",
+   "p-271761": "Vietnamese",
+   "p-3276518": "Huns",
+   "p-3905401": "Berbers",
+   "p-4323388": "Portuguese",
+   "p-59289": "Koreans"
+  },
+  "date": "2026-11-23",
+  "durationSec": 999,
+  "lobby": "[Revancha] CW 7- Panatimankos vs Subditos de Hilariano",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-242561",
+   "p-271761",
+   "p-3276518"
+  ],
+  "team2": [
+   "p-59289",
+   "p-4323388",
+   "p-3905401"
+  ],
+  "ts": 1795464803000,
+  "winner": 2
  }
 }
