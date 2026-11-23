@@ -6048,5 +6048,61 @@
   ],
   "ts": 1795464803000,
   "winner": 2
+ },
+ "aoe-523235033": {
+  "aoeMatchId": 523235033,
+  "civs": {
+   "p-242561": "Dravidians",
+   "p-271761": "Saracens",
+   "p-3276518": "Franks",
+   "p-3905401": "Maya",
+   "p-4323388": "Khmer",
+   "p-59289": "Ethiopians"
+  },
+  "date": "2026-11-23",
+  "durationSec": 853,
+  "lobby": "[Revancha] CW 7- Panatimankos vs Subditos de Hilariano",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-242561",
+   "p-3276518",
+   "p-271761"
+  ],
+  "team2": [
+   "p-3905401",
+   "p-4323388",
+   "p-59289"
+  ],
+  "ts": 1795466123000,
+  "winner": 2
+ },
+ "aoe-523238465": {
+  "aoeMatchId": 523238465,
+  "civs": {
+   "p-10179079": "Koreans",
+   "p-214269": "Maya",
+   "p-2315213": "Vietnamese",
+   "p-2598337": "Magyars",
+   "p-329032": "Franks",
+   "p-6216515": "Shu"
+  },
+  "date": "2026-11-23",
+  "durationSec": 1146,
+  "lobby": "cw ",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-2598337",
+   "p-10179079",
+   "p-2315213"
+  ],
+  "team2": [
+   "p-329032",
+   "p-6216515",
+   "p-214269"
+  ],
+  "ts": 1795467161000,
+  "winner": 1
  }
 }
