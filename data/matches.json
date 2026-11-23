@@ -6104,5 +6104,61 @@
   ],
   "ts": 1795467161000,
   "winner": 1
+ },
+ "aoe-523244051": {
+  "aoeMatchId": 523244051,
+  "civs": {
+   "p-10179079": "Britons",
+   "p-13235": "Lithuanians",
+   "p-214269": "Saracens",
+   "p-2315213": "Italians",
+   "p-236313": "Poles",
+   "p-6216515": "Ethiopians"
+  },
+  "date": "2026-11-23",
+  "durationSec": 1615,
+  "lobby": "cw ",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-236313",
+   "p-2315213",
+   "p-10179079"
+  ],
+  "team2": [
+   "p-6216515",
+   "p-13235",
+   "p-214269"
+  ],
+  "ts": 1795468888000,
+  "winner": 2
+ },
+ "aoe-523251566": {
+  "aoeMatchId": 523251566,
+  "civs": {
+   "p-13235": "Khmer",
+   "p-1342495": "Dravidians",
+   "p-214269": "Portuguese",
+   "p-236313": "Persians",
+   "p-2598337": "Japanese",
+   "p-6216515": "Armenians"
+  },
+  "date": "2026-11-23",
+  "durationSec": 883,
+  "lobby": "[Revancha] cw ",
+  "map": "CW7 Crescent (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-2598337",
+   "p-1342495",
+   "p-236313"
+  ],
+  "team2": [
+   "p-214269",
+   "p-6216515",
+   "p-13235"
+  ],
+  "ts": 1795471289000,
+  "winner": 1
  }
 }
