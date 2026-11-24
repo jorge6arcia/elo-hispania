@@ -6244,5 +6244,145 @@
   ],
   "ts": 1795549193000,
   "winner": 1
+ },
+ "aoe-523428494": {
+  "aoeMatchId": 523428494,
+  "civs": {
+   "p-113764": "Italians",
+   "p-12278112": "Sicilians",
+   "p-217558": "Chinese",
+   "p-2604970": "Bengalis",
+   "p-5741031": "Malians",
+   "p-810914": "Portuguese"
+  },
+  "date": "2026-11-24",
+  "durationSec": 1753,
+  "lobby": "CW7 LODHV vs NEPEI",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-217558",
+   "p-810914",
+   "p-12278112"
+  ],
+  "team2": [
+   "p-5741031",
+   "p-113764",
+   "p-2604970"
+  ],
+  "ts": 1795550934000,
+  "winner": 1
+ },
+ "aoe-523429455": {
+  "aoeMatchId": 523429455,
+  "civs": {
+   "p-12465743": "Huns",
+   "p-232252": "Saracens",
+   "p-2887868": "Britons",
+   "p-314216": "Inca",
+   "p-3266401": "Maya",
+   "p-3469310": "Khmer"
+  },
+  "date": "2026-11-24",
+  "durationSec": 1609,
+  "lobby": "CW7 semur jodete",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-3266401",
+   "p-232252",
+   "p-12465743"
+  ],
+  "team2": [
+   "p-3469310",
+   "p-2887868",
+   "p-314216"
+  ],
+  "ts": 1795551129000,
+  "winner": 1
+ },
+ "aoe-523434398": {
+  "aoeMatchId": 523434398,
+  "civs": {
+   "p-1382231": "Malay",
+   "p-1840848": "Huns",
+   "p-18947729": "Burgundians",
+   "p-2867863": "Wei",
+   "p-382573": "Tatars",
+   "p-4269127": "Aztecs"
+  },
+  "date": "2026-11-24",
+  "durationSec": 1062,
+  "lobby": "CW - DKtaratas vs TdB.Espadas",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-4269127",
+   "p-382573",
+   "p-18947729"
+  ],
+  "team2": [
+   "p-1382231",
+   "p-1840848",
+   "p-2867863"
+  ],
+  "ts": 1795552731000,
+  "winner": 1
+ },
+ "aoe-523435965": {
+  "aoeMatchId": 523435965,
+  "civs": {
+   "p-12465743": "Japanese",
+   "p-232252": "Sicilians",
+   "p-2887868": "Ethiopians",
+   "p-314216": "Tatars",
+   "p-3266401": "Dravidians",
+   "p-3469310": "Magyars"
+  },
+  "date": "2026-11-24",
+  "durationSec": 1901,
+  "lobby": "CW7 semur jodete",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-12465743",
+   "p-3266401",
+   "p-232252"
+  ],
+  "team2": [
+   "p-314216",
+   "p-3469310",
+   "p-2887868"
+  ],
+  "ts": 1795553263000,
+  "winner": 2
+ },
+ "aoe-523435992": {
+  "aoeMatchId": 523435992,
+  "civs": {
+   "p-12278112": "Burmese",
+   "p-217558": "Inca",
+   "p-2604970": "Gurjaras",
+   "p-478118": "Teutons",
+   "p-6742741": "Malay",
+   "p-810914": "Celts"
+  },
+  "date": "2026-11-24",
+  "durationSec": 1878,
+  "lobby": "CW7 LODHV vs NEPEI",
+  "map": "CW7 Fortress (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-217558",
+   "p-12278112",
+   "p-810914"
+  ],
+  "team2": [
+   "p-478118",
+   "p-6742741",
+   "p-2604970"
+  ],
+  "ts": 1795553292000,
+  "winner": 1
  }
 }
