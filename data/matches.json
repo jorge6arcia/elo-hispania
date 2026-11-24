@@ -6188,5 +6188,61 @@
   ],
   "ts": 1795545783000,
   "winner": 1
+ },
+ "aoe-523420095": {
+  "aoeMatchId": 523420095,
+  "civs": {
+   "p-12465743": "Cumans",
+   "p-232252": "Bengalis",
+   "p-314216": "Turks",
+   "p-3266401": "Shu",
+   "p-3469310": "Hindustanis",
+   "p-861763": "Malay"
+  },
+  "date": "2026-11-24",
+  "durationSec": 2093,
+  "lobby": "CW7 semur jodete",
+  "map": "CW7 Fortress (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-232252",
+   "p-12465743",
+   "p-3266401"
+  ],
+  "team2": [
+   "p-3469310",
+   "p-861763",
+   "p-314216"
+  ],
+  "ts": 1795548534000,
+  "winner": 2
+ },
+ "aoe-523422715": {
+  "aoeMatchId": 523422715,
+  "civs": {
+   "p-12278112": "Franks",
+   "p-217558": "Saxons",
+   "p-2604970": "Saracens",
+   "p-478118": "Tupi",
+   "p-5741031": "Franks",
+   "p-810914": "Aztecs"
+  },
+  "date": "2026-11-24",
+  "durationSec": 1279,
+  "lobby": "CW7 LODHV vs NEPEI",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-810914",
+   "p-12278112",
+   "p-217558"
+  ],
+  "team2": [
+   "p-2604970",
+   "p-5741031",
+   "p-478118"
+  ],
+  "ts": 1795549193000,
+  "winner": 1
  }
 }
