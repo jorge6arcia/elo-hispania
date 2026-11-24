@@ -6160,5 +6160,33 @@
   ],
   "ts": 1795471289000,
   "winner": 1
+ },
+ "aoe-523413089": {
+  "aoeMatchId": 523413089,
+  "civs": {
+   "p-12465743": "Tupi",
+   "p-232252": "Lithuanians",
+   "p-314216": "Burmese",
+   "p-3266401": "Romans",
+   "p-3469310": "Malians",
+   "p-861763": "Berbers"
+  },
+  "date": "2026-11-24",
+  "durationSec": 2075,
+  "lobby": "[Revancha] CW7 semur jodete",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-12465743",
+   "p-3266401",
+   "p-232252"
+  ],
+  "team2": [
+   "p-314216",
+   "p-3469310",
+   "p-861763"
+  ],
+  "ts": 1795545783000,
+  "winner": 1
  }
 }
