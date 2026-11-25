@@ -6468,5 +6468,89 @@
   ],
   "ts": 1795636156000,
   "winner": 2
+ },
+ "aoe-523626535": {
+  "aoeMatchId": 523626535,
+  "civs": {
+   "p-10721552": "Wei",
+   "p-10728048": "Georgians",
+   "p-1988166": "Huns",
+   "p-2871715": "Portuguese",
+   "p-5162605": "Bohemians",
+   "p-669752": "Magyars"
+  },
+  "date": "2026-11-25",
+  "durationSec": 2173,
+  "lobby": "clan wars",
+  "map": "CW7 Tres Leches (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-10728048",
+   "p-10721552",
+   "p-2871715"
+  ],
+  "team2": [
+   "p-1988166",
+   "p-5162605",
+   "p-669752"
+  ],
+  "ts": 1795637797000,
+  "winner": 1
+ },
+ "aoe-523633167": {
+  "aoeMatchId": 523633167,
+  "civs": {
+   "p-1229488": "Wei",
+   "p-1342495": "Chinese",
+   "p-1758789": "Dravidians",
+   "p-2315213": "Italians",
+   "p-2598337": "Spanish",
+   "p-5829315": "Vietnamese"
+  },
+  "date": "2026-11-25",
+  "durationSec": 182,
+  "lobby": "Clan Wars - Potassium",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1229488",
+   "p-1758789",
+   "p-5829315"
+  ],
+  "team2": [
+   "p-1342495",
+   "p-2315213",
+   "p-2598337"
+  ],
+  "ts": 1795640127000,
+  "winner": 2
+ },
+ "aoe-523636176": {
+  "aoeMatchId": 523636176,
+  "civs": {
+   "p-1229488": "Wei",
+   "p-1342495": "Chinese",
+   "p-1758789": "Dravidians",
+   "p-2315213": "Italians",
+   "p-2598337": "Spanish",
+   "p-5829315": "Vietnamese"
+  },
+  "date": "2026-11-25",
+  "durationSec": 1433,
+  "lobby": "Clan Wars - Potassium",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1758789",
+   "p-5829315",
+   "p-1229488"
+  ],
+  "team2": [
+   "p-1342495",
+   "p-2315213",
+   "p-2598337"
+  ],
+  "ts": 1795640451000,
+  "winner": 1
  }
 }
