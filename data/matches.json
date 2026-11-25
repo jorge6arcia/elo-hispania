@@ -6440,5 +6440,33 @@
   ],
   "ts": 1795555616000,
   "winner": 1
+ },
+ "aoe-523622153": {
+  "aoeMatchId": 523622153,
+  "civs": {
+   "p-10721552": "Celts",
+   "p-10728048": "Bengalis",
+   "p-1988166": "Italians",
+   "p-2871715": "Vietnamese",
+   "p-5162605": "Koreans",
+   "p-669752": "Dravidians"
+  },
+  "date": "2026-11-25",
+  "durationSec": 1000,
+  "lobby": "TdB.Caclan wars",
+  "map": "CW7 Nomad (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-10728048",
+   "p-2871715",
+   "p-10721552"
+  ],
+  "team2": [
+   "p-669752",
+   "p-1988166",
+   "p-5162605"
+  ],
+  "ts": 1795636156000,
+  "winner": 2
  }
 }
