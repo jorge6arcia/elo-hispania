@@ -6525,6 +6525,34 @@
   "ts": 1795640127000,
   "winner": 2
  },
+ "aoe-523636050": {
+  "aoeMatchId": 523636050,
+  "civs": {
+   "p-10721552": "Armenians",
+   "p-10728048": "Tatars",
+   "p-1988166": "Malians",
+   "p-2871715": "Byzantines",
+   "p-5162605": "Vikings",
+   "p-669752": "Saxons"
+  },
+  "date": "2026-11-25",
+  "durationSec": 2571,
+  "lobby": "clan wars",
+  "map": "CW7 Crescent (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-10728048",
+   "p-10721552",
+   "p-2871715"
+  ],
+  "team2": [
+   "p-669752",
+   "p-5162605",
+   "p-1988166"
+  ],
+  "ts": 1795640568000,
+  "winner": 2
+ },
  "aoe-523636176": {
   "aoeMatchId": 523636176,
   "civs": {
@@ -6551,6 +6579,90 @@
    "p-2598337"
   ],
   "ts": 1795640451000,
+  "winner": 1
+ },
+ "aoe-523642104": {
+  "aoeMatchId": 523642104,
+  "civs": {
+   "p-10179079": "Malay",
+   "p-1758789": "Byzantines",
+   "p-2315213": "Aztecs",
+   "p-236313": "Bulgarians",
+   "p-4566248": "Slavs",
+   "p-5829315": "Maya"
+  },
+  "date": "2026-11-25",
+  "durationSec": 1470,
+  "lobby": "Clan Wars - Potassium",
+  "map": "CW7 Socotra (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-1758789",
+   "p-4566248",
+   "p-5829315"
+  ],
+  "team2": [
+   "p-236313",
+   "p-2315213",
+   "p-10179079"
+  ],
+  "ts": 1795642414000,
+  "winner": 1
+ },
+ "aoe-523644870": {
+  "aoeMatchId": 523644870,
+  "civs": {
+   "p-10721552": "Wu",
+   "p-10728048": "Khmer",
+   "p-1988166": "Bulgarians",
+   "p-2871715": "Mongols",
+   "p-5162605": "Aztecs",
+   "p-669752": "Tupi"
+  },
+  "date": "2026-11-25",
+  "durationSec": 583,
+  "lobby": "clan wars",
+  "map": "CW7 Socotra (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-2871715",
+   "p-10728048",
+   "p-10721552"
+  ],
+  "team2": [
+   "p-669752",
+   "p-1988166",
+   "p-5162605"
+  ],
+  "ts": 1795643591000,
+  "winner": 1
+ },
+ "aoe-523648235": {
+  "aoeMatchId": 523648235,
+  "civs": {
+   "p-10721552": "Shu",
+   "p-10728048": "Slavs",
+   "p-1988166": "Teutons",
+   "p-2871715": "Malay",
+   "p-5162605": "Ethiopians",
+   "p-669752": "Britons"
+  },
+  "date": "2026-11-25",
+  "durationSec": 1417,
+  "lobby": "clan wars",
+  "map": "CW7 Grand Bara (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-2871715",
+   "p-10728048",
+   "p-10721552"
+  ],
+  "team2": [
+   "p-5162605",
+   "p-1988166",
+   "p-669752"
+  ],
+  "ts": 1795644650000,
   "winner": 1
  }
 }
