@@ -6637,6 +6637,34 @@
   "ts": 1795643591000,
   "winner": 1
  },
+ "aoe-523647978": {
+  "aoeMatchId": 523647978,
+  "civs": {
+   "p-1229488": "Shu",
+   "p-1342495": "Vikings",
+   "p-236313": "Malians",
+   "p-2598337": "Japanese",
+   "p-4566248": "Tatars",
+   "p-5829315": "Bohemians"
+  },
+  "date": "2026-11-25",
+  "durationSec": 2169,
+  "lobby": "Clan Wars - Potassium",
+  "map": "CW7 Crescent (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-5829315",
+   "p-4566248",
+   "p-1229488"
+  ],
+  "team2": [
+   "p-2598337",
+   "p-1342495",
+   "p-236313"
+  ],
+  "ts": 1795644482000,
+  "winner": 2
+ },
  "aoe-523648235": {
   "aoeMatchId": 523648235,
   "civs": {
@@ -6663,6 +6691,34 @@
    "p-669752"
   ],
   "ts": 1795644650000,
+  "winner": 1
+ },
+ "aoe-523655262": {
+  "aoeMatchId": 523655262,
+  "civs": {
+   "p-10179079": "Wu",
+   "p-1229488": "Turks",
+   "p-1758789": "Romans",
+   "p-2315213": "Inca",
+   "p-236313": "Huns",
+   "p-5829315": "Gurjaras"
+  },
+  "date": "2026-11-26",
+  "durationSec": 1207,
+  "lobby": "Clan Wars - Potassium",
+  "map": "CW7 Colosseum (Custom)",
+  "source": "auto",
+  "team1": [
+   "p-5829315",
+   "p-1229488",
+   "p-1758789"
+  ],
+  "team2": [
+   "p-10179079",
+   "p-236313",
+   "p-2315213"
+  ],
+  "ts": 1795647617000,
   "winner": 1
  }
 }
